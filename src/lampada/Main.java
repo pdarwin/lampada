@@ -1,6 +1,7 @@
 package lampada;
 
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
 
@@ -25,7 +26,9 @@ public class Main {
 	public static void main(String[] args)
 	{
 
-		Lampada nLamp = new Lampada(5);
+		Random rand = new Random();
+		int numGenios = rand.nextInt(11);
+		Lampada nLamp = new Lampada(numGenios);
 
 		while (menu() != 2)
 		{
@@ -37,18 +40,40 @@ public class Main {
 			int esfregadelas = nLamp.getNumEsfregadelas();
 
 			System.out.println("Lampada esfregada " + esfregadelas + " vezes");
-
-			System.out.println("Quantos desejos pretende pedir?");
-			int desejos = sc.nextInt();
-
-			if (esfregadelas % 2 == 0)
+			
+			boolean bom = esfregadelas % 2 == 0;
+			
+			String tipoGenio;
+			if (bom == true) 
 			{
-				System.out.println("Chama genio bom");
-			} else
-			{
-				System.out.println("Chama genio mau");
+				tipoGenio = "bom";
 			}
-
+			else
+			{
+				tipoGenio = "mau";
+			}
+			
+			System.out.println("Foram " + esfregadelas + " - Chama genio " + tipoGenio);
+				
+			System.out.println("Quantos desejos pretende pedir?");
+				
+			int desejos = sc.nextInt();
+				
+			if (bom == true)
+			{
+				GenioBom genio =  new GenioBom(desejos);
+				genio.realizaDesejo();
+			}
+			else
+			{
+				desejos = 1;
+				GenioMau genio = new GenioMau(desejos);
+				genio.realizaDesejo();
+			}
+				
+			System.out.println(desejos + " desejos realizados!");
+			
+			
 		}
 
 	}

@@ -4,7 +4,7 @@ public class Lampada {
 
 	private int numGenios;
 	private int numInicializacoes;
-	private int numEsfregadelas;
+	private int numEsfregadelas = 0;
 	
 	public Lampada(int numGenios) {
 		super();
@@ -33,7 +33,7 @@ public class Lampada {
 	}
 
 	public void setNumEsfregadelas(int numEsfregadelas) {
-		this.numEsfregadelas = numEsfregadelas;
+		this.numEsfregadelas = this.numEsfregadelas + numEsfregadelas;
 	}
 
 	
