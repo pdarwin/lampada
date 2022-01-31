@@ -7,11 +7,6 @@ public class Main {
 
 	static Scanner sc = new Scanner(System.in);
 
-	public Main()
-	{
-		// TODO Auto-generated constructor stub
-	}
-
 	public static int menu()
 	{
 		System.out.println("\nBem-vindo a Lampada Mágica!");
@@ -26,53 +21,44 @@ public class Main {
 	public static void main(String[] args)
 	{
 
+		/** Cria um random */
 		Random rand = new Random();
-		int numGenios = rand.nextInt(11);
-		MagicLamp nLamp = new MagicLamp(numGenios);
+		
+		/** Gera o limite de desejos a partir do random */
+		int limit = rand.nextInt(11);
+		System.out.println("Limite de génios:" + limit);
+			
+		/** Cria uma nova lâmpada */
+		MagicLamp lamp = new MagicLamp(limit);
 
+		/** Gera o menu */
 		while (menu() != 2)
 		{
 			System.out.println("Quantas vezes quer esfregar a lampada?");
 			int rubs = sc.nextInt();
 
-			nLamp.setNumEsfregadelas(rubs);
+			lamp.setRubs(rubs);
 
-			int esfregadelas = nLamp.getNumEsfregadelas();
-
-			System.out.println("Lampada esfregada " + esfregadelas + " vezes");
+			System.out.println("Lampada esfregada " + rubs + " vezes");
 			
-			boolean bom = esfregadelas % 2 == 0;
+			Genie genio = lamp.rub(limit); 
+			System.out.print(genio.toString());
+			System.out.println();
+			System.out.println("Realizar desejo (S/N)?");
 			
-			String tipoGenio;
-			if (bom == true) 
-			{
-				tipoGenio = "bom";
-			}
-			else
-			{
-				tipoGenio = "mau";
-			}
+			String realizar = sc.nextLine();
 			
-			System.out.println("Foram " + esfregadelas + " - Chama genio " + tipoGenio);
-				
-			System.out.println("Quantos desejos pretende pedir?");
-				
-			int desejos = sc.nextInt();
-				
-			if (bom == true)
-			{
-				GoodGenius genio =  new GoodGenius(desejos);
-				genio.makeWish();
+			if (realizar == "S") {
+				genio.grantWish();
 			}
-			else
-			{
-				desejos = 1;
-				BadGenius genio = new BadGenius(desejos);
-				genio.makeWish();
+			else if (realizar == "N") {
+				break;
 			}
+			else {
 				
-			System.out.println(desejos + " desejos realizados!");
-			
+				System.out.println("Opção inválida");
+				break;
+			}
 			
 		}
 
