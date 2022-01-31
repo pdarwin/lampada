@@ -1,4 +1,4 @@
-package lampada;
+package magiclamp;
 
 import java.util.Scanner;
 import java.util.Random;
@@ -28,7 +28,7 @@ public class Main {
 
 		Random rand = new Random();
 		int numGenios = rand.nextInt(11);
-		Lampada nLamp = new Lampada(numGenios);
+		MagicLamp nLamp = new MagicLamp(numGenios);
 
 		while (menu() != 2)
 		{
@@ -61,14 +61,14 @@ public class Main {
 				
 			if (bom == true)
 			{
-				GenioBom genio =  new GenioBom(desejos);
-				genio.realizaDesejo();
+				GoodGenius genio =  new GoodGenius(desejos);
+				genio.makeWish();
 			}
 			else
 			{
 				desejos = 1;
-				GenioMau genio = new GenioMau(desejos);
-				genio.realizaDesejo();
+				BadGenius genio = new BadGenius(desejos);
+				genio.makeWish();
 			}
 				
 			System.out.println(desejos + " desejos realizados!");

@@ -1,12 +1,12 @@
-package lampada;
+package magiclamp;
 
-public class Lampada {
+public class MagicLamp {
 
 	private int numGenios;
 	private int numInicializacoes;
 	private int numEsfregadelas = 0;
 	
-	public Lampada(int numGenios) {
+	public MagicLamp(int numGenios) {
 		super();
 		this.numGenios = numGenios;
 	}
