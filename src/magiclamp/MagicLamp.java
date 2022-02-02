@@ -8,7 +8,9 @@ public class MagicLamp {
 	/** Número máximo de desejos */
 	private int limit;
 
-
+	/** Número de desejos restantes*/
+	private int remGenies;
+	
 	/** Número total de esfregadelas. */
 	private int totalRubs;
 
@@ -17,15 +19,59 @@ public class MagicLamp {
 
 	/** Número de recargas. */
 	private int demons;
-
+	
 	/**
 	 * @param limit
 	 *            Quantos génios podem sair da lâmpada.
 	 */
 	public MagicLamp(int aLimit) {
-		limit = aLimit;
+		this.limit = aLimit;
 	}
 
+	/**
+	 * Método para esfregar a lâmpada
+	 * Esfregamos a lâmpada mágica para obter um génio. Sé o número for par sem contar a vez atual, retorna um génio mau;
+	 * Se o número for maior que o limite, a lâmpada cria um pequeno demónio;
+	 * Em todas as outras situações, retorna um génio normal.
+	 * 
+	 * @param limit
+	 *            máximo número de desejos que o génio pode realizar
+	 * 
+	 * @return um génio ou demónio.
+	 */
+	public Genie rub() {
+		if (rubs < limit) {
+			rubs++;
+			totalRubs++;
+			if (totalRubs % 2 == 0)
+				return new NiceGenie(limit);
+			return new BadGenie(limit);
+		}
+		return new Demon(limit);
+	}
+
+	/**
+	 * Recarrega a lâmpada mágica colocando nela um demónio.
+	 * Um demónio pode ser usado somente se ainda não foi reciclado
+	 * 
+	 * @param demon
+	 *            o demónio reciclável.
+	 */
+	public void rechargeLamp(Demon demon) {
+		if (!demon.recycled()) {
+			demon.recycle();
+			rubs = 0;
+			demons++;
+		}
+	}
+	
+	public String toString ()
+	{
+		return "Tenho "+ rubs + " esfregadelas de um total de " + totalRubs + 
+				"; restam " + remGenies + " de um total de " + limit + "; foram feitas " + demons + " recargas";
+		
+	}
+	
 	/**
 	 * @return número máximo de génios.
 	 */
@@ -68,41 +114,6 @@ public class MagicLamp {
 		return demons;
 	}
 
-	/**
-	 * Método para esfregar a lâmpada
-	 * Esfregamos a lâmpada mágica para obter um génio. Sé o número for par sem contar a vez atual, retorna um génio mau;
-	 * Se o número for maior que o limite, a lâmpada cria um pequeno demónio;
-	 * Em todas as outras situações, retorna um génio normal.
-	 * 
-	 * @param limit
-	 *            máximo número de desejos que o génio pode realizar
-	 * 
-	 * @return um génio ou demónio.
-	 */
-	public Genie rub(int aLimit) {
-		if (rubs < limit) {
-			rubs++;
-			totalRubs++;
-			if (totalRubs % 2 == 0)
-				return new NiceGenie(aLimit);
-			return new BadGenie(aLimit);
-		}
-		return new Demon(aLimit);
-	}
 
-	/**
-	 * Recarrega a lâmpada mágica colocando nela um demónio.
-	 * Um demónio pode ser usado somente se ainda não foi reciclado
-	 * 
-	 * @param demon
-	 *            o demónio reciclável.
-	 */
-	public void rechargeLamp(Demon demon) {
-		if (!demon.recycled()) {
-			demon.recycle();
-			rubs = 0;
-			demons++;
-		}
-	}
 	
 }

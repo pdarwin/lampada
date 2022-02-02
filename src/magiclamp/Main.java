@@ -1,6 +1,7 @@
 package magiclamp;
 
 import java.util.Scanner;
+
 import java.util.Random;
 
 public class Main {
@@ -26,6 +27,7 @@ public class Main {
 		
 		/** Gera o limite de desejos a partir do random */
 		int limit = rand.nextInt(11);
+		if (limit <= 0) limit= 1; // para nunca dar 0 no random
 		System.out.println("Limite de génios:" + limit);
 			
 		/** Cria uma nova lâmpada */
@@ -41,25 +43,22 @@ public class Main {
 
 			System.out.println("Lampada esfregada " + rubs + " vezes");
 			
-			Genie genio = lamp.rub(limit); 
-			System.out.print(genio.toString());
+			Genie genio = lamp.rub(); // Esfrega a lâmpada o nº de vezes escolhido
+			
+			System.out.println("num desejos " + genio.getGranted());
+			System.out.println(genio instanceof NiceGenie ? "Génio bom" : genio instanceof BadGenie ? "Génio mau" : "Demónio");
+			System.out.println(lamp);
+			
 			System.out.println();
 			System.out.println("Realizar desejo (S/N)?");
 			
-			String realizar = sc.nextLine();
+			String realiza = sc.next();
 			
-			if (realizar == "S") {
+			if (realiza != "N") {
 				genio.grantWish();
+				System.out.println(genio);
 			}
-			else if (realizar == "N") {
-				break;
-			}
-			else {
-				
-				System.out.println("Opção inválida");
-				break;
-			}
-			
+
 		}
 
 	}
