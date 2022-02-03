@@ -25,7 +25,7 @@ public class NiceGenie extends Genie {
 	 */
 	@Override
 	public String toString() {
-		return "O génio bom concedeu " + getGranted() + " desejos. Ainda tem "
+		return "Eu sou o génio bom e já concedi " + getGranted() + " desejos. Ainda tem "
 				+ getRemainingWishes() + " desejos para pedir.";
 	}
 

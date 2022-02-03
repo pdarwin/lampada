@@ -18,8 +18,8 @@ public class BadGenie extends Genie {
 	 */
 	@Override
 	public String toString() {
-		return (getGranted() == 1) ? "O génio mau realizou um desejo."
-				: "O génio mau tem um desejo para realizar.";
+		return (getGranted() == 1) ? "Eu sou o génio mau e realizei um desejo."
+				: "Olá! Eu sou o génio mau e posso realizar um desejo.";
 	}
 	
 }

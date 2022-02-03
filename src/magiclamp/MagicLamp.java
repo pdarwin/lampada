@@ -67,8 +67,8 @@ public class MagicLamp {
 	
 	public String toString ()
 	{
-		return "Tenho "+ rubs + " esfregadelas de um total de " + totalRubs + 
-				"; restam " + remGenies + " de um total de " + limit + "; foram feitas " + demons + " recargas";
+		return "Olá, eu sou a lâmpada mágica. Tenho "+ rubs + " esfregadelas de um total de " + totalRubs + 
+				"; restam " + remGenies + " génios de um total de " + limit + "; foram feitas " + demons + " recargas";
 		
 	}
 	
