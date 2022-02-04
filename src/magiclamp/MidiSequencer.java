@@ -45,7 +45,9 @@ public class MidiSequencer {
 	    // create a stream from a file
 	    InputStream is = null;
 		try {
-			is = new BufferedInputStream(new FileInputStream(new File("C:\\Users\\PP\\Documents\\GitHub\\lampada\\src\\magiclamp\\Aladdin-(Medley-Of-All-Songs).mid")));
+			String basePath = new File("").getAbsolutePath(); // Vai buscar o caminho relativo da pasta
+		    
+			is = new BufferedInputStream(new FileInputStream(new File(basePath + "\\src\\magiclamp\\Aladdin-(Medley-Of-All-Songs).mid")));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
