@@ -173,7 +173,7 @@ public class Main {
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#(((((((((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#((((@@@(((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@                 @@@@@@@@@@@((@@#(@@@@@@@@@@@@@@@@@@@@@@@##@@@@@@@@@@@@@@@");
-		System.out.println("@@@@@    Bemvinda/o     @@@@@@@@@@@&@#(@@#@@@@@@@@@@@@@@@@@@#######%%@@@@@@@@@@@");
+		System.out.println("@@@@@    Bem-vinda/o     @@@@@@@@@@@&@#(@@#@@@@@@@@@@@@@@@@@@#######%%@@@@@@@@@@@");
 		System.out.println("@@@@@        à          @@@@@@@@@@@@@(@@@#(#%%%%&@@@@@@@@@###########%%@@%%@@%%@");
 		System.out.println("@@@@@   Lâmpada Mágica! @@@@@@@@@@@@@@@@@@@@@@@@%%%%%%%%@%%%%%%%%%%%%%%%%%%@@@@%");
 		System.out.println("@@@@@@                 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%%%%%%%%%%%%%%%@@%%%@@");
@@ -186,7 +186,7 @@ public class Main {
 	
 	public static void showMenu (MagicLamp aLamp, boolean aMusicOn)
 	{
-		System.out.println("╔====  Bemvinda/o ao menu da Lampada Mágica  ====╗");
+		System.out.println("╔====  Bem-vinda/o ao menu da Lampada Mágica  ====╗");
 		System.out.println("╠================================================╣");
 		System.out.println("║                                                ║");
 		System.out.println("║       Lâmpada carregada com " + aLamp.getNumGenies() +
