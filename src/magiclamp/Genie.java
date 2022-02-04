@@ -1,83 +1,63 @@
 package magiclamp;
 
+import java.util.Scanner;
+
 public abstract class Genie {
 
 	/**
-	 * Número máximo de desejos
+	 * Número de desejos pedidos
 	 */
-	private int limit;
+	protected int numWishes;
 
 	/**
-	 * Número de desejos realizados
+	 * Número de desejos ainda não realizados
 	 */
-	private int granted;
+	protected int remWishes;
 
 	/**
 	 * @param laLimWishes número máximo de desejos a conceder
 	 */
-	public Genie (int aLimit) {
+	public Genie () {
 		super();
-		this.limit = aLimit;
 	}
 
 	/**
-	 * Retorna o número de desejos já realizados
-	 */	
-	public int getGranted() {
-		return granted;
-	}
-	
-	/**
-	 * Retorna o número máximo de desejos
-	 */	
-	public int getLimit() {
-		return limit;
-	}
-
-	/**
-	 * @param aLimWishes define o número máximo de desejos a conceder
+	 * @return retorna o número de desejos pedidos
 	 */
-	public void setLimit(int aLimit) {
-		this.limit = aLimit;
+	public int getNumWishes() {
+		return numWishes;
 	}
 
 	/**
-	 * Incrementar o contador de desejos
+	 * @return retorna o número de desejos ainda disponíveis
 	 */
-	public void incrementGranted() {
-		granted++;
+	public int getRemWishes() {
+		return remWishes;
 	}
+
 
 	/**
 	 * Pede ao génio que realize um desejo.
-	 * Nunca pode poermitir mais desejos que o limite definido
+	 * Nunca pode permitir mais desejos que o limite definido
 	 * 
 	 * @return verdadeiro se o desejo foi concedido, senão falso
 	 */
-	public boolean grantWish() {
-		if (canGrantWish()) {
-			incrementGranted();
-			doGrantWish();
+	public boolean grantWish (String aWish) {
+		
+		
+		if (remWishes > 0) {
+			remWishes-=1;
+			System.out.println("Desejo concedido! " + aWish + " foi realizado. " + (remWishes==0 ? "Não lhe restam mais" : "Ainda lhe restam " + remWishes + " de " + numWishes) + " desejos.");
 			return true;
 		}
 		return false;
 	}
-
-
-	/**
-	 * Decide se o génio pode realizar o desejo
-	 * 
-	 * @return verdadeiro ou falso
-	 */
-	public boolean canGrantWish() {
-		return granted < limit;
-	}
+	
 	
 	/**
-	 * Realizar desejo. Não faz nada, as subclasses definirão o que acontece aqui
+	 * Mostra o génio. Não faz nada, as subclasses definirão o que acontece aqui
 	 */
-	public void doGrantWish() {
+	public void showMe() {
 		// NADA
 	}
-	
 }

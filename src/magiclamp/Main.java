@@ -1,108 +1,217 @@
 package magiclamp;
 
+import java.util.InputMismatchException;
+import java.util.Random;
 import java.util.Scanner;
 
-import java.util.Random;
 
 public class Main {
 
+	/** Scanner de input */
 	static Scanner sc = new Scanner(System.in);
-
+	
+	/** Música ligada ou desligada */
+	static boolean musicOn = false;
 	public static void main(String[] args)
-	{
+	{		
 		
+		/** Ecrã de boas vindas */
 		printWelcomeToTheLamp();
-
+		
+		/** Inicia a música */
+		MidiSequencer midiSequencer = new MidiSequencer();
+		midiSequencer.playMidi();
+		musicOn = true;
+		
+		/** Aqui aguarda que a tecla enter seja pressionada */
+		try{
+			System.in.read();
+			}
+		catch(Exception e){
+			
+		}
+		
+		/** Limpa a consola com 50 linhas em branco */
+		clearConsole();
+		
 		/** Cria um random */
 		Random rand = new Random();
 		
 		/** Gera o limite de desejos a partir do random */
-		int limit = rand.nextInt(11);
+		int limit = rand.nextInt(20);
 		if (limit <= 0) limit= 1; // para nunca dar 0 no random
-		System.out.println("Nesta iteração foram gerados aleatoriamente " + limit + " génios.");
+
 			
 		/** Cria uma nova lâmpada */
 		MagicLamp lamp = new MagicLamp(limit);
 
-		/** Gera o menu */
-		while (menu() != 2)
+		/** Mostra o menu */
+		showMenu(lamp, musicOn);
+
+		/** choice - variável que guarda a escolha do utilizador */
+		int choice = 0;
+		
+		boolean ok = false; // Boleano para o ciclo inicializado a falso
+		do
 		{
-			System.out.println("Quantas vezes quer esfregar a lampada?");
-			int rubs = sc.nextInt();
-
-			lamp.setRubs(rubs);
-
-			System.out.println("Lampada esfregada " + rubs + " vezes");
-			
-			Genie genio = lamp.rub(); // Esfrega a lâmpada o nº de vezes escolhido
-			
-			System.out.println("num desejos " + genio.getGranted());
-			System.out.println(genio instanceof NiceGenie ? "Génio bom" : genio instanceof BadGenie ? "Génio mau" : "Demónio");
-			System.out.println(lamp);
-			
-			System.out.println();
-			System.out.println("Realizar desejo (S/N)?");
-			
-			String realiza = sc.next();
-			
-			if (realiza != "N") {
-				genio.grantWish();
-				System.out.println(genio);
+			try
+			{
+				choice = sc.nextInt(); // Tenta atribuir o valor do scanner ao inteiro
+				ok = true; // Se conseguir, marca ok como verdadeiro para sair do ciclo
 			}
+			catch (InputMismatchException e) // Apanha como excepção tudo o que não seja um inteiro
+			{
+				System.out.println("Opção inválida. Escolha outra opção, por favor.");
+				sc.next();
+			}
+		} while (!ok);
+		
+		ok = true;
+		do 	{
+				switch (choice)
+				{
+					case 1:
+						clearConsole(); // Limpa a consola
+						
+						lamp.showMe(); // Mostra a lâmpada
+						System.out.println("Quantas vezes deseja esfregar a lampada?"); // Pergunta
+						int rubs = sc.nextInt(); // Guarda o nº de esfregadelas
 			
-		
-
-		}
-		
+						lamp.setRubs(rubs); // Esfrega a lâmpada o nº de vezes escolhido
+						
+						Genie genie = lamp.rub(sc); // Cria o génio - passa o scanner como parâmetro, para que possa definir o nº de desejos ao esfregar a lâmpada
+						
+						genie.showMe(); // mostra o génio
+						int i;
+						String wish = sc.nextLine(); // Cria a string, e limpa o nextLine 
+						
+						for (i = 1; i <= genie.getNumWishes(); i++ )
+						{
+							System.out.println("Peça um desejo!");
+							wish = sc.nextLine();
+							genie.grantWish(wish);
+						}
+						
+						
+						System.out.println("Prima Enter para continuar");
+						/** Aqui aguarda que a tecla enter seja pressionada */
+						try{
+							System.in.read();
+							}
+						catch(Exception e){
+							
+						}
+						
+						clearConsole(); // Limpa consola
+						showMenu(lamp, musicOn); // Mostra menu
+						choice = sc.nextInt(); // Coloca scanner à escuta para nova escolha
+						break;
+					case 2:
+						if (!musicOn) // Verifica se a música está a tocar
+						{
+							midiSequencer = new MidiSequencer(); //Se não estiver, liga a música
+							midiSequencer.playMidi();
+							musicOn = true;
+						}
+						else 
+						{
+							midiSequencer.stopSequencer(); // Desliga a música
+							musicOn = false; // Música desligada
+						}
+						clearConsole(); // Limpa consola
+						showMenu(lamp, musicOn); // Mostra menu
+						choice = sc.nextInt(); // Coloca scanner à escuta para nova escolha
+						break;
+					case 3:
+						break;
+					case 4: /* sequência de saída */
+				        System.out.println("Obrigado por usar a lâmpada mágica. Até à proxima!"); // imprime mensagem de despedida
+						
+				        midiSequencer.stopSequencer(); // Desliga a música
+						sc.close(); // Fecha o scanner
+						
+				        System.exit(0); // Sai do sistema
+					default:
+						System.out.println(choice + " não é uma opção válida. Escolha outra opção, por favor.");
+						choice = sc.nextInt(); // Coloca scanner à escuta para nova escolha
+						break;
+				}
+			} while (ok);
 
 	}
 	
 	public static void printWelcomeToTheLamp () {
-		System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
-		System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWNXNWWWWWWWWWWWWWWWWW");
-		System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWNxo0NWWWWWWWWWWWWWWW");
-		System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWk';kNWWWWWWWWWWWWWW");
-		System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWX:.,dKNNNWWWWWWWWWW");
-		System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWKKk;'';lkKNWWWWWWWWW");
-		System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWN00xc;,'..dXWWWWWWWWW");
-		System.out.println("WW       Bem-vindo        WWWWX0o:lol;..l0NNWWWWWW");
-		System.out.println("WW    à Lampada Mágica!   WWWNKX0xx0Odc,.'dKNWWWWW");
-		System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWXKXKkxOOoc;..lXWWWWW");
-		System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWNNNNXdo0xcc:;oKWWWWW");
-		System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWNNWNKxx0xlclxKNWWWWW");
-		System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWNNNXkoxxlloxKXNWWWWW");
-		System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWNXXNKxlc;cdOKNNWWWWWW");
-		System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWNKXKxdxxO0XNNNWWWWWWW");
-		System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWKkxONNXNNXNNNWWWWWWW");
-		System.out.println("WWWWWWXOxxkKNWWWWXo;dXWWWWWWWWWX0XNWNNNNWWWWWWWWWW");
-		System.out.println("WWWWKo'.,,..:0WWNk, ,ONWWWWWWWWWWXXXWWWWWWWWWWWWWW");
-		System.out.println("WWWXc ,ONXo. ;KO:.   .:0WWWWWWWWWNKKNMWWWWWWWWWWWW");
-		System.out.println("WWM0' oWWO.  ,o,       ;ONWWWWWWNNXXNWWWWWWWWWWWWW");
-		System.out.println("WWWNl.'OWXo'...         .,:x0XXd;,,:kNWWWWWWWWWWWW");
-		System.out.println("WWWWNx,'lx:..              ..::.  ;kNWWWWWWWWWWWWW");
-		System.out.println("WWWWWWXk:'.                  .  'dXWWWWWWWWWWWWWWW");
-		System.out.println("WWWWWWWWd.  ',.         ...',;ckXWWWWWWWWWWWWWWWWW");
-		System.out.println("WWWWWWWNx..'xX0l..   ..l0XXXXNWWWWWWWWWWWWWWWWWWWW");
-		System.out.println("WWWWWWWWWX0XWNKc.     .cKNNWWWWWWWWWWWWWWWWWWWWWWW");
-		System.out.println("WWWWWWWWWKxoc,.         .';coxKWWWWWWWWWWWWWWWWWWW");
-		System.out.println("WWWWWWWWWOlcccccccccccccccccclOWWWWWWWWWWWWWWWWWWW");
-		System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&&&&&&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@((#(&&&&&&&&&#((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@(%((#@@@&@&&&&&@@@@@&((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@#%@@@@@@@&%%@@@@@@@@@&((&(#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@#@@@@@@@@%%%@@@@((@@@@@@@@@#(@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@(##((/(((@@@@(@@@@@@(%@@@@@@(&@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@/((//##((%@/,@@(((((/*&@@(@@@@@@@(@@@@&(@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@/((((((/(#(@ .,@(((@@@@@(/@@@(@@@@@@@/@@&(@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@/((((((((/*(/((((#@@  &@#((@@@@/@@@@@@@(@(&@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@/((((((((((((((((//*/@((((((@@@&&@@@@@@@%(@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@#((//(((((((((/((((.  /(((((((@@@@(@@@@@#(@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@#((((((((((*    (((/,/((((((((#@@@@(@%(@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@(((@@@@@#((((((((((...,,.,,./((((((((((@@%(/@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@(((%@@@@#((((((((((,,,,,,,*(((((((((((((((%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@%((#(((((%@@@@@#((((((((****/./((((((((((((/((((&@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@#(#(((((((#%%%(#@@@#((((#/////(((((((((((((((/(((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@#(((@@@@@@@@@@&(((((#@     (((((((((((((@@%&((@@@@@@#((@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@/    (((((((**(((((((((((%%%(#(((#@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@%*#(((((((((((***/@@@@@@@@%#%%#(((((((@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@**(((((((((((((****@@@@@@@@@@@@@@((((((#@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@**(((((((((((((****,@@@@@@@@@@@@@@@@#((((%@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@,,#((((((((((((*****,@@@@@@@@@@@@@@@@@@@@&@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@#(((((((((((((((,,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@#((((((((((((((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@#((((((((((((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@##(/*******@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,*****/(&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#((((#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#(((((((((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#((((@@@(((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@                 @@@@@@@@@@@((@@#(@@@@@@@@@@@@@@@@@@@@@@@##@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@    Bemvinda/o     @@@@@@@@@@@&@#(@@#@@@@@@@@@@@@@@@@@@#######%%@@@@@@@@@@@");
+		System.out.println("@@@@@        à          @@@@@@@@@@@@@(@@@#(#%%%%&@@@@@@@@@###########%%@@%%@@%%@");
+		System.out.println("@@@@@   Lâmpada Mágica! @@@@@@@@@@@@@@@@@@@@@@@@%%%%%%%%@%%%%%%%%%%%%%%%%%%@@@@%");
+		System.out.println("@@@@@@                 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%%%%%%%%%%%%%%%@@%%%@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&%%%%%%%%%%%%%&@%%%@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&%%%@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%&%%##@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@    Prima Enter para continuar     @@@@@@@@@@@@@@@@@@@@@@@@@@");
+		
 	}
 	
-	public static int menu()
+	public static void showMenu (MagicLamp aLamp, boolean aMusicOn)
 	{
-		System.out.println("\n╔=== Menu da Lampada Mágica ===╗");
-		System.out.println("╠==============================╣");
-		System.out.println("║Escolha a opção que prentende 	║");
-		System.out.println("╠==============================╣");
-		System.out.println("║                              ║");
-		System.out.println("║  1 -Esfregar                 ║");
-		System.out.println("║  2 -Sair                     ║");
-		System.out.println("║                              ║");
-		System.out.println("╚==============================╝");
+		System.out.println("╔====  Bemvinda/o ao menu da Lampada Mágica  ====╗");
+		System.out.println("╠================================================╣");
+		System.out.println("║                                                ║");
+		System.out.println("║       Lâmpada carregada com " + aLamp.getNumGenies() +
+							 " de " + aLamp.getLimGenies() + " génios" + 
+							 (aLamp.getNumGenies()< 10 ? " " :"") + 
+							 (aLamp.getLimGenies()< 10 ? " " :"") + "    ║");
+		System.out.println("║                                                ║");
+		System.out.println("║              Escolha uma opção                 ║");
+		System.out.println("╠================================================╣");
+		System.out.println("║                                                ║");
+		System.out.println("║       1 -Esfregar a lâmpada                    ║");
+		System.out.println("║       2 -" + (aMusicOn ? "Desl" : "L") + 
+										"igar música" + (aMusicOn ? "" : "   ") +
+										"                       ║");
+		System.out.println("║       3 -Reiniciar                             ║");
+		System.out.println("║       4 -Sair                                  ║");
+		System.out.println("║                                                ║");
+		System.out.println("╚================================================╝");
 
-		int opcao = sc.nextInt();
-		return opcao;
+	}
+	
+	public final static void clearConsole()
+	{
+		for(int i = 0; i < 50; i++) // 
+		    System.out.println();   // Imprime 50 linhas em branco para limpar a consola
 	}
 	
 }

@@ -9,17 +9,47 @@ public class BadGenie extends Genie {
 	 * @param limit
 	 *            número de desejos a realizar - ignorado, apenas para compatibilidade
 	 */
-	public BadGenie(int aLimitnumDesejos) {
-		super(1);
+	public BadGenie() {
+		super();
+		this.numWishes = 1;
+		this.remWishes = 1;
 	}
 
 	/**
-	 * @see java.lang.Object#toString()
+	 * Mostra o génio.
 	 */
-	@Override
-	public String toString() {
-		return (getGranted() == 1) ? "Eu sou o génio mau e realizei um desejo."
-				: "Olá! Eu sou o génio mau e posso realizar um desejo.";
+	public void showMe ()
+	{
+		System.out.println("                                                                                ");
+		System.out.println("                                                                                ");
+		System.out.println("                                                                                ");
+		System.out.println("               ##                                                %              ");
+		System.out.println("              %&@@,                                            /@&@.            ");
+		System.out.println("              @@@@@@*                                        (&&@@&@            ");
+		System.out.println("             &@@@@@&&&(                                    %@@@@@@@@,           ");
+		System.out.println("             @@@@@@@@@&@&                                &@@@@@@@@@@*           ");
+		System.out.println("             @@@@@@@@@@@@@&                            &@&@@@@@@@@@@*           ");
+		System.out.println("             %@@@@@@@@@@@@@@@                       .&&@@@@@@@@@@@&@,           ");
+		System.out.println("              &@@@@@@@@@@@@@@@&,                  /&@@@@@@@@@@@@@@&#            ");
+		System.out.println("               @@@@@@@@@@@@@@@@@@#              &@@@@@@@@@@@@@@@@@&        &    ");
+		System.out.println("                %@@@@&@@@@@@@@@@@&@#          &@@&@@@@@@@@@@@@@&&(        *&    ");
+		System.out.println("     *  ..         ,&@@@@@@@@@@@@&@%          &@@@@@@@@@@@@@&&,          .&*    ");
+		System.out.println("     &,  @(                &@@&@@/..          #.&&@@@&&.                 @@     ");
+		System.out.println("     .@( /@&                                                            &@&     ");
+		System.out.println("      (@& @@@.                                                        .&@&.     ");
+		System.out.println("       &@@@@@@&                                                      (&&@#      ");
+		System.out.println("        %&@&@@@&,   *&                                         #.   &@@@&       ");
+		System.out.println("         *@@@@@@@&. #@&&                                      @@@ #@&&&&        ");
+		System.out.println("           @@@@@@@@@@@@@@@        *&             .@&,       *&@@@@&&.#%         ");
+		System.out.println("             @&@@@@@@@@@@@@@     .@@@&          &&@@&&     &&@@@@&&  ,          ");
+		System.out.println("               .  &@@&@@@@&&@@#  &@@@@@@      /@@@@@@@@  @@@@@&&@%              ");
+		System.out.println("                   .@&@@@@@&@&@&@@@@@@@&&&  /&@@@@@&@@@@@&&  .@@                ");
+		System.out.println("                      @@@@   *@@@@@@@@@@@@&&@@@@@@@(@@@&&                       ");
+		System.out.println("                         *       /@@@@    &@@@@&&                               ");
+		System.out.println("                                                                                ");
+		System.out.println("                                                                                ");
+		System.out.println("                                                                                ");
+		System.out.println("          Eu sou o génio mau, e vou conceder apenas um desejo!                  ");
 	}
 	
 }

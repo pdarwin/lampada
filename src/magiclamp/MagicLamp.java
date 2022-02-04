@@ -1,18 +1,17 @@
 package magiclamp;
 
+import java.util.Scanner;
+
 /**
  * Lâmpada mágica
  */
 public class MagicLamp {
 
-	/** Número máximo de desejos */
-	private int limit;
-
-	/** Número de desejos restantes*/
-	private int remGenies;
+	/** Número de génios disponíveis */
+	private int limGenies;
 	
-	/** Número total de esfregadelas. */
-	private int totalRubs;
+	/** Número de génios disponíveis */
+	private int numGenies;
 
 	/** Número de esfregadelas desde o último carregamento. */
 	private int rubs;
@@ -25,7 +24,8 @@ public class MagicLamp {
 	 *            Quantos génios podem sair da lâmpada.
 	 */
 	public MagicLamp(int aLimit) {
-		this.limit = aLimit;
+		this.limGenies = aLimit;
+		this.numGenies = aLimit;
 	}
 
 	/**
@@ -39,17 +39,62 @@ public class MagicLamp {
 	 * 
 	 * @return um génio ou demónio.
 	 */
-	public Genie rub() {
-		if (rubs < limit) {
-			rubs++;
-			totalRubs++;
-			if (totalRubs % 2 == 0)
-				return new NiceGenie(limit);
-			return new BadGenie(limit);
+	public Genie rub(Scanner sc) {
+		
+		System.out.print("Está a esfregar a lâmpada " + rubs + " vezes. Quantos desejos pretende realizar?");
+		
+		int numWishes = sc.nextInt();
+		
+		if (numGenies > 0)
+		{
+			
+			numGenies -= 1;
+			if ((rubs % 2 == 0) || (rubs == 1))
+			{
+				return new NiceGenie(numWishes);
+			}
+			else
+			{
+				return new BadGenie();
+			}
+			
 		}
-		return new Demon(limit);
+		else
+		{
+			return new Demon(numWishes);
+		}
 	}
 
+	/**
+	 * Mostra a lâmpada
+	 */
+	public void showMe ()
+	{
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@((#(@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@((#(@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/*(#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/,,***,,*%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@&%&&@@@@@@@@@@@@@@@@@@@@@@@(,,*(#%&&%#*,.*&@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@*#****/*#%(&@@@@@@@@@@@@@@@@@(*,,//(#%%#(*,,,/#@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@&%(**#%(#@@@@@@@@@@@@**,,,*********,****%@@@@@@@@@@@@&#((#%@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@&%(*,/%%#/&@@@@@@/,**/(((((((////**,,,%@@@@@@@#/%*(&@@%*#/(@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@&%#/*,**#%####################%%%%%%%###@&/(%@@@@@@@@@@,(#@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@%%#//**********//((##%%%#(/********/*/,@@%(%@@@@@@@@/(#@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@%##%#//*///*****************////////*@/%/%@@@@@@%/#(@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@#(#%&%%#/////////////////(#%%%%((@@%*%*/%%(,##/%@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#(##%%%%%%%%%%%%%%%%%%%%%%#(@@@@@@@%(//(#&@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*///(((######(((///&@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&%(///(&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,(#/,(*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(*#&%/**(/#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,*(%&&#//,*/%/,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,*//(((#############(((//**@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+	}
+	
 	/**
 	 * Recarrega a lâmpada mágica colocando nela um demónio.
 	 * Um demónio pode ser usado somente se ainda não foi reciclado
@@ -65,19 +110,7 @@ public class MagicLamp {
 		}
 	}
 	
-	public String toString ()
-	{
-		return "Olá, eu sou a lâmpada mágica. Tenho "+ rubs + " esfregadelas de um total de " + totalRubs + 
-				"; restam " + remGenies + " génios de um total de " + limit + "; foram feitas " + demons + " recargas";
-		
-	}
 	
-	/**
-	 * @return número máximo de génios.
-	 */
-	public int getLimit() {
-		return limit;
-	}
 
 	/**
 	 * @return quantas vezes foi esfregada desde a última recarga.
@@ -93,19 +126,6 @@ public class MagicLamp {
 		this.rubs = aRubs;
 	}
 	
-	/**
-	 * @return número total de esfregadelas.
-	 */
-	public int getTotalRubs() {
-		return totalRubs;
-	}
-
-	/**
-	 * @return número de génios disponíveis.
-	 */
-	public int getGenies() {
-		return getLimit() - getRubs();
-	}
 
 	/**
 	 * @return número de demónios.
@@ -113,6 +133,21 @@ public class MagicLamp {
 	public int getDemons() {
 		return demons;
 	}
+
+	/**
+	 * @return número de génios disponíveis na lâmpada
+	 */
+	public int getNumGenies() {
+		return numGenies;
+	}
+	
+	/**
+	 * @return limite de génios disponíveis na lâmpada
+	 */
+	public int getLimGenies() {
+		return limGenies;
+	}
+
 
 
 	
