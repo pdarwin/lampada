@@ -186,7 +186,7 @@ public class Main {
 	
 	public static void showMenu (MagicLamp aLamp, boolean aMusicOn)
 	{
-		System.out.println("╔====  Bem-vinda/o ao menu da Lampada Mágica  ====╗");
+		System.out.println("╔===== Bem-vinda/o ao menu da Lampada Mágica ====╗");
 		System.out.println("╠================================================╣");
 		System.out.println("║                                                ║");
 		System.out.println("║       Lâmpada carregada com " + aLamp.getNumGenies() +
