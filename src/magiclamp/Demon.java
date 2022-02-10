@@ -1,5 +1,7 @@
 package magiclamp;
 
+import java.util.Scanner;
+
 /**
  * Demónio reciclável
  */
@@ -16,8 +18,6 @@ public class Demon extends Genie {
 	 */
 	public Demon (int aNumWishes) {
 		super();
-		this.numWishes = aNumWishes;
-		this.remWishes = aNumWishes;
 	}
 	
 	/**
@@ -40,9 +40,28 @@ public class Demon extends Genie {
 	 * Recicla o demónio - chamada pela lâmpada mágica
 	 */
 	public void recycle() {
+		System.out.println("Demónio consumido. Lâmpada em reciclagem...");
 		recycled = true;
 	}
 
+	/**
+	 * Pede ao demónio que realize um desejo, e pergunta se quer realizar outro
+	 * 
+	 * @return verdadeiro se continua a realizar, senão falso
+	 */
+	public boolean grantWish (String aWish, Scanner sc) {
+		System.out.println("Desejo concedido! " + aWish + " foi realizado. Escolha outro desejo, ou \"n\" para sair.");
+		String resposta = sc.nextLine();
+		if (!resposta.equals("n"))
+			{
+			//sc.nextLine(); // Limpar scanner
+			this.grantWish(resposta, sc);
+			return true;
+			}
+		else return false;
+
+	}
+	
 	/**
 	 * Mostra o génio.
 	 */
@@ -77,8 +96,7 @@ public class Demon extends Genie {
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-		System.out.println("@@@@@@@@@   Eu sou o demónio reciclável, e posso realizar " + remWishes + 
-				" desejo" + (remWishes > 1 ? "s" : " ") + " @@@@@@@@@@@");
+		System.out.println("@@@   Eu sou o demónio reciclável, e posso realizar todos os seus desejos!  @@@@");
 	}
 
 }

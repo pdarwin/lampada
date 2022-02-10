@@ -78,6 +78,7 @@ public class MagicLamp {
 		if (!demon.recycled()) {
 			demon.recycle();
 			rubs = 0;
+			numGenies = limGenies;
 			demons++;
 		}
 	}

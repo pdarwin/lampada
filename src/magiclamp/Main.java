@@ -4,7 +4,6 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-
 public class Main {
 
 	/** Scanner de input */
@@ -34,8 +33,8 @@ public class Main {
 		/** Limpa a consola com 50 linhas em branco */
 		clearConsole();
 		
-		/** Pergunta pelo limite de génios, para gerar o random */
-		System.out.println("Escolha o limite de génios que a lâmpada pode gerar");
+		/** Pergunta pelo limite do random que vai gerar os génios */
+		System.out.println("Escolha o limite do número aleatório de génios que a lâmpada pode gerar");
 		
 		/** Cria um random */
 		Random rand = new Random();
@@ -85,13 +84,27 @@ public class Main {
 						int i;
 						String wish = sc.nextLine(); // Cria a string, e limpa o nextLine 
 						
-						for (i = 1; i <= genie.getNumWishes(); i++ )
-						{
-							System.out.println("Peça um desejo!");
-							wish = sc.nextLine();
-							genie.grantWish(wish);
-						}
+						/** dois ciclos diferentes para pedir os desejos, caso seja génio ou demónio */
 						
+						if (genie instanceof Demon)
+						{
+							Demon demon = (Demon) genie; // Faz o cast para transformar o génio genérico em demónio
+							System.out.println("Peça um desejo!");
+							wish = sc.nextLine(); // Guarda o desejo no scanner
+							
+							demon.grantWish(wish, sc);
+
+							lamp.rechargeLamp(demon); // recarrega a lâmpada
+							
+						}
+						else {
+							for (i = 1; i <= genie.getNumWishes(); i++ ) // Ciclo para realizar os desejos pedidos
+							{
+								System.out.println("Peça um desejo!");
+								wish = sc.nextLine(); // Guarda o desejo no scanner
+								genie.grantWish(wish); // Realiza o desejo
+							}
+						}
 						
 						System.out.println("Prima Enter para continuar");
 						/** Aqui aguarda que a tecla enter seja pressionada */
@@ -101,6 +114,7 @@ public class Main {
 						catch(Exception e){
 							
 						}
+
 						
 						showMenu(lamp, musicOn); // Mostra menu
 						choice = sc.nextInt(); // Coloca scanner à escuta para nova escolha
