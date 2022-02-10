@@ -73,8 +73,7 @@ public class Main {
 					case 1:
 						clearConsole(); // Limpa a consola
 						
-						lamp.showMe(); // Mostra a lâmpada
-						System.out.println("Quantas vezes deseja esfregar a lampada?"); // Pergunta
+						System.out.println("Quantas vezes deseja esfregar a lâmpada?"); // Pergunta
 						int rubs = sc.nextInt(); // Guarda o nº de esfregadelas
 			
 						lamp.setRubs(rubs); // Esfrega a lâmpada o nº de vezes escolhido
@@ -122,9 +121,7 @@ public class Main {
 						showMenu(lamp, musicOn); // Mostra menu
 						choice = sc.nextInt(); // Coloca scanner à escuta para nova escolha
 						break;
-					case 3:
-						break;
-					case 4: /* sequência de saída */
+					case 3: /* sequência de saída */
 				        System.out.println("Obrigado por usar a lâmpada mágica. Até à proxima!"); // imprime mensagem de despedida
 						
 				        midiSequencer.stopSequencer(); // Desliga a música
@@ -173,7 +170,7 @@ public class Main {
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#(((((((((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#((((@@@(((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@                 @@@@@@@@@@@((@@#(@@@@@@@@@@@@@@@@@@@@@@@##@@@@@@@@@@@@@@@");
-		System.out.println("@@@@@    Bem-vinda/o     @@@@@@@@@@@&@#(@@#@@@@@@@@@@@@@@@@@@#######%%@@@@@@@@@@@");
+		System.out.println("@@@@@    Bem-vinda/o    @@@@@@@@@@@&@#(@@#@@@@@@@@@@@@@@@@@@#######%%@@@@@@@@@@@");
 		System.out.println("@@@@@        à          @@@@@@@@@@@@@(@@@#(#%%%%&@@@@@@@@@###########%%@@%%@@%%@");
 		System.out.println("@@@@@   Lâmpada Mágica! @@@@@@@@@@@@@@@@@@@@@@@@%%%%%%%%@%%%%%%%%%%%%%%%%%%@@@@%");
 		System.out.println("@@@@@@                 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%%%%%%%%%%%%%%%@@%%%@@");
@@ -186,26 +183,36 @@ public class Main {
 	
 	public static void showMenu (MagicLamp aLamp, boolean aMusicOn)
 	{
-		System.out.println("╔===== Bem-vinda/o ao menu da Lampada Mágica ====╗");
-		System.out.println("╠================================================╣");
-		System.out.println("║                                                ║");
-		System.out.println("║       Lâmpada carregada com " + aLamp.getNumGenies() +
-							 " de " + aLamp.getLimGenies() + " génios" + 
-							 (aLamp.getNumGenies()< 10 ? " " :"") + 
-							 (aLamp.getLimGenies()< 10 ? " " :"") + "    ║");
-		System.out.println("║                                                ║");
-		System.out.println("║              Escolha uma opção                 ║");
-		System.out.println("╠================================================╣");
-		System.out.println("║                                                ║");
-		System.out.println("║       1 -Esfregar a lâmpada                    ║");
-		System.out.println("║       2 -" + (aMusicOn ? "Desl" : "L") + 
-										"igar música" + (aMusicOn ? "" : "   ") +
-										"                       ║");
-		System.out.println("║       3 -Reiniciar                             ║");
-		System.out.println("║       4 -Sair                                  ║");
-		System.out.println("║                                                ║");
-		System.out.println("╚================================================╝");
-
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@   * * *  Menu da Lâmpada Mágica    * * *   @@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@((#(@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@((#(@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/*(#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/,,***,,*%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@&%&&@@@@@@@@@@@@@@@@@@@@@@@(,,*(#%&&%#*,.*&@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@*#****/*#%(&@@@@@@@@@@@@@@@@@(*,,//(#%%#(*,,,/#@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@&%(**#%(#@@@@@@@@@@@@**,,,*********,****%@@@@@@@@@@@@&#((#%@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@&%(*,/%%#/&@@@@@@/,**/(((((((////**,,,%@@@@@@@#/%*(&@@%*#/(@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@&%#/*,**#%####################%%%%%%%###@&/(%@@@@@@@@@@,(#@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@%%#//**********//((##%%%#(/********/*/,@@%(%@@@@@@@@/(#@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@%##%#//*///*****************////////*@/%/%@@@@@@%/#(@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@#(#%&%%#/////////////////(#%%%%((@@%*%*/%%(,##/%@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#(##%%%%%%%%%%%%%%%%%%%%%%#(@@@@@@@%(//(#&@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*///(((######(((///&@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@    Génios: " + aLamp.getNumGenies() +
+				 " de " + aLamp.getLimGenies() + 
+				 (aLamp.getNumGenies()< 10 ? " " :"") + 
+				 (aLamp.getLimGenies()< 10 ? " " :"") + "   @@@@@@@@@@@@&%(///(&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,(#/,(*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(*#&%/**(/#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,*(%&&#//,*/%/,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,*//(((#############(((//**@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@     1 - Esfregar lâmpada         2 - " + 
+				(aMusicOn ? "Desl" : "L") + "igar música" + (aMusicOn ? "" : "   ") + "          3 - Sair     @@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 	}
 	
 	public final static void clearConsole()
