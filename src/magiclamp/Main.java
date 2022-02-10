@@ -38,7 +38,7 @@ public class Main {
 		Random rand = new Random();
 		
 		/** Gera o limite de desejos a partir do random */
-		int limit = rand.nextInt(20);
+		int limit = rand.nextInt(11);
 		if (limit <= 0) limit= 1; // para nunca dar 0 no random
 
 			
