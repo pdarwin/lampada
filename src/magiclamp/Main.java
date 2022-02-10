@@ -34,17 +34,20 @@ public class Main {
 		/** Limpa a consola com 50 linhas em branco */
 		clearConsole();
 		
+		/** Pergunta pelo limite de génios, para gerar o random */
+		System.out.println("Escolha o limite de génios que a lâmpada pode gerar");
+		
 		/** Cria um random */
 		Random rand = new Random();
 		
 		/** Gera o limite de desejos a partir do random */
-		int limit = rand.nextInt(11);
+		int limit = rand.nextInt(sc.nextInt());
 		if (limit <= 0) limit= 1; // para nunca dar 0 no random
 
 			
 		/** Cria uma nova lâmpada */
 		MagicLamp lamp = new MagicLamp(limit);
-
+		
 		/** Mostra o menu */
 		showMenu(lamp, musicOn);
 
@@ -70,9 +73,7 @@ public class Main {
 		do 	{
 				switch (choice)
 				{
-					case 1:
-						clearConsole(); // Limpa a consola
-						
+					case 1:						
 						System.out.println("Quantas vezes deseja esfregar a lâmpada?"); // Pergunta
 						int rubs = sc.nextInt(); // Guarda o nº de esfregadelas
 			
@@ -101,7 +102,6 @@ public class Main {
 							
 						}
 						
-						clearConsole(); // Limpa consola
 						showMenu(lamp, musicOn); // Mostra menu
 						choice = sc.nextInt(); // Coloca scanner à escuta para nova escolha
 						break;
@@ -183,6 +183,7 @@ public class Main {
 	
 	public static void showMenu (MagicLamp aLamp, boolean aMusicOn)
 	{
+		clearConsole();
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@   * * *  Menu da Lâmpada Mágica    * * *   @@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -205,7 +206,8 @@ public class Main {
 				 (aLamp.getNumGenies()< 10 ? " " :"") + 
 				 (aLamp.getLimGenies()< 10 ? " " :"") + "   @@@@@@@@@@@@&%(///(&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,(#/,(*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(*#&%/**(/#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@   N.º de recargas: " + aLamp.getDemons() 
+			+"   @@@@@@@@@(*#&%/**(/#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,*(%&&#//,*/%/,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,*//(((#############(((//**@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");

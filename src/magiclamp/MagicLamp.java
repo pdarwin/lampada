@@ -26,6 +26,7 @@ public class MagicLamp {
 	public MagicLamp(int aLimit) {
 		this.limGenies = aLimit;
 		this.numGenies = aLimit;
+		this.demons = 0;
 	}
 
 	/**
