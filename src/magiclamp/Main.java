@@ -92,7 +92,7 @@ public class Main {
 							System.out.println("Peça um desejo!");
 							wish = sc.nextLine(); // Guarda o desejo no scanner
 							
-							demon.grantWish(wish, sc);
+							demon.grantWishDemon(wish, sc);
 
 							lamp.rechargeLamp(demon); // recarrega a lâmpada
 							

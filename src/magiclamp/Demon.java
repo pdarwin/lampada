@@ -49,13 +49,13 @@ public class Demon extends Genie {
 	 * 
 	 * @return verdadeiro se continua a realizar, senão falso
 	 */
-	public boolean grantWish (String aWish, Scanner sc) {
+	public boolean grantWishDemon (String aWish, Scanner sc) {
 		System.out.println("Desejo concedido! " + aWish + " foi realizado. Escolha outro desejo, ou \"n\" para sair.");
 		String resposta = sc.nextLine();
 		if (!resposta.equals("n"))
 			{
 			//sc.nextLine(); // Limpar scanner
-			this.grantWish(resposta, sc);
+			this.grantWishDemon(resposta, sc);
 			return true;
 			}
 		else return false;
