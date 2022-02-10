@@ -4,6 +4,12 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * 
+ * @author P. Perneta e J. Rocha
+ *
+ */
+
 public class Main {
 
 	/** Scanner de input */
