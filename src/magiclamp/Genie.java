@@ -1,7 +1,5 @@
 package magiclamp;
 
-import java.util.Scanner;
-
 public abstract class Genie {
 
 	/**
