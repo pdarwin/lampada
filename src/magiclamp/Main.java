@@ -98,7 +98,7 @@ public class Main {
 							System.out.println("Peça um desejo!");
 							wish = sc.nextLine(); // Guarda o desejo no scanner
 							
-							demon.grantWishDemon(wish, sc);
+							demon.grantWishDemon(wish, sc); // chama a função recursiva que pede infinitos desejos ao demónio, até escolher parar
 
 							lamp.rechargeLamp(demon); // recarrega a lâmpada
 							
