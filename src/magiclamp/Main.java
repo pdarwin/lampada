@@ -12,75 +12,77 @@ import java.util.Scanner;
 
 public class Main {
 
-	/** Scanner de input */
-	static Scanner sc = new Scanner(System.in);
-	
-	/** Música ligada ou desligada */
-	static boolean musicOn = false;
 	public static void main(String[] args)
 	{		
 		
-		/** Ecrã de boas vindas */
-		printWelcomeToTheLamp();
+
+		Scanner sc = new Scanner(System.in); // Cria e inicializa o scanner de input
 		
-		/** Inicia a música */
-		MidiSequencer midiSequencer = new MidiSequencer();
-		midiSequencer.playMidi();
-		musicOn = true;
+		boolean musicOn = false; // Cria e inicializa o boleano do estado do sequenciador de Midis
 		
-		/** Aqui aguarda que a tecla enter seja pressionada */
-		try{
-			System.in.read();
-			}
-		catch(Exception e){
-			
+		printWelcomeToTheLamp(); // Imprime o ecrã de boas vindas
+
+		MidiSequencer midiSequencer = new MidiSequencer(); // inicializa o sequenciador de Midis
+		try {
+			/** Inicia a música */
+
+			midiSequencer.playMidi();
+			musicOn = true;
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			ErrorHandler.errorHandler(e1, sc, midiSequencer);
 		}
 		
-		/** Limpa a consola com 50 linhas em branco */
-		clearConsole();
+		waitForEnter(); // aguarda que a tecla enter seja pressionada
+		
+		/** Cria uma nova lâmpada */
+		MagicLamp lamp; // Variável lâmpada
+		
+		int limit = 0; // cria e inicializa o n.º limite do random
+		
+		clearConsole(); // Limpa a consola com 50 linhas em branco
 		
 		/** Pergunta pelo limite do random que vai gerar os génios */
 		System.out.println("Escolha o limite do número aleatório de génios que a lâmpada pode gerar");
-		
-		/** Cria um random */
-		Random rand = new Random();
-		
-		/** Gera o limite de desejos a partir do random */
-		int limit = rand.nextInt(sc.nextInt());
-		if (limit <= 0) limit= 1; // para nunca dar 0 no random
 
-			
-		/** Cria uma nova lâmpada */
-		MagicLamp lamp = new MagicLamp(limit);
-		
-		/** Mostra o menu */
-		showMenu(lamp, musicOn);
-
-		/** choice - variável que guarda a escolha do utilizador */
-		int choice = 0;
-		
-		boolean ok = false; // Boleano para o ciclo inicializado a falso
+		boolean ok = false; // Boleano para ciclos inicializado a falso
+				
 		do
 		{
-			try
-			{
-				choice = sc.nextInt(); // Tenta atribuir o valor do scanner ao inteiro
-				ok = true; // Se conseguir, marca ok como verdadeiro para sair do ciclo
+			try {
+				Random rand = new Random();
+				/** Gera o limite de desejos a partir do random */
+				limit = rand.nextInt(ErrorHandler.tryScannerNextInt(sc)); // Tenta atribuir o valor do scanner ao inteiro
+				ok = true;
 			}
-			catch (InputMismatchException e) // Apanha como excepção tudo o que não seja um inteiro
-			{
-				System.out.println("Opção inválida. Escolha outra opção, por favor.");
-				sc.next();
+			catch (Exception e1) {
+				ErrorHandler.errorHandler(e1, sc, midiSequencer); // trata o erro
 			}
 		} while (!ok);
 		
-		ok = true;
+			
+		if (limit <= 0) limit= 1; // para nunca dar 0 no random
+
+			
+		lamp = new MagicLamp(limit);
+		
+		/** Mostra o menu */
+		printMenu(lamp, musicOn);
+
+
+		/**
+		 * cria e inicializa a variável que guarda a escolha do utilizador
+		 */
+		int choice = ErrorHandler.tryScannerNextInt(sc);
+		
+		
+		ok = false;
 		do 	{
 				switch (choice)
 				{
 					case 1:						
 						System.out.println("Quantas vezes deseja esfregar a lâmpada?"); // Pergunta
-						int rubs = sc.nextInt(); // Guarda o nº de esfregadelas
+						int rubs = ErrorHandler.tryScannerNextInt(sc); // Guarda o nº de esfregadelas
 			
 						lamp.setRubs(rubs); // Esfrega a lâmpada o nº de vezes escolhido
 						
@@ -113,17 +115,10 @@ public class Main {
 						}
 						
 						System.out.println("Prima Enter para continuar");
-						/** Aqui aguarda que a tecla enter seja pressionada */
-						try{
-							System.in.read();
-							}
-						catch(Exception e){
-							
-						}
-
+						waitForEnter(); // aguarda que a tecla enter seja pressionada
 						
-						showMenu(lamp, musicOn); // Mostra menu
-						choice = sc.nextInt(); // Coloca scanner à escuta para nova escolha
+						printMenu(lamp, musicOn); // Mostra menu
+						choice = ErrorHandler.tryScannerNextInt(sc); // Coloca scanner à escuta para nova escolha
 						break;
 					case 2:
 						if (!musicOn) // Verifica se a música está a tocar
@@ -138,25 +133,27 @@ public class Main {
 							musicOn = false; // Música desligada
 						}
 						clearConsole(); // Limpa consola
-						showMenu(lamp, musicOn); // Mostra menu
-						choice = sc.nextInt(); // Coloca scanner à escuta para nova escolha
+						printMenu(lamp, musicOn); // Mostra menu
+						choice = ErrorHandler.tryScannerNextInt(sc); // Coloca scanner à escuta para nova escolha
 						break;
 					case 3: /* sequência de saída */
-				        System.out.println("Obrigado por usar a lâmpada mágica. Até à proxima!"); // imprime mensagem de despedida
+				        printGameOver(sc); // imprime mensagem de despedida
 						
 				        midiSequencer.stopSequencer(); // Desliga a música
 						sc.close(); // Fecha o scanner
-						
+					
 				        System.exit(0); // Sai do sistema
 					default:
 						System.out.println(choice + " não é uma opção válida. Escolha outra opção, por favor.");
-						choice = sc.nextInt(); // Coloca scanner à escuta para nova escolha
+						choice = ErrorHandler.tryScannerNextInt(sc); // Coloca scanner à escuta para nova escolha
 						break;
 				}
-			} while (ok);
-
+			} while (!ok);
 	}
 	
+	/**
+	 * Imprime o ecrã de boas vindas
+	 */
 	public static void printWelcomeToTheLamp () {
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&&&&&&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -201,11 +198,16 @@ public class Main {
 		
 	}
 	
-	public static void showMenu (MagicLamp aLamp, boolean aMusicOn)
+	/**
+	 * imprime o menu
+	 * @param aLamp - a Lâmpada Mágica
+	 * @param aMusicOn - o estado do som (ligado/ desligado)
+	 */
+	public static void printMenu (MagicLamp aLamp, boolean aMusicOn)
 	{
 		clearConsole();
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-		System.out.println("@@@@@@@@@@@@@@@@@@@   * * *  Menu da Lâmpada Mágica    * * *   @@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@   * * *  Menu da Lâmpada Mágica    * * *   @@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@((#(@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@((#(@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -237,10 +239,97 @@ public class Main {
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 	}
 	
-	public final static void clearConsole()
+	/**
+	 * imprime o escrã final
+	 */
+	public static void printGameOver(Scanner sc)
 	{
-		for(int i = 0; i < 50; i++) // 
-		    System.out.println();   // Imprime 50 linhas em branco para limpar a consola
+
+		boolean ok = false;
+		
+		do {
+			clearConsole();
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@        _                                                                  @@");
+			System.out.println("@@       | |_  ____ ____   ___   ___    ____   ____ ____   ____              @@");
+			System.out.println("@@       |  _)/ _  )    \\ / _ \\ /___)  |  _ \\ / _  )  _ \\ / _  |             @@");
+			System.out.println("@@       | |_( (/ /| | | | |_| |___ |  | | | ( (/ /| | | ( ( | |_ _ _        @@");
+			System.out.println("@@        \\___)____)_|_|_|\\___/(___/   | ||_/ \\____)_| |_|\\_||_(_|_|_)       @@");
+			System.out.println("@@                                     |_|                                   @@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ * * * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@ * * * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ * * * @@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@   Mas o jogo acabou    @@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@ * * * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ * * * @@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@     Até à próxima!     @@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@ * * * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ * * * @@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ * * * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			clearConsole();
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@        _                                                                  @@");
+			System.out.println("@@       | |_  ____ ____   ___   ___    ____   ____ ____   ____              @@");
+			System.out.println("@@       |  _)/ _  )    \\ / _ \\ /___)  |  _ \\ / _  )  _ \\ / _  |             @@");
+			System.out.println("@@       | |_( (/ /| | | | |_| |___ |  | | | ( (/ /| | | ( ( | |_ _ _        @@");
+			System.out.println("@@        \\___)____)_|_|_|\\___/(___/   | ||_/ \\____)_| |_|\\_||_(_|_|_)       @@");
+			System.out.println("@@                                     |_|                                   @@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       @@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@   Mas o jogo acabou    @@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       @@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@     Até à próxima!     @@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       @@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+				
+		} while (!ok);	
+			
+		
+	}
+	
+	/**
+	 * Imprime 50 linhas em branco para limpar a consola
+	 */
+	public static void clearConsole()
+	{
+		for(int i = 0; i < 50; i++)  
+		    System.out.println();   
+	}
+	
+	/**
+	 * Aguarda que a tecla enter seja pressionada
+	 */
+	public static void waitForEnter()
+	{
+		try{
+			System.in.read();
+			}
+		catch(Exception e){
+		}
 	}
 	
 }
+
