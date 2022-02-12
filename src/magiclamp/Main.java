@@ -1,8 +1,6 @@
 package magiclamp;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -14,10 +12,9 @@ import java.util.Scanner;
 
 public class Main {
 
-	static long now = System.currentTimeMillis();   
-	
 	public static void main(String[] args)
-	{			
+	{		
+		
 
 		Scanner sc = new Scanner(System.in); // Cria e inicializa o scanner de input
 		
@@ -33,15 +30,20 @@ public class Main {
 			musicOn = true;
 		} catch (Exception e1) {
 			// TODO Auto-generated catch block
-			MyErrorHandler.errorHandler(e1, sc, midiSequencer);
+			ErrorHandler.errorHandler(e1, sc, midiSequencer);
 		}
 		
-		/**
-		 * lamp - variável que guarda a lâmpada mágica
-		 */
-		MagicLamp lamp; 
+		waitForEnter(); // aguarda que a tecla enter seja pressionada
+		
+		/** Cria uma nova lâmpada */
+		MagicLamp lamp; // Variável lâmpada
 		
 		int limit = 0; // cria e inicializa o n.º limite do random
+		
+		clearConsole(); // Limpa a consola com 50 linhas em branco
+		
+		/** Pergunta pelo limite do random que vai gerar os génios */
+		System.out.println("Escolha o limite do número aleatório de génios que a lâmpada pode gerar");
 
 		boolean ok = false; // Boleano para ciclos inicializado a falso
 				
@@ -50,11 +52,11 @@ public class Main {
 			try {
 				Random rand = new Random();
 				/** Gera o limite de desejos a partir do random */
-				limit = rand.nextInt(MyErrorHandler.tryScannerIntFromNextLine(sc)); // Tenta atribuir o valor do scanner ao inteiro
+				limit = rand.nextInt(ErrorHandler.tryScannerNextInt(sc)); // Tenta atribuir o valor do scanner ao inteiro
 				ok = true;
 			}
 			catch (Exception e1) {
-				MyErrorHandler.errorHandler(e1, sc, midiSequencer); // trata o erro
+				ErrorHandler.errorHandler(e1, sc, midiSequencer); // trata o erro
 			}
 		} while (!ok);
 		
@@ -71,7 +73,7 @@ public class Main {
 		/**
 		 * cria e inicializa a variável que guarda a escolha do utilizador
 		 */
-		int choice = MyErrorHandler.tryScannerIntFromNextLine(sc);
+		int choice = ErrorHandler.tryScannerNextInt(sc);
 		
 		
 		ok = false;
@@ -80,7 +82,7 @@ public class Main {
 				{
 					case 1:						
 						System.out.println("Quantas vezes deseja esfregar a lâmpada?"); // Pergunta
-						int rubs = MyErrorHandler.tryScannerIntFromNextLine(sc); // Guarda o nº de esfregadelas
+						int rubs = ErrorHandler.tryScannerNextInt(sc); // Guarda o nº de esfregadelas
 			
 						lamp.setRubs(rubs); // Esfrega a lâmpada o nº de vezes escolhido
 						
@@ -88,16 +90,15 @@ public class Main {
 						
 						genie.showMe(); // mostra o génio
 						int i;
-						String wish = ""; // Cria a string 
+						String wish = sc.nextLine(); // Cria a string, e limpa o nextLine 
 						
 						/** dois ciclos diferentes para pedir os desejos, caso seja génio ou demónio */
 						
 						if (genie instanceof Demon)
 						{
 							Demon demon = (Demon) genie; // Faz o cast para transformar o génio genérico em demónio
-							
 							System.out.println("Peça um desejo!");
-							wish = MyErrorHandler.tryScannerNextLine(sc); // Guarda o desejo no scanner
+							wish = sc.nextLine(); // Guarda o desejo no scanner
 							
 							demon.grantWishDemon(wish, sc); // chama a função recursiva que pede infinitos desejos ao demónio, até escolher parar
 
@@ -108,7 +109,7 @@ public class Main {
 							for (i = 1; i <= genie.getNumWishes(); i++ ) // Ciclo para realizar os desejos pedidos
 							{
 								System.out.println("Peça um desejo!");
-								wish = MyErrorHandler.tryScannerNextLine(sc); // Guarda o desejo no scanner
+								wish = sc.nextLine(); // Guarda o desejo no scanner
 								genie.grantWish(wish); // Realiza o desejo
 							}
 						}
@@ -117,33 +118,24 @@ public class Main {
 						waitForEnter(); // aguarda que a tecla enter seja pressionada
 						
 						printMenu(lamp, musicOn); // Mostra menu
-						sc.nextLine();
-						choice = MyErrorHandler.tryScannerIntFromNextLine(sc); // Coloca scanner à escuta para nova escolha
-				
+						choice = ErrorHandler.tryScannerNextInt(sc); // Coloca scanner à escuta para nova escolha
 						break;
 					case 2:
-						try { // idealmente não correria se o ficheiro não existisse
-							if (!musicOn) // Verifica se a música está a tocar
-							{
-								midiSequencer = new MidiSequencer(); //Se não estiver, liga a música
-								midiSequencer.playMidi();
-								musicOn = true;
-							}
-							else 
-							{
-								midiSequencer.stopSequencer(); // Desliga a música
-								musicOn = false; // Música desligada
-							}
-						} catch (Exception e) {
-							MyErrorHandler.errorHandler(e, sc, midiSequencer);
+						if (!musicOn) // Verifica se a música está a tocar
+						{
+							midiSequencer = new MidiSequencer(); //Se não estiver, liga a música
+							midiSequencer.playMidi();
+							musicOn = true;
 						}
-						
+						else 
+						{
+							midiSequencer.stopSequencer(); // Desliga a música
+							musicOn = false; // Música desligada
+						}
 						clearConsole(); // Limpa consola
 						printMenu(lamp, musicOn); // Mostra menu
-					
-						choice = MyErrorHandler.tryScannerIntFromNextLine(sc); // Coloca scanner à escuta para nova escolha
+						choice = ErrorHandler.tryScannerNextInt(sc); // Coloca scanner à escuta para nova escolha
 						break;
-					
 					case 3: /* sequência de saída */
 				        printGameOver(sc); // imprime mensagem de despedida
 						
@@ -153,7 +145,7 @@ public class Main {
 				        System.exit(0); // Sai do sistema
 					default:
 						System.out.println(choice + " não é uma opção válida. Escolha outra opção, por favor.");
-						choice = MyErrorHandler.tryScannerIntFromNextLine(sc); // Coloca scanner à escuta para nova escolha
+						choice = ErrorHandler.tryScannerNextInt(sc); // Coloca scanner à escuta para nova escolha
 						break;
 				}
 			} while (!ok);
@@ -163,31 +155,46 @@ public class Main {
 	 * Imprime o ecrã de boas vindas
 	 */
 	public static void printWelcomeToTheLamp () {
-		System.out.println("───────────────────────────────────────────────────────────────────────────");
-		System.out.println("───────────────────────────────────────────────────────────────────────────");
-		System.out.println("───  _     /\\                      _        __  __   __      _          ───");
-		System.out.println("─── | |   |/\\| _ __  _ __  __ _ __| |__ _  |  \\/  |_/_/ __ _(_)__ __ _  ───");
-		System.out.println("─── | |__/ _` | '  \\| '_ \\/ _` / _` / _` | | |\\/| / _` / _` | / _/ _` | ───");
-		System.out.println("─── |____\\__,_|_|_|_| .__/\\__,_\\__,_\\__,_| |_|  |_\\__,_\\__, |_\\__\\__,_| ───");
-		System.out.println("───                 |_|                                |___/            ───");
-		System.out.println("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒");
-		System.out.println("────────────────────▓╫─▄▀────────────▄▀───────────▄▀─╫▓────────────────────");
-		System.out.println("────────────────────▓╫─▀▄───────────▐█────────────▀▄─╫▓────────────────────");
-		System.out.println("────────────────────▓╫─▄▌▄───────────▀▄───────────▄▌▄╫▓────────────────────");
-		System.out.println("── Nas areias     ──▓▄▀░▓░▀▄──────────▌─────────▄▀░▓░▀▓── Para descobrir ──");
-		System.out.println("── do deserto,    ──▓░░░░░░░▌──────▄▄▀▀▄▄──────▐▓░░░░░▓── o que ela      ──");
-		System.out.println("── achou uma      ──▓▓░░░░░▓▀────▄▀░░▓▓░░▀▄────▀▄░░░░░▓── guarda, comece ──");
-		System.out.println("── misteriosa     ──▓╫▓█▓█▓─────▐▓░░P░D░S░▓▌─────▓█▓█▓▓── por escolher   ──");
-		System.out.println("── lâmpada...     ──▓╫▐░░░▌─────██▀▀▀▀▀▀▀▀██─────▐░░░╫▓── um número      ──");
-		System.out.println("────────────────────▓╫▐░█░▌───▄▄████████████▄▄───▐░█░╫▓── maior que 0  ──");
-		System.out.println("────────────────────▓╫▐░░░▌───▐▓▓▓▌▐▒▓▓▒▌▐▓▓▓▌───▐░░░╫▓────────────────────");
-		System.out.println("────────────────────▓╫▐░█░▌───▐▓▓▓▌▐▓▒▒▓▌▐▓▓▓▌───▐░█░╫▓────────────────────");
-		System.out.println("────────────────────▓╫▐░░░▌▄▄▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▄▐░░░╫▓────────────────────");
-		System.out.println("────────────────────▓╫▐░█░███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███░█░╫▓────────────────────");
-		System.out.println("────────────────────▓╫▐░░░▌░█▒▒▒▒▒▒▒▒▒▓▒▒▒▒▒▒▒▓▒▒▐░█░╫▓────────────────────");
-		System.out.println("════════════════════◙═════════════════════════════════◙════════════════════");
-		System.out.println("───────────────────────────────────────────────────────────────────────────");
-		System.out.println("──────────────── Digite um número maior que 0 para iniciar ─────────────────");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&&&&&&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@((#(&&&&&&&&&#((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@(%((#@@@&@&&&&&@@@@@&((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@#%@@@@@@@&%%@@@@@@@@@&((&(#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@#@@@@@@@@%%%@@@@((@@@@@@@@@#(@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@(##((/(((@@@@(@@@@@@(%@@@@@@(&@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@/((//##((%@/,@@(((((/*&@@(@@@@@@@(@@@@&(@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@/((((((/(#(@ .,@(((@@@@@(/@@@(@@@@@@@/@@&(@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@/((((((((/*(/((((#@@  &@#((@@@@/@@@@@@@(@(&@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@/((((((((((((((((//*/@((((((@@@&&@@@@@@@%(@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@#((//(((((((((/((((.  /(((((((@@@@(@@@@@#(@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@#((((((((((*    (((/,/((((((((#@@@@(@%(@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@(((@@@@@#((((((((((...,,.,,./((((((((((@@%(/@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@(((%@@@@#((((((((((,,,,,,,*(((((((((((((((%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@%((#(((((%@@@@@#((((((((****/./((((((((((((/((((&@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@#(#(((((((#%%%(#@@@#((((#/////(((((((((((((((/(((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@#(((@@@@@@@@@@&(((((#@     (((((((((((((@@%&((@@@@@@#((@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@/    (((((((**(((((((((((%%%(#(((#@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@%*#(((((((((((***/@@@@@@@@%#%%#(((((((@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@**(((((((((((((****@@@@@@@@@@@@@@((((((#@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@**(((((((((((((****,@@@@@@@@@@@@@@@@#((((%@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@,,#((((((((((((*****,@@@@@@@@@@@@@@@@@@@@&@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@#(((((((((((((((,,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@#((((((((((((((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@#((((((((((((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@##(/*******@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,*****/(&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#((((#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#(((((((((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#((((@@@(((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@                 @@@@@@@@@@@((@@#(@@@@@@@@@@@@@@@@@@@@@@@##@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@    Bem-vinda/o    @@@@@@@@@@@&@#(@@#@@@@@@@@@@@@@@@@@@#######%%@@@@@@@@@@@");
+		System.out.println("@@@@@        à          @@@@@@@@@@@@@(@@@#(#%%%%&@@@@@@@@@###########%%@@%%@@%%@");
+		System.out.println("@@@@@   Lâmpada Mágica! @@@@@@@@@@@@@@@@@@@@@@@@%%%%%%%%@%%%%%%%%%%%%%%%%%%@@@@%");
+		System.out.println("@@@@@@                 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%%%%%%%%%%%%%%%@@%%%@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&%%%%%%%%%%%%%&@%%%@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&%%%@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%&%%##@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@    Prima Enter para continuar     @@@@@@@@@@@@@@@@@@@@@@@@@@");
 		
 	}
 	
@@ -233,53 +240,36 @@ public class Main {
 	}
 	
 	/**
-	 * imprime o escrã final, com animação
+	 * imprime o escrã final
 	 */
 	public static void printGameOver(Scanner sc)
 	{
 
-		InputStreamReader inputStream = new InputStreamReader(System.in);
-		BufferedReader bufferedReader = new BufferedReader(inputStream);
+		boolean ok = false;
 		
 		do {
-			
-			try {
-				if (bufferedReader.ready())
-				 {
-				     bufferedReader.readLine();
-				     // do stuff before exiting loop
-				     break;
-				 }
-			} catch (IOException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
-			
 			clearConsole();
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-			System.out.println("@@                                                                           @@");
-			System.out.println("@@      ________              .__         ________                           @@");
-			System.out.println("@@      /  _____/  ____   ____ |__| ____   \\_____  \\___  __ ___________      @@");
-			System.out.println("@@     /   \\  ____/ __ \\ /    \\|  |/ __ \\   /   |   \\  \\/ // __ \\_  __ \\     @@");
-			System.out.println("@@     \\    \\_\\  \\  ___/|   |  \\  \\  ___/  /    |    \\   /\\  ___/|  | \\/     @@");
-			System.out.println("@@      \\______  /\\___  >___|  /__|\\___  > \\_______  /\\_/  \\___  >__|        @@");
-			System.out.println("@@             \\/     \\/     \\/        \\/          \\/          \\/            @@");
-			System.out.println("@@                                                                           @@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ _(^.^)_ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@        _                                                                  @@");
+			System.out.println("@@       | |_  ____ ____   ___   ___    ____   ____ ____   ____              @@");
+			System.out.println("@@       |  _)/ _  )    \\ / _ \\ /___)  |  _ \\ / _  )  _ \\ / _  |             @@");
+			System.out.println("@@       | |_( (/ /| | | | |_| |___ |  | | | ( (/ /| | | ( ( | |_ _ _        @@");
+			System.out.println("@@        \\___)____)_|_|_|\\___/(___/   | ||_/ \\____)_| |_|\\_||_(_|_|_)       @@");
+			System.out.println("@@                                     |_|                                   @@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-			System.out.println("@@@@@@@@ _(^.^)_ @@@@@@@   *   *  Créditos:   *   *   @@@@@@ _(^.^)_ @@@@@@@@@@");
-			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@");
-			System.out.println("@@@@@@@@@ *   * @@@@@@@@        Paulo Perneta         @@@@@@@ *   * @@@@@@@@@@@");
-			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@          João Rocha          @@@@@@@@@@@@@@@@@@@@@@@@@");
-			System.out.println("@@@@@@@@ _(^.^)_ @@@@@@@ Disney (Tema Arabian Nights) @@@@@@ _(^.^)_ @@@@@@@@@@");
-			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ _(^.^)_ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ * * * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@ * * * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ * * * @@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@   Mas o jogo acabou    @@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@ * * * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ * * * @@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@     Até à próxima!     @@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@ * * * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ * * * @@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ * * * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-			System.out.println("@@@@@@@@@@@@@@@@@@@@@@      Prima enter para sair      @@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			try {
 				Thread.sleep(500);
 			} catch (InterruptedException e) {
@@ -290,37 +280,33 @@ public class Main {
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-			System.out.println("@@                                                                           @@");
-			System.out.println("@@      ________              .__         ________                           @@");
-			System.out.println("@@      /  _____/  ____   ____ |__| ____   \\_____  \\___  __ ___________      @@");
-			System.out.println("@@     /   \\  ____/ __ \\ /    \\|  |/ __ \\   /   |   \\  \\/ // __ \\_  __ \\     @@");
-			System.out.println("@@     \\    \\_\\  \\  ___/|   |  \\  \\  ___/  /    |    \\   /\\  ___/|  | \\/     @@");
-			System.out.println("@@      \\______  /\\___  >___|  /__|\\___  > \\_______  /\\_/  \\___  >__|        @@");
-			System.out.println("@@             \\/     \\/     \\/        \\/          \\/          \\/            @@");
-			System.out.println("@@                                                                           @@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \\(^.^)/ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@        _                                                                  @@");
+			System.out.println("@@       | |_  ____ ____   ___   ___    ____   ____ ____   ____              @@");
+			System.out.println("@@       |  _)/ _  )    \\ / _ \\ /___)  |  _ \\ / _  )  _ \\ / _  |             @@");
+			System.out.println("@@       | |_( (/ /| | | | |_| |___ |  | | | ( (/ /| | | ( ( | |_ _ _        @@");
+			System.out.println("@@        \\___)____)_|_|_|\\___/(___/   | ||_/ \\____)_| |_|\\_||_(_|_|_)       @@");
+			System.out.println("@@                                     |_|                                   @@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-			System.out.println("@@@@@@@@ \\(^.^)/ @@@@@@@     *    Créditos:     *     @@@@@@ \\(^.^)/ @@@@@@@@@@");
-			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@");
-			System.out.println("@@@@@@@@@   *   @@@@@@@@        Paulo Perneta         @@@@@@@   *   @@@@@@@@@@@");
-			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@          João Rocha          @@@@@@@@@@@@@@@@@@@@@@@@@");
-			System.out.println("@@@@@@@@ \\(^.^)/ @@@@@@@ Disney (Tema Arabian Nights) @@@@@@ \\(^.^)/ @@@@@@@@@@");
-			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \\(^.^)/ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       @@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@   Mas o jogo acabou    @@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       @@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@     Até à próxima!     @@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       @@@@@@@@@@@@");
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-			System.out.println("@@@@@@@@@@@@@@@@@@@@@@      Prima enter para sair      @@@@@@@@@@@@@@@@@@@@@@@@");
-			
+			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			try {
 				Thread.sleep(500);
-				} catch (InterruptedException e) {
+			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-						
-		} while (true);
-
+				
+		} while (!ok);	
+			
 		
 	}
 	

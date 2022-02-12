@@ -51,7 +51,7 @@ public class Demon extends Genie {
 	 */
 	public boolean grantWishDemon (String aWish, Scanner sc) {
 		System.out.println("Desejo concedido! " + aWish + " foi realizado. Escolha outro desejo, ou \"n\" para sair.");
-		String resposta = MyErrorHandler.tryScannerNextLine(sc) ;
+		String resposta = sc.nextLine();
 		if (!resposta.equals("n"))
 			{
 			//sc.nextLine(); // Limpar scanner
