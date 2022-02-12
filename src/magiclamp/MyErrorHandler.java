@@ -25,17 +25,17 @@ public class MyErrorHandler {
 		}
 		catch (InputMismatchException e) // quando n é um inteiro
 		{
-			System.out.println("Opção inválida. Por favor digite um número inteiro."); // imprime mensagem de erro
-			sc.next(); // limpa o scanner
+			System.out.println("Opção inválida. Por favor escolha um número."); // imprime mensagem de erro
+			//sc.next(); // limpa o scanner
 		}
 		catch (NumberFormatException e)
 		{
-			System.out.println("Opção inválida. Por favor digite um número inteiro."); // imprime mensagem de erro
-			sc.next(); // limpa o scanner
+			System.out.println("Opção inválida. Por favor escolha um número."); // imprime mensagem de erro
+			//sc.next(); // limpa o scanner
 		}
 		catch (IllegalArgumentException e) // quando apanha o zero na escolha do random
 		{
-			System.out.println("Opção inválida. Por favor digite um inteiro maior que zero."); // imprime mensagem de erro
+			System.out.println("Opção inválida. Por favor escolha um número maior que zero."); // imprime mensagem de erro
 		}
 		catch (FileNotFoundException e)
 		{
@@ -75,13 +75,8 @@ public class MyErrorHandler {
 				nInt = Integer.parseInt (tryScannerNextLine(sc)) ; // Tenta atribuir o valor do scanner ao inteiro
 				ok = true;
 			}
-			catch (InputMismatchException e) // quando n é um inteiro
-			{
-				System.out.println("Opção inválida. Por favor digite um número inteiro."); // imprime mensagem de erro
-				sc.next(); // limpa o scanner
-			}
 			catch (Exception e1) {
-				e1.printStackTrace(); // mostra o erro
+				errorHandler(e1, sc, null); // mostra o erro
 			}
 		} while (!ok);
 		
@@ -95,7 +90,6 @@ public class MyErrorHandler {
 	 */
 	public static String tryScannerNextLine (Scanner sc)
 	{
-		boolean ok = false;
 		String sString = "";
 		do
 		{
@@ -106,24 +100,54 @@ public class MyErrorHandler {
 				if (sString.trim().isEmpty())
 				{
 					System.out.println("O valor inserido estava vazio, ou só continha espaços. Por favor digite outra vez.");
+					//sc.next(); // limpa o scanner
 				}
 				else
 				{
-					ok = true;
+					break;
 				}					
 					
 			}
 			catch (InputMismatchException e) // quando n é uma String válida
 			{
 				; // imprime mensagem de erro
-				sc.next(); // limpa o scanner
+				//sc.next(); // limpa o scanner
 			}
 			catch (Exception e1) {
 				e1.printStackTrace(); // mostra o erro
 			}
-		} while (!ok);
+		} while (true);
 		
 		return sString;
+	}
+	
+	/**
+	 * 
+	 * @param sc - O scanner ativo na sessão
+	 * @return - o inteiro escolhido pelo utilizador e validado pelo sistema
+	 */
+	public static int tryStartNum (Scanner sc) 
+	{
+		
+		int num;
+		
+		do
+		{
+	
+			num = tryScannerIntFromNextLine(sc);
+			
+			if (num > 0 && num <= 20)
+			{
+				break;
+			}
+			else
+			{
+				System.out.println("Por favor escolha um número entre 0 e 20");
+
+			}
+		} while (true);
+		
+		return num;
 	}
 	
 }

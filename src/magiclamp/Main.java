@@ -50,7 +50,7 @@ public class Main {
 			try {
 				Random rand = new Random();
 				/** Gera o limite de desejos a partir do random */
-				limit = rand.nextInt(MyErrorHandler.tryScannerIntFromNextLine(sc)); // Tenta atribuir o valor do scanner ao inteiro
+				limit = rand.nextInt(MyErrorHandler.tryStartNum(sc)); // Tenta atribuir o valor do scanner ao inteiro
 				ok = true;
 			}
 			catch (Exception e1) {
@@ -179,7 +179,7 @@ public class Main {
 		System.out.println("── achou uma      ──▓▓░░░░░▓▀────▄▀░░▓▓░░▀▄────▀▄░░░░░▓── guarda, comece ──");
 		System.out.println("── misteriosa     ──▓╫▓█▓█▓─────▐▓░░P░D░S░▓▌─────▓█▓█▓▓── por escolher   ──");
 		System.out.println("── lâmpada...     ──▓╫▐░░░▌─────██▀▀▀▀▀▀▀▀██─────▐░░░╫▓── um número      ──");
-		System.out.println("────────────────────▓╫▐░█░▌───▄▄████████████▄▄───▐░█░╫▓── maior que 0  ──");
+		System.out.println("────────────────────▓╫▐░█░▌───▄▄████████████▄▄───▐░█░╫▓── entre 0 e 20   ──");
 		System.out.println("────────────────────▓╫▐░░░▌───▐▓▓▓▌▐▒▓▓▒▌▐▓▓▓▌───▐░░░╫▓────────────────────");
 		System.out.println("────────────────────▓╫▐░█░▌───▐▓▓▓▌▐▓▒▒▓▌▐▓▓▓▌───▐░█░╫▓────────────────────");
 		System.out.println("────────────────────▓╫▐░░░▌▄▄▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▄▐░░░╫▓────────────────────");
@@ -187,8 +187,7 @@ public class Main {
 		System.out.println("────────────────────▓╫▐░░░▌░█▒▒▒▒▒▒▒▒▒▓▒▒▒▒▒▒▒▓▒▒▐░█░╫▓────────────────────");
 		System.out.println("════════════════════◙═════════════════════════════════◙════════════════════");
 		System.out.println("───────────────────────────────────────────────────────────────────────────");
-		System.out.println("──────────────── Digite um número maior que 0 para iniciar ─────────────────");
-		
+		System.out.println("─────────────── Digite um número entre 0 e 20 para iniciar ────────────────");	
 	}
 	
 	/**
@@ -274,7 +273,7 @@ public class Main {
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@ *   * @@@@@@@@        Paulo Perneta         @@@@@@@ *   * @@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@          João Rocha          @@@@@@@@@@@@@@@@@@@@@@@@@");
-			System.out.println("@@@@@@@@ _(^.^)_ @@@@@@@ Disney (Tema Arabian Nights) @@@@@@ _(^.^)_ @@@@@@@@@@");
+			System.out.println("@@@@@@@@ \\(^.^)/ @@@@@@@   Disney (Tema do Aladino)   @@@@@@ \\(^.^)/ @@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ _(^.^)_ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -305,7 +304,7 @@ public class Main {
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@   *   @@@@@@@@        Paulo Perneta         @@@@@@@   *   @@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@          João Rocha          @@@@@@@@@@@@@@@@@@@@@@@@@");
-			System.out.println("@@@@@@@@ \\(^.^)/ @@@@@@@ Disney (Tema Arabian Nights) @@@@@@ \\(^.^)/ @@@@@@@@@@");
+			System.out.println("@@@@@@@@ \\(^.^)/ @@@@@@@   Disney (Tema do Aladino)   @@@@@@ \\(^.^)/ @@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \\(^.^)/ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
