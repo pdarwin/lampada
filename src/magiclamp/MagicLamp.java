@@ -36,7 +36,7 @@ public class MagicLamp {
 	 * Em todas as outras situações, retorna um génio normal.
 	 * 
 	 * @param limit
-	 *            máximo número de desejos que o génio pode realizar
+	 *            máximo de número de desejos que o génio pode realizar
 	 * 
 	 * @return um génio ou demónio.
 	 */
@@ -101,7 +101,7 @@ public class MagicLamp {
 	
 
 	/**
-	 * @return número de demónios.
+	 * @return número de demónios
 	 */
 	public int getDemons() {
 		return demons;
