@@ -1,4 +1,4 @@
-o zip contém 3 ficheiros:
+O zip contém 3 ficheiros:
 	* MyLamp.bat - executável para Windows (testado em Win 11)
 	* MyLamp.jar - executável em java
 	* (Aladdin-(Medley-Of-All-Songs).mid - Midi usado no jogo
