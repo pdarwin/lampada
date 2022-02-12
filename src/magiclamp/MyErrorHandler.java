@@ -142,7 +142,7 @@ public class MyErrorHandler {
 			}
 			else
 			{
-				System.out.println("Por favor escolha um número entre 0 e 20");
+				System.out.println("Por favor escolha um número entre 1 e 20");
 
 			}
 		} while (true);
