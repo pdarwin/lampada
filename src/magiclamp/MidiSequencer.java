@@ -47,12 +47,11 @@ public class MidiSequencer {
 		try {
 			String basePath = new File("").getAbsolutePath(); // Vai buscar o caminho relativo da pasta
 		    
-			is = new BufferedInputStream(new FileInputStream(new File(basePath + "\\src\\magiclamp\\Aladdin-(Medley-Of-All-Songs).mid")));
+			is = new BufferedInputStream(new FileInputStream(new File(basePath + "\\Aladdin-(Medley-Of-All-Songs).mid")));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			MyErrorHandler.errorHandler(e, null, null);
 		}
-
 	    // Sets the current sequence on which the sequencer operates.
 	    // The stream must point to MIDI file data.
 	    try {

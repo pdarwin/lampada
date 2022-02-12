@@ -44,7 +44,7 @@ public class MagicLamp {
 		
 		System.out.print("Está a esfregar a lâmpada " + rubs + " vezes. Quantos desejos pretende realizar?");
 		
-		int numWishes = ErrorHandler.tryScannerNextInt(sc);
+		int numWishes = MyErrorHandler.tryScannerIntFromNextLine(sc);
 		
 		if (numGenies > 0)
 		{
