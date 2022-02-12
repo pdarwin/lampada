@@ -20,7 +20,7 @@ public class Main {
 		
 		boolean musicOn = false; // Cria e inicializa o boleano do estado do sequenciador de Midis
 		
-		printWelcomeToTheLamp(); // Imprime o ecrã de boas vindas
+		printWelcomeToTheLamp(); // Imprime o ecrã de boas-vindas
 
 		MidiSequencer midiSequencer = new MidiSequencer(); // inicializa o sequenciador de Midis
 		try {
@@ -33,7 +33,7 @@ public class Main {
 			ErrorHandler.errorHandler(e1, sc, midiSequencer);
 		}
 		
-		waitForEnter(); // aguarda que a tecla enter seja pressionada
+		waitForEnter(); // aguarda que a tecla 'enter' seja pressionada
 		
 		/** Cria uma nova lâmpada */
 		MagicLamp lamp; // Variável lâmpada
@@ -45,7 +45,7 @@ public class Main {
 		/** Pergunta pelo limite do random que vai gerar os génios */
 		System.out.println("Escolha o limite do número aleatório de génios que a lâmpada pode gerar");
 
-		boolean ok = false; // Boleano para ciclos inicializado a falso
+		boolean ok = false; // Boleano para ciclos, inicializado a falso
 				
 		do
 		{
@@ -86,7 +86,8 @@ public class Main {
 			
 						lamp.setRubs(rubs); // Esfrega a lâmpada o nº de vezes escolhido
 						
-						Genie genie = lamp.rub(sc); // Cria o génio - passa o scanner como parâmetro, para que possa definir o nº de desejos ao esfregar a lâmpada
+						Genie genie = lamp.rub(sc); // Cria o génio - passa o scanner como parâmetro, 
+													// para que possa definir o nº de desejos ao esfregar a lâmpada
 						
 						genie.showMe(); // mostra o génio
 						int i;
@@ -100,7 +101,8 @@ public class Main {
 							System.out.println("Peça um desejo!");
 							wish = sc.nextLine(); // Guarda o desejo no scanner
 							
-							demon.grantWishDemon(wish, sc); // chama a função recursiva que pede infinitos desejos ao demónio, até escolher parar
+							demon.grantWishDemon(wish, sc); // chama a função recursiva que pede infinitos desejos ao demónio, 
+															// até escolher parar
 
 							lamp.rechargeLamp(demon); // recarrega a lâmpada
 							

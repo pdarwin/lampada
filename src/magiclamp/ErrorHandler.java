@@ -18,7 +18,7 @@ public class ErrorHandler {
 		try {
 			throw err;
 		}
-		catch (InputMismatchException e) // quando n é um inteiro
+		catch (InputMismatchException e) // quando não é um inteiro
 		{
 			System.out.println("Opção inválida. Por favor digite um número inteiro."); // imprime mensagem de erro
 			sc.next(); // limpa o scanner
