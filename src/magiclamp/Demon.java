@@ -21,7 +21,7 @@ public class Demon extends Genie {
 	}
 	
 	/**
-	 * O demónio reciclável concede todos os desejos que lhe forem colocados, exceto quando foi reciclado.
+	 * O demónio reciclável concede todos os desejos que lhe forem colocados, exceto quando for reciclado.
 	 * 
 	 * @return verdadeiro quando não foi ainda reciclado, senão falso
 	 */
@@ -37,7 +37,7 @@ public class Demon extends Genie {
 	}
 
 	/**
-	 * Recicla o demónio - chamada pela lâmpada mágica
+	 * Recicla o demónio - função chamada pela lâmpada mágica
 	 */
 	public void recycle() {
 		System.out.println("Demónio consumido. Lâmpada em reciclagem...");
@@ -63,7 +63,7 @@ public class Demon extends Genie {
 	}
 	
 	/**
-	 * Mostra o génio.
+	 * Mostra o demónio.
 	 */
 	public void showMe ()
 	{

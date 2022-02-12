@@ -101,7 +101,7 @@ public class MagicLamp {
 	
 
 	/**
-	 * @return número de demónios.
+	 * @return número de demónios
 	 */
 	public int getDemons() {
 		return demons;
@@ -120,8 +120,5 @@ public class MagicLamp {
 	public int getLimGenies() {
 		return limGenies;
 	}
-
-
-
 	
 }
