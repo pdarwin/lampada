@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 /**
  * Demónio reciclável
+ * @author P. Perneta e J. Rocha
+ * 
  */
 public class Demon extends Genie {
 
@@ -13,8 +15,11 @@ public class Demon extends Genie {
 	private boolean recycled = false;
 	
 	/**
+	 * Construtor do demónio
+	 * 
 	 * @param aLimit
-	 *            número de desejos a realizar (ignorado, independente do limite)
+	 *            número de desejos a realizar (ignorado, independente do limite
+	 *            mas passa na mesma para o caso de alguma funcionalidade futura)
 	 */
 	public Demon (int aNumWishes) {
 		super();
@@ -22,9 +27,12 @@ public class Demon extends Genie {
 	
 
 	/**
-	 * @return estado de reciclagem do demónio
+	 * Retorna o estado do demónio
+	 * 
+	 * @return 
+	 * 		verdadeiro se reciclado, senão falso
 	 */
-	public boolean recycled() {
+	public boolean isRecycled() {
 		return recycled;
 	}
 
@@ -33,28 +41,35 @@ public class Demon extends Genie {
 	 */
 	public void recycle() {
 		System.out.println("O demónio está a ser consumido!");
-		recycled = true;
 		AudioPlayer player = new AudioPlayer();
-		player.play("Demon_dying.wav");
+		player.play("Demon_dying.wav"); // Toca som do demónio a morrer
+		recycled = true; // Coloca o demónio como consumido
 		System.out.println("Demónio consumido. Lâmpada em reciclagem...");
 	}
 
 	/**
-	 * Pede ao demónio que realize um desejo, e pergunta se quer realizar outro
+	 * Função recursiva que pede ao demónio que realize um desejo, e pergunta 
+	 * se quer realizar outro, indefinidamente, até que se digite o código
+	 * de saída ("x")
 	 * 
-	 * @return verdadeiro se continua a realizar, senão falso
+	 * @param 
+	 * 		aWish - o desejo, em String
+	 * @param 
+	 * 		sc - o scanner ativo
+	 * @return 
+	 * 		verdadeiro se continua a realizar, senão falso
 	 */
-	public boolean grantWishDemon (String aWish, Scanner sc) {
+	public boolean grantWishDemon (String aWish, Scanner sc) 
+	{
 		System.out.println("Desejo concedido! " + aWish + " foi realizado. Escolha outro desejo, ou \"x\" para sair.");
-		String resposta = MyErrorHandler.tryScannerNextLine(sc) ; // Guarda o desejo na variável
+		String resposta = MyErrorHandler.tryScannerNextLine(sc) ; // Guarda o desejo escolhido na variável
 		
-		if (!resposta.equals("x"))
+		if (!resposta.equals("x")) // se a resposta é diferente de x (código de saída)
 			{
-			//sc.nextLine(); // Limpar scanner
-			this.grantWishDemon(resposta, sc);
+			this.grantWishDemon(resposta, sc); // realiza o desejo
 			return true;
 			}
-		else return false;
+		else return false; // retirna falso, se for escolhido o código de saída "x"
 
 	}
 	
@@ -63,7 +78,7 @@ public class Demon extends Genie {
 	 */
 	public void showMe ()
 	{	
-		Main.clearConsole();
+		Main.clearConsole(); // limpa a consola
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -95,5 +110,4 @@ public class Demon extends Genie {
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@   Eu sou o demónio reciclável, e posso realizar todos os seus desejos!  @@@@");
 	}
-
 }

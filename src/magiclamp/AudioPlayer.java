@@ -11,7 +11,7 @@ import javax.sound.sampled.LineEvent;
 import javax.sound.sampled.LineListener;
  
 /**
- * Classe para tocar um fivheiro .wav usando o Clip da Java Sound API.
+ * Classe para tocar um ficheiro .wav usando o Clip da Java Sound API.
  * @author www.codejava.net
  *
  */
@@ -24,7 +24,9 @@ public class AudioPlayer implements LineListener {
      
     /**
      * Toca um audio (.wav)
-     * @param filename nome do ficheiro
+     * 
+     * @param 
+     * 		filename nome do ficheiro
      */
     public void play(String filename) {
     	

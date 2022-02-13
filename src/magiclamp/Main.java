@@ -7,30 +7,35 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * 
+ * Classe main da aplicação MagicLamp
  * @author P. Perneta e J. Rocha
  *
  */
 
 public class Main {
-
-	static long now = System.currentTimeMillis();   
+	
+	/**
+	 *  Variável estática para guardar o estado do sequenciador de Midis
+	 */
+	static boolean musicOn; 
 	
 	public static void main(String[] args)
 	{			
 
 		Scanner sc = new Scanner(System.in); // Cria e inicializa o scanner de input
 		
-		boolean musicOn = false; // Cria e inicializa o boleano do estado do sequenciador de Midis
+		musicOn = false; // Quando arranca, a música não está a tocar
 		
 		printWelcomeToTheLamp(); // Imprime o ecrã de boas vindas
 		
 		MidiSequencer midiSequencer = new MidiSequencer(); // inicializa o sequenciador de Midis
 		try {
-			/** Inicia a música */
+			/** Inicia a música escolhida no futuro pode ter mais opções, 
+			 * como uma juke-box 
+			 */
 
 			midiSequencer.playSound("Aladdin-(Medley-Of-All-Songs).mid");
-			musicOn = true;
+			musicOn = true; // Música a tocar = true
 		} 
 		catch (Exception e1) 
 		{
@@ -43,121 +48,118 @@ public class Main {
 		MagicLamp lamp; 
 		
 		int limit = 0; // cria e inicializa o n.º limite do random
-
-		boolean ok = false; // Boleano para ciclos inicializado a falso
 				
-		do
+		do // Ciclo para atribuição do máximo valor do random
 		{
 			try {
 				Random rand = new Random();
 				/** Gera o limite de desejos a partir do random */
 				limit = rand.nextInt(MyErrorHandler.tryStartNum(sc)); // Tenta atribuir o valor do scanner ao inteiro
-				ok = true;
+				break;
 			}
 			catch (Exception e1) {
 				MyErrorHandler.errorHandler(e1, sc, midiSequencer); // trata o erro
 			}
-		} while (!ok);
+		} while (true);
 		
 			
-		if (limit <= 0) limit= 1; // para nunca dar 0 no random
+		if (limit <= 0) limit= 1; // para nunca dar 0 ou negativo no random
 
 			
-		lamp = new MagicLamp(limit);
-		
-		/** Mostra o menu */
-		printMenu(lamp, musicOn);
-
-
-		/**
-		 * cria e inicializa a variável que guarda a escolha do utilizador
-		 */
-		int choice = MyErrorHandler.tryScannerIntFromNextLine(sc);
+		lamp = new MagicLamp(limit); // Instância a lâmpada
 		
 		
-		ok = false;
-		do 	{
-				switch (choice)
-				{
-					case 1:						
-						System.out.println("Quantas vezes deseja esfregar a lâmpada?"); // Pergunta
-						int rubs = MyErrorHandler.tryScannerIntFromNextLine(sc); // Guarda o nº de esfregadelas
+		do 	
+		{
+			printMenu(lamp); //Mostra o menu de gestão da lâmpada
 			
-						lamp.setRubs(rubs); // Esfrega a lâmpada o nº de vezes escolhido
+			/**
+			 * cria e inicializa a variável que guarda a escolha do utilizador
+			 */
+			int choice = MyErrorHandler.tryOption(sc);
+			
+			switch (choice)
+			{
+				case 1:						
+					System.out.println("Quantas vezes deseja esfregar a lâmpada?"); // Pergunta
+					int rubs = MyErrorHandler.tryScannerIntFromNextLine(sc); // Guarda o nº de esfregadelas
+		
+					lamp.setRubs(rubs); // Esfrega a lâmpada o n.º de vezes escolhido
+					
+					/* // cria o génio - passa o scanner como parâmetro, para que possa definir 
+					 * o n.º de desejos ao esfregar a lâmpada
+					 */
+					Genie genie = lamp.rub(sc);
+					
+					genie.showMe(); // mostra o génio
+					
+					int i;
+					String wish = ""; // Cria e inicializa a String que vai guardar o desejo
+					
+					/** dois processos diferentes para pedir os desejos, caso seja génio ou demónio */
+					if (genie instanceof Demon) // se for demónio
+					{
+						Demon demon = (Demon) genie; // Faz o cast para transformar o génio genérico em demónio
 						
-						Genie genie = lamp.rub(sc); // Cria o génio - passa o scanner como parâmetro, para que possa definir o nº de desejos ao esfregar a lâmpada
+						System.out.println("Peça um desejo!");
+						wish = MyErrorHandler.tryScannerNextLine(sc); // Guarda o desejo no scanner
 						
-						genie.showMe(); // mostra o génio
-						int i;
-						String wish = ""; // Cria a string 
+						demon.grantWishDemon(wish, sc); // chama a função recursiva que pede infinitos desejos ao demónio, até escolher parar
+
+						lamp.rechargeLamp(demon); // recarrega a lâmpada
 						
-						/** dois ciclos diferentes para pedir os desejos, caso seja génio ou demónio */
-						
-						if (genie instanceof Demon)
+					}
+					else //não sendo demónio
+					{ 
+						for (i = 1; i <= genie.getNumWishes(); i++ ) // Ciclo para realizar os desejos pedidos
 						{
-							Demon demon = (Demon) genie; // Faz o cast para transformar o génio genérico em demónio
-							
 							System.out.println("Peça um desejo!");
 							wish = MyErrorHandler.tryScannerNextLine(sc); // Guarda o desejo no scanner
-							
-							demon.grantWishDemon(wish, sc); // chama a função recursiva que pede infinitos desejos ao demónio, até escolher parar
-
-							lamp.rechargeLamp(demon); // recarrega a lâmpada
-							
+							genie.grantWish(wish); // Realiza o desejo
 						}
-						else {
-							for (i = 1; i <= genie.getNumWishes(); i++ ) // Ciclo para realizar os desejos pedidos
-							{
-								System.out.println("Peça um desejo!");
-								wish = MyErrorHandler.tryScannerNextLine(sc); // Guarda o desejo no scanner
-								genie.grantWish(wish); // Realiza o desejo
-							}
+					}
+					
+					System.out.println("Prima Enter para continuar");
+					
+					waitForEnter(); // aguarda que a tecla enter seja pressionada
+					
+					sc.nextLine(); // limpa o scanner
+			
+					break;
+				case 2:
+					/* Possível melhoria /implementação futura:
+					 * 		idealmente esta opção não apareceria o ficheiro de som não existisse
+					 */
+					try { 
+						if (!musicOn) // Verifica se a música está a tocar
+						{
+							midiSequencer = new MidiSequencer(); //Se não estiver, liga a música
+							// Manda tocar a m+usica, com o ficheiro escolhido
+							midiSequencer.playSound("Aladdin-(Medley-Of-All-Songs).mid"); 
+							musicOn = true; // Diz que a música está a tocar
 						}
-						
-						System.out.println("Prima Enter para continuar");
-						waitForEnter(); // aguarda que a tecla enter seja pressionada
-						
-						printMenu(lamp, musicOn); // Mostra menu
-						sc.nextLine();
-						choice = MyErrorHandler.tryScannerIntFromNextLine(sc); // Coloca scanner à escuta para nova escolha
+						else 
+						{
+							midiSequencer.stopSequencer(); // Desliga a música
+							musicOn = false; // Diz que a música desligada
+						}
+					} catch (Exception e) {
+						MyErrorHandler.errorHandler(e, sc, midiSequencer);
+					}
 				
-						break;
-					case 2:
-						try { // idealmente não correria se o ficheiro não existisse
-							if (!musicOn) // Verifica se a música está a tocar
-							{
-								midiSequencer = new MidiSequencer(); //Se não estiver, liga a música
-								midiSequencer.playSound("Aladdin-(Medley-Of-All-Songs).mid");
-								musicOn = true;
-							}
-							else 
-							{
-								midiSequencer.stopSequencer(); // Desliga a música
-								musicOn = false; // Música desligada
-							}
-						} catch (Exception e) {
-							MyErrorHandler.errorHandler(e, sc, midiSequencer);
-						}
-						
-						clearConsole(); // Limpa consola
-						printMenu(lamp, musicOn); // Mostra menu
+					break;
+				
+				case 3: /* sequência de saída */
+			        printGameOver(sc); // imprime mensagem de despedida
 					
-						choice = MyErrorHandler.tryScannerIntFromNextLine(sc); // Coloca scanner à escuta para nova escolha
-						break;
-					
-					case 3: /* sequência de saída */
-				        printGameOver(sc); // imprime mensagem de despedida
-						
-				        midiSequencer.stopSequencer(); // Desliga a música
-						sc.close(); // Fecha o scanner
-					
-				        System.exit(0); // Sai do sistema
-					default:
-						System.out.println(choice + " não é uma opção válida. Escolha outra opção, por favor.");
-						choice = MyErrorHandler.tryScannerIntFromNextLine(sc); // Coloca scanner à escuta para nova escolha
-						break;
+			        midiSequencer.stopSequencer(); // Desliga a música
+					sc.close(); // Fecha o scanner
+				
+			        System.exit(0); // Sai do sistema
+				default:
+					break;
 				}
-			} while (!ok);
+			} while (true);
 	}
 	
 	/**
@@ -193,10 +195,10 @@ public class Main {
 	
 	/**
 	 * imprime o menu
-	 * @param aLamp - a Lâmpada Mágica
-	 * @param aMusicOn - o estado do som (ligado/ desligado)
+	 * @param aLamp
+	 * 			a Lâmpada Mágica
 	 */
-	public static void printMenu (MagicLamp aLamp, boolean aMusicOn)
+	public static void printMenu (MagicLamp aLamp)
 	{
 		clearConsole();
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -228,12 +230,12 @@ public class Main {
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@     1 - Esfregar lâmpada         2 - " + 
-				(aMusicOn ? "Desl" : "L") + "igar música" + (aMusicOn ? "" : "   ") + "          3 - Sair     @@");
+				(musicOn ? "Desl" : "L") + "igar música" + (musicOn ? "" : "   ") + "          3 - Sair     @@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 	}
 	
 	/**
-	 * imprime o escrã final, com animação
+	 * imprime o ecrã final, com animação
 	 */
 	public static void printGameOver(Scanner sc)
 	{
@@ -323,7 +325,6 @@ public class Main {
 			}
 						
 		} while (true);
-
 	}
 	
 	/**
@@ -331,7 +332,7 @@ public class Main {
 	 */
 	public static void clearConsole()
 	{
-		for(int i = 0; i < 50; i++)  
+		for(int i = 0; i < 50; i++)
 		    System.out.println();   
 	}
 	

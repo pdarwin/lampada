@@ -1,579 +1,659 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_Yv_d4IwKEeyDmIylgZKhAg">
-  <modelElement href="lampada3.uml#_Y-HZcIwKEeyDmIylgZKhAg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZtqAAIwKEeyDmIylgZKhAg" targetItem="_ZtrOIIwKEeyDmIylgZKhAg" sourceItem="_Ztox4IwKEeyDmIylgZKhAg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZuLkcIwKEeyDmIylgZKhAg" targetItem="_ZuXxsIwKEeyDmIylgZKhAg" sourceItem="_Zt-JEIwKEeyDmIylgZKhAg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZuTgQYwKEeyDmIylgZKhAg" targetItem="_ZuXxuIwKEeyDmIylgZKhAg" sourceItem="_ZuTgQIwKEeyDmIylgZKhAg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZuUHUYwKEeyDmIylgZKhAg" targetItem="_ZuXxwYwKEeyDmIylgZKhAg" sourceItem="_ZuUHUIwKEeyDmIylgZKhAg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZuUuYIwKEeyDmIylgZKhAg" targetItem="_ZuXxxowKEeyDmIylgZKhAg" sourceItem="_ZuUHUowKEeyDmIylgZKhAg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZuVVcIwKEeyDmIylgZKhAg" targetItem="_ZuXxyYwKEeyDmIylgZKhAg" sourceItem="_ZuUuYYwKEeyDmIylgZKhAg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZuV8gIwKEeyDmIylgZKhAg" targetItem="_ZuXxzIwKEeyDmIylgZKhAg" sourceItem="_ZuVVcYwKEeyDmIylgZKhAg"/>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Zush0IwKEeyDmIylgZKhAg" sourceAnchor="91.0,0.0" targetAnchor="133.0,174.0" superClass="_ZvP7cIwKEeyDmIylgZKhAg" subClass="_ZtrOIIwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_Y_7XUIwKEeyDmIylgZKhAg"/>
-    <bendpoints xmi:id="_aKS4sIwKEeyDmIylgZKhAg" sourceY="-15" targetX="299" targetY="30"/>
-    <bendpoints xmi:id="_aKS4sYwKEeyDmIylgZKhAg" sourceX="-299" sourceY="-15" targetY="30"/>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_8CYTMIxnEeyauKcbfTyhVw">
+  <modelElement href="lampada.uml#_8raCEIxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-LUVoIxnEeyauKcbfTyhVw" targetItem="_-Lf70IxnEeyauKcbfTyhVw" sourceItem="_-LRSUIxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-NPBMIxnEeyauKcbfTyhVw" targetItem="_-NVu4IxnEeyauKcbfTyhVw" sourceItem="_-NAXsIxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-OEHoIxnEeyauKcbfTyhVw" targetItem="_-ONRkIxnEeyauKcbfTyhVw" sourceItem="_-NuJYIxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-OGj4IxnEeyauKcbfTyhVw" targetItem="_-ONRmIxnEeyauKcbfTyhVw" sourceItem="_-OF80IxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-OHK8YxnEeyauKcbfTyhVw" targetItem="_-ONRoYxnEeyauKcbfTyhVw" sourceItem="_-OHK8IxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-OHyAYxnEeyauKcbfTyhVw" targetItem="_-ONRpoxnEeyauKcbfTyhVw" sourceItem="_-OHyAIxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-OIZEYxnEeyauKcbfTyhVw" targetItem="_-ONRqYxnEeyauKcbfTyhVw" sourceItem="_-OIZEIxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-OKOQIxnEeyauKcbfTyhVw" targetItem="_-ONRrIxnEeyauKcbfTyhVw" sourceItem="_-OJnMIxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_-O6cMIxnEeyauKcbfTyhVw" sourceAnchor="91.0,0.0" targetAnchor="133.0,174.0" superClass="_-PwJsIxnEeyauKcbfTyhVw" subClass="_-NVu4IxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8w5mEIxnEeyauKcbfTyhVw"/>
+    <bendpoints xmi:id="_-vy7sIxnEeyauKcbfTyhVw" sourceY="-15" targetX="299" targetY="30"/>
+    <bendpoints xmi:id="_-v0J0IxnEeyauKcbfTyhVw" sourceX="-299" sourceY="-15" targetY="30"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_ZvB5AIwKEeyDmIylgZKhAg" sourceAnchor="188.0,0.0" targetAnchor="133.0,174.0" superClass="_ZvP7cIwKEeyDmIylgZKhAg" subClass="_ZuXxsIwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_Y__owIwKEeyDmIylgZKhAg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_-PZkYIxnEeyauKcbfTyhVw" sourceAnchor="188.0,0.0" targetAnchor="133.0,174.0" superClass="_-PwJsIxnEeyauKcbfTyhVw" subClass="_-ONRkIxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8w9QcIxnEeyauKcbfTyhVw"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZvDHIIwKEeyDmIylgZKhAg" targetItem="_ZvP7fYwKEeyDmIylgZKhAg" sourceItem="_ZvCgEIwKEeyDmIylgZKhAg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZvDuMYwKEeyDmIylgZKhAg" targetItem="_ZvP7g4wKEeyDmIylgZKhAg" sourceItem="_ZvDuMIwKEeyDmIylgZKhAg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZvEVQYwKEeyDmIylgZKhAg" targetItem="_ZvP7iIwKEeyDmIylgZKhAg" sourceItem="_ZvEVQIwKEeyDmIylgZKhAg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZvE8UYwKEeyDmIylgZKhAg" targetItem="_ZvP7jYwKEeyDmIylgZKhAg" sourceItem="_ZvE8UIwKEeyDmIylgZKhAg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZvFjYYwKEeyDmIylgZKhAg" targetItem="_ZvP7lYwKEeyDmIylgZKhAg" sourceItem="_ZvFjYIwKEeyDmIylgZKhAg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZweqgIwKEeyDmIylgZKhAg" targetItem="_ZwppoIwKEeyDmIylgZKhAg" sourceItem="_ZwB-kIwKEeyDmIylgZKhAg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ZxeJAIwKEeyDmIylgZKhAg" targetItem="_ZxrkYIwKEeyDmIylgZKhAg" sourceItem="_ZxGVkIwKEeyDmIylgZKhAg"/>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ZyNv4IwKEeyDmIylgZKhAg" source="_Zy2CAIwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA-gMIwKEeyDmIylgZKhAg"/>
-    <stereotypes xmi:id="_ZyNv4YwKEeyDmIylgZKhAg" name="Reference">
-      <modelElement href="lampada3.uml#_ZA_uUIwKEeyDmIylgZKhAg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-PbZkIxnEeyauKcbfTyhVw" targetItem="_-PwJvYxnEeyauKcbfTyhVw" sourceItem="_-PaLcIxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-PcAoYxnEeyauKcbfTyhVw" targetItem="_-PwJw4xnEeyauKcbfTyhVw" sourceItem="_-PcAoIxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-PdOwIxnEeyauKcbfTyhVw" targetItem="_-PwJyIxnEeyauKcbfTyhVw" sourceItem="_-PcnsIxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-Pec4YxnEeyauKcbfTyhVw" targetItem="_-PwJzYxnEeyauKcbfTyhVw" sourceItem="_-Pec4IxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-PfrAIxnEeyauKcbfTyhVw" targetItem="_-PwJ1YxnEeyauKcbfTyhVw" sourceItem="_-PfD8IxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-RzYIIxnEeyauKcbfTyhVw" targetItem="_-R3pkIxnEeyauKcbfTyhVw" sourceItem="_-RAt8IxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-TKqEIxnEeyauKcbfTyhVw" targetItem="_-UeRoIxnEeyauKcbfTyhVw" sourceItem="_-Sf7sIxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_-VnhIIxnEeyauKcbfTyhVw" source="_-W8W0IxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8zVPAIxnEeyauKcbfTyhVw"/>
+    <stereotypes xmi:id="_-VnhIYxnEeyauKcbfTyhVw" name="Reference">
+      <modelElement href="lampada.uml#_8zWdIIxnEeyauKcbfTyhVw"/>
     </stereotypes>
-    <nameVisual xmi:id="_ZyNv4owKEeyDmIylgZKhAg" text=""/>
-    <sourceRole xmi:id="_ZyNv44wKEeyDmIylgZKhAg" aggregationKind="NONE" name="">
-      <modelElement href="lampada3.uml#_ZA-gMYwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZyNv5IwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZyNv5YwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
+    <nameVisual xmi:id="_-VoIMIxnEeyauKcbfTyhVw" text=""/>
+    <sourceRole xmi:id="_-VoIMYxnEeyauKcbfTyhVw" aggregationKind="NONE" name="">
+      <modelElement href="lampada.uml#_8zVPAYxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-VoIMoxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-VoIM4xnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
     </sourceRole>
-    <targetRole xmi:id="_ZyNv5owKEeyDmIylgZKhAg" aggregationKind="NONE" name="sequencer" navigable="true">
-      <modelElement href="lampada3.uml#_ZAtacIwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZyNv54wKEeyDmIylgZKhAg" label="-"/>
-      <cardinality xmi:id="_ZyNv6IwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
+    <targetRole xmi:id="_-VoINIxnEeyauKcbfTyhVw" aggregationKind="NONE" name="sequencer" navigable="true">
+      <modelElement href="lampada.uml#_8yXlsIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-VoINYxnEeyauKcbfTyhVw" label="-"/>
+      <cardinality xmi:id="_-VoINoxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Zz4j0IwKEeyDmIylgZKhAg" targetItem="_Z0H0YIwKEeyDmIylgZKhAg" sourceItem="_ZzQ4wIwKEeyDmIylgZKhAg"/>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Z0m8kIwKEeyDmIylgZKhAg" sourceAnchor="143.0,0.0" targetAnchor="133.0,174.0" superClass="_ZvP7cIwKEeyDmIylgZKhAg" subClass="_Z1XxkIwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZAWOEIwKEeyDmIylgZKhAg"/>
-    <bendpoints xmi:id="_aKTfwIwKEeyDmIylgZKhAg" sourceY="-15" targetX="-351" targetY="30"/>
-    <bendpoints xmi:id="_aKTfwYwKEeyDmIylgZKhAg" sourceX="351" sourceY="-15" targetY="30"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-YeA0IxnEeyauKcbfTyhVw" targetItem="_-Y9wEIxnEeyauKcbfTyhVw" sourceItem="_-XyEUIxnEeyauKcbfTyhVw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_-ZzdkIxnEeyauKcbfTyhVw" sourceAnchor="143.0,0.0" targetAnchor="133.0,174.0" superClass="_-PwJsIxnEeyauKcbfTyhVw" subClass="_-bL9oIxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8xmJoIxnEeyauKcbfTyhVw"/>
+    <bendpoints xmi:id="_-v0w4IxnEeyauKcbfTyhVw" sourceY="-15" targetX="-351" targetY="30"/>
+    <bendpoints xmi:id="_-v1X8IxnEeyauKcbfTyhVw" sourceX="351" sourceY="-15" targetY="30"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Z1WjcIwKEeyDmIylgZKhAg" targetItem="_Z1XxkIwKEeyDmIylgZKhAg" sourceItem="_Z1FdsIwKEeyDmIylgZKhAg"/>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Ztox4IwKEeyDmIylgZKhAg" sourceConnectionVisual="_ZtqAAIwKEeyDmIylgZKhAg" text="Génio mau - só concede um desejo" item="_ZtrOIIwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA610IwKEeyDmIylgZKhAg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_-bITQIxnEeyauKcbfTyhVw" targetItem="_-bL9oIxnEeyauKcbfTyhVw" sourceItem="_-arAQIxnEeyauKcbfTyhVw"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-LRSUIxnEeyauKcbfTyhVw" sourceConnectionVisual="_-LUVoIxnEeyauKcbfTyhVw" text="Classe para tocar um fivheiro .wav usando o Clip da Java Sound API.&#xD;&#xA;@author www.codejava.net&#xD;&#xA; *" item="_-Lf70IxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y80gIxnEeyauKcbfTyhVw"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Zt-JEIwKEeyDmIylgZKhAg" sourceConnectionVisual="_ZuLkcIwKEeyDmIylgZKhAg" text="Demónio reciclável" item="_ZuXxsIwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA610YwKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-NAXsIxnEeyauKcbfTyhVw" sourceConnectionVisual="_-NPBMIxnEeyauKcbfTyhVw" text="Génio mau - só concede um desejo" item="_-NVu4IxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y80gYxnEeyauKcbfTyhVw"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ZuTgQIwKEeyDmIylgZKhAg" sourceConnectionVisual="_ZuTgQYwKEeyDmIylgZKhAg" text="@param aLimit&#xD;&#xA;&#x9; *            número de desejos a realizar (ignorado, independente do limite)" item="_ZuXxuIwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA610owKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-NuJYIxnEeyauKcbfTyhVw" sourceConnectionVisual="_-OEHoIxnEeyauKcbfTyhVw" text="Demónio reciclável" item="_-ONRkIxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y9bkIxnEeyauKcbfTyhVw"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ZuUHUIwKEeyDmIylgZKhAg" sourceConnectionVisual="_ZuUHUYwKEeyDmIylgZKhAg" text="O demónio reciclável concede todos os desejos que lhe forem colocados, exceto quando foi reciclado.&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @return verdadeiro quando não foi ainda reciclado, senão falso" item="_ZuXxwYwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA6104wKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-OF80IxnEeyauKcbfTyhVw" sourceConnectionVisual="_-OGj4IxnEeyauKcbfTyhVw" text="@param aLimit&#xD;&#xA;&#x9; *            número de desejos a realizar (ignorado, independente do limite)" item="_-ONRmIxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y9bkYxnEeyauKcbfTyhVw"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ZuUHUowKEeyDmIylgZKhAg" sourceConnectionVisual="_ZuUuYIwKEeyDmIylgZKhAg" text="Recicla o demónio - chamada pela lâmpada mágica" item="_ZuXxxowKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA611IwKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-OHK8IxnEeyauKcbfTyhVw" sourceConnectionVisual="_-OHK8YxnEeyauKcbfTyhVw" text="@return estado de reciclagem do demónio" item="_-ONRoYxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y9bkoxnEeyauKcbfTyhVw"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ZuUuYYwKEeyDmIylgZKhAg" sourceConnectionVisual="_ZuVVcIwKEeyDmIylgZKhAg" text="Mostra o génio." item="_ZuXxyYwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA7c4YwKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-OHyAIxnEeyauKcbfTyhVw" sourceConnectionVisual="_-OHyAYxnEeyauKcbfTyhVw" text="Recicla o demónio - função chamada pela lâmpada mágica" item="_-ONRpoxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y9bk4xnEeyauKcbfTyhVw"/>
+    <visualProperties xmi:id="_F5MnUIxoEeyauKcbfTyhVw" position="436.0,376.0" size="200.0,150.0"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ZuVVcYwKEeyDmIylgZKhAg" sourceConnectionVisual="_ZuV8gIwKEeyDmIylgZKhAg" text="Pede ao demónio que realize um desejo, e pergunta se quer realizar outro&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @return verdadeiro se continua a realizar, senão falso" item="_ZuXxzIwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA7c4IwKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-OIZEIxnEeyauKcbfTyhVw" sourceConnectionVisual="_-OIZEYxnEeyauKcbfTyhVw" text="Mostra o demónio." item="_-ONRqYxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y-CoIxnEeyauKcbfTyhVw"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ZvCgEIwKEeyDmIylgZKhAg" sourceConnectionVisual="_ZvDHIIwKEeyDmIylgZKhAg" text="@param laLimWishes número máximo de desejos a conceder" item="_ZvP7fYwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA7c4owKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-OJnMIxnEeyauKcbfTyhVw" sourceConnectionVisual="_-OKOQIxnEeyauKcbfTyhVw" text="Pede ao demónio que realize um desejo, e pergunta se quer realizar outro&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @return verdadeiro se continua a realizar, senão falso" item="_-ONRrIxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y9blIxnEeyauKcbfTyhVw"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ZvDuMIwKEeyDmIylgZKhAg" sourceConnectionVisual="_ZvDuMYwKEeyDmIylgZKhAg" text="@return retorna o número de desejos pedidos" item="_ZvP7g4wKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA7c44wKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-PaLcIxnEeyauKcbfTyhVw" sourceConnectionVisual="_-PbZkIxnEeyauKcbfTyhVw" text="@param laLimWishes número máximo de desejos a conceder" item="_-PwJvYxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y-CoYxnEeyauKcbfTyhVw"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ZvEVQIwKEeyDmIylgZKhAg" sourceConnectionVisual="_ZvEVQYwKEeyDmIylgZKhAg" text="@return retorna o número de desejos ainda disponíveis" item="_ZvP7iIwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA7c5IwKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-PcAoIxnEeyauKcbfTyhVw" sourceConnectionVisual="_-PcAoYxnEeyauKcbfTyhVw" text="@return retorna o número de desejos pedidos" item="_-PwJw4xnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y-CooxnEeyauKcbfTyhVw"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ZvE8UIwKEeyDmIylgZKhAg" sourceConnectionVisual="_ZvE8UYwKEeyDmIylgZKhAg" text="Pede ao génio que realize um desejo.&#xD;&#xA;&#x9; * Nunca pode permitir mais desejos que o limite definido&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @return verdadeiro se o desejo foi concedido, senão falso" item="_ZvP7jYwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA7c5YwKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-PcnsIxnEeyauKcbfTyhVw" sourceConnectionVisual="_-PdOwIxnEeyauKcbfTyhVw" text="@return retorna o número de desejos ainda disponíveis" item="_-PwJyIxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y-Co4xnEeyauKcbfTyhVw"/>
+    <visualProperties xmi:id="_FEo94IxoEeyauKcbfTyhVw" position="555.0,165.0" size="200.0,150.0"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ZvFjYIwKEeyDmIylgZKhAg" sourceConnectionVisual="_ZvFjYYwKEeyDmIylgZKhAg" text="Mostra o génio. Não faz nada, as subclasses definirão o que acontece aqui" item="_ZvP7lYwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA7c5owKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-Pec4IxnEeyauKcbfTyhVw" sourceConnectionVisual="_-Pec4YxnEeyauKcbfTyhVw" text="Pede ao génio que realize um desejo.&#xD;&#xA;&#x9; * Nunca pode permitir mais desejos que o limite definido&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @return verdadeiro se o desejo foi concedido, senão falso" item="_-PwJzYxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y-CpIxnEeyauKcbfTyhVw"/>
+    <visualProperties xmi:id="_EmfpUIxoEeyauKcbfTyhVw" position="635.0,184.0" size="200.0,150.0"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ZwB-kIwKEeyDmIylgZKhAg" sourceConnectionVisual="_ZweqgIwKEeyDmIylgZKhAg" text="Lâmpada mágica" item="_ZwppoIwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA7c54wKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-PfD8IxnEeyauKcbfTyhVw" sourceConnectionVisual="_-PfrAIxnEeyauKcbfTyhVw" text="Mostra o génio. Não faz nada, as subclasses definirão o que acontece aqui" item="_-PwJ1YxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y-CpYxnEeyauKcbfTyhVw"/>
+    <visualProperties xmi:id="_D8Y8YIxoEeyauKcbfTyhVw" position="499.0,203.0" size="200.0,150.0"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ZxGVkIwKEeyDmIylgZKhAg" sourceConnectionVisual="_ZxeJAIwKEeyDmIylgZKhAg" text="&#xD;&#xA;@author P. Perneta e J. Rocha&#xD;&#xA; *" item="_ZxrkYIwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA8D8IwKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-RAt8IxnEeyauKcbfTyhVw" sourceConnectionVisual="_-RzYIIxnEeyauKcbfTyhVw" text="Lâmpada mágica" item="_-R3pkIxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y-psIxnEeyauKcbfTyhVw"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ZzQ4wIwKEeyDmIylgZKhAg" sourceConnectionVisual="_Zz4j0IwKEeyDmIylgZKhAg" text="Classe geral para tratamento de erros&#xD;&#xA;@author PP &amp; JR&#xD;&#xA; *" item="_Z0H0YIwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA8D8YwKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-Sf7sIxnEeyauKcbfTyhVw" sourceConnectionVisual="_-TKqEIxnEeyauKcbfTyhVw" text="&#xD;&#xA;@author P. Perneta e J. Rocha&#xD;&#xA; *" item="_-UeRoIxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y-psYxnEeyauKcbfTyhVw"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Z1FdsIwKEeyDmIylgZKhAg" sourceConnectionVisual="_Z1WjcIwKEeyDmIylgZKhAg" text="Génio bom - concede todos os desejos" item="_Z1XxkIwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_ZA8D8owKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-XyEUIxnEeyauKcbfTyhVw" sourceConnectionVisual="_-YeA0IxnEeyauKcbfTyhVw" text="Classe geral para tratamento de erros&#xD;&#xA;@author PP &amp; JR&#xD;&#xA; *" item="_-Y9wEIxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y-psoxnEeyauKcbfTyhVw"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZtrOIIwKEeyDmIylgZKhAg" comments="_Ztox4IwKEeyDmIylgZKhAg" targetConnectionVisual="_ZtqAAIwKEeyDmIylgZKhAg" name="BadGenie" generalizations="_Zush0IwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_Y-soQIwKEeyDmIylgZKhAg"/>
-    <visualProperties xmi:id="_ZtrOIYwKEeyDmIylgZKhAg" position="724.0,250.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_ZtrOIowKEeyDmIylgZKhAg" label="+"/>
-    <operations xmi:id="_ZtrOI4wKEeyDmIylgZKhAg" name="BadGenie">
-      <modelElement href="lampada3.uml#_Y-tPUIwKEeyDmIylgZKhAg"/>
-      <keywords xmi:id="_ZtrOJIwKEeyDmIylgZKhAg" keyword="create"/>
-      <visibility xmi:id="_ZtrOJYwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZtrOJowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_ZtrOJ4wKEeyDmIylgZKhAg">
-        <modelElement href="lampada3.uml#_Y-udcIwKEeyDmIylgZKhAg"/>
-        <type xmi:id="_ZtrOKIwKEeyDmIylgZKhAg" name="BadGenie">
-          <modelElement href="lampada3.uml#_Y-soQIwKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_-arAQIxnEeyauKcbfTyhVw" sourceConnectionVisual="_-bITQIxnEeyauKcbfTyhVw" text="Génio bom - concede todos os desejos" item="_-bL9oIxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8y_QwIxnEeyauKcbfTyhVw"/>
+    <visualProperties xmi:id="_Fb_G4IxoEeyauKcbfTyhVw" position="325.0,270.0" size="200.0,150.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_-NVu4IxnEeyauKcbfTyhVw" comments="_-NAXsIxnEeyauKcbfTyhVw" targetConnectionVisual="_-NPBMIxnEeyauKcbfTyhVw" name="BadGenie" generalizations="_-O6cMIxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8snjAIxnEeyauKcbfTyhVw"/>
+    <visualProperties xmi:id="_-NWV8IxnEeyauKcbfTyhVw" position="721.0,250.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_-NWV8YxnEeyauKcbfTyhVw" label="+"/>
+    <operations xmi:id="_-NWV8oxnEeyauKcbfTyhVw" name="BadGenie">
+      <modelElement href="lampada.uml#_8soxIIxnEeyauKcbfTyhVw"/>
+      <keywords xmi:id="_-NWV84xnEeyauKcbfTyhVw" keyword="create"/>
+      <visibility xmi:id="_-NWV9IxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-NWV9YxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_-NWV9oxnEeyauKcbfTyhVw">
+        <modelElement href="lampada.uml#_8sp_QYxnEeyauKcbfTyhVw"/>
+        <type xmi:id="_-NWV94xnEeyauKcbfTyhVw" name="BadGenie">
+          <modelElement href="lampada.uml#_8snjAIxnEeyauKcbfTyhVw"/>
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_ZtrOKYwKEeyDmIylgZKhAg" name="showMe">
-      <modelElement href="lampada3.uml#_Y-udcYwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZtrOKowKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZtrOK4wKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
+    <operations xmi:id="_-NWV-IxnEeyauKcbfTyhVw" name="showMe">
+      <modelElement href="lampada.uml#_8sqmUIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-NWV-YxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-NWV-oxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZuXxsIwKEeyDmIylgZKhAg" comments="_Zt-JEIwKEeyDmIylgZKhAg" targetConnectionVisual="_ZuLkcIwKEeyDmIylgZKhAg" name="Demon" generalizations="_ZvB5AIwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_Y-vrkIwKEeyDmIylgZKhAg"/>
-    <visualProperties xmi:id="_ZuXxsYwKEeyDmIylgZKhAg" position="328.0,261.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_ZuXxsowKEeyDmIylgZKhAg" label="+"/>
-    <attributes xmi:id="_ZuXxs4wKEeyDmIylgZKhAg" defaultValue="false" name="recycled">
-      <modelElement href="lampada3.uml#_ZAleoIwKEeyDmIylgZKhAg"/>
-      <stereotypes xmi:id="_ZuXxtIwKEeyDmIylgZKhAg" name="LegacyStyledElement">
-        <modelElement href="lampada3.uml#_ZAmswIwKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_-ONRkIxnEeyauKcbfTyhVw" comments="_-NuJYIxnEeyauKcbfTyhVw" targetConnectionVisual="_-OEHoIxnEeyauKcbfTyhVw" name="Demon" generalizations="_-PZkYIxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8sr0cIxnEeyauKcbfTyhVw"/>
+    <visualProperties xmi:id="_-ONRkYxnEeyauKcbfTyhVw" position="325.0,261.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_-ONRkoxnEeyauKcbfTyhVw" label="+"/>
+    <attributes xmi:id="_-ONRk4xnEeyauKcbfTyhVw" defaultValue="false" name="recycled">
+      <modelElement href="lampada.uml#_8yObwIxnEeyauKcbfTyhVw"/>
+      <stereotypes xmi:id="_-ONRlIxnEeyauKcbfTyhVw" name="LegacyStyledElement">
+        <modelElement href="lampada.uml#_8yPp4IxnEeyauKcbfTyhVw"/>
       </stereotypes>
-      <visibility xmi:id="_ZuXxtYwKEeyDmIylgZKhAg" label="-"/>
-      <cardinality xmi:id="_ZuXxtowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <type xmi:id="_ZuXxt4wKEeyDmIylgZKhAg" name="boolean">
+      <visibility xmi:id="_-ONRlYxnEeyauKcbfTyhVw" label="-"/>
+      <cardinality xmi:id="_-ONRloxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <type xmi:id="_-ONRl4xnEeyauKcbfTyhVw" name="boolean">
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
       </type>
     </attributes>
-    <operations xmi:id="_ZuXxuIwKEeyDmIylgZKhAg" comments="_ZuTgQIwKEeyDmIylgZKhAg" targetConnectionVisual="_ZuTgQYwKEeyDmIylgZKhAg" name="Demon">
-      <modelElement href="lampada3.uml#_Y-xgwIwKEeyDmIylgZKhAg"/>
-      <keywords xmi:id="_ZuXxuYwKEeyDmIylgZKhAg" keyword="create"/>
-      <visibility xmi:id="_ZuXxuowKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZuXxu4wKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_ZuXxvIwKEeyDmIylgZKhAg">
-        <modelElement href="lampada3.uml#_Y-xgxIwKEeyDmIylgZKhAg"/>
-        <type xmi:id="_ZuXxvYwKEeyDmIylgZKhAg" name="Demon">
-          <modelElement href="lampada3.uml#_Y-vrkIwKEeyDmIylgZKhAg"/>
+    <operations xmi:id="_-ONRmIxnEeyauKcbfTyhVw" comments="_-OF80IxnEeyauKcbfTyhVw" targetConnectionVisual="_-OGj4IxnEeyauKcbfTyhVw" name="Demon">
+      <modelElement href="lampada.uml#_8stCkIxnEeyauKcbfTyhVw"/>
+      <keywords xmi:id="_-ONRmYxnEeyauKcbfTyhVw" keyword="create"/>
+      <visibility xmi:id="_-ONRmoxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-ONRm4xnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_-ONRnIxnEeyauKcbfTyhVw">
+        <modelElement href="lampada.uml#_8stpooxnEeyauKcbfTyhVw"/>
+        <type xmi:id="_-ONRnYxnEeyauKcbfTyhVw" name="Demon">
+          <modelElement href="lampada.uml#_8sr0cIxnEeyauKcbfTyhVw"/>
         </type>
       </outParameters>
-      <parameters xmi:id="_ZuXxvowKEeyDmIylgZKhAg" name="aNumWishes">
-        <modelElement href="lampada3.uml#_Y-xgwYwKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_ZuXxv4wKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-        <type xmi:id="_ZuXxwIwKEeyDmIylgZKhAg" name="int">
+      <parameters xmi:id="_-ONRnoxnEeyauKcbfTyhVw" name="aNumWishes">
+        <modelElement href="lampada.uml#_8stCkYxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-ONRn4xnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-ONRoIxnEeyauKcbfTyhVw" name="int">
           <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_ZuXxwYwKEeyDmIylgZKhAg" comments="_ZuUHUIwKEeyDmIylgZKhAg" targetConnectionVisual="_ZuUHUYwKEeyDmIylgZKhAg" name="recycled">
-      <modelElement href="lampada3.uml#_Y-yH0IwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZuXxwowKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZuXxw4wKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_ZuXxxIwKEeyDmIylgZKhAg">
-        <modelElement href="lampada3.uml#_Y-yH0YwKEeyDmIylgZKhAg"/>
-        <type xmi:id="_ZuXxxYwKEeyDmIylgZKhAg" name="boolean">
+    <operations xmi:id="_-ONRoYxnEeyauKcbfTyhVw" comments="_-OHK8IxnEeyauKcbfTyhVw" targetConnectionVisual="_-OHK8YxnEeyauKcbfTyhVw" name="recycled">
+      <modelElement href="lampada.uml#_8suQsIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-ONRooxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-ONRo4xnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_-ONRpIxnEeyauKcbfTyhVw">
+        <modelElement href="lampada.uml#_8su3wIxnEeyauKcbfTyhVw"/>
+        <type xmi:id="_-ONRpYxnEeyauKcbfTyhVw" name="boolean">
           <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_ZuXxxowKEeyDmIylgZKhAg" comments="_ZuUHUowKEeyDmIylgZKhAg" targetConnectionVisual="_ZuUuYIwKEeyDmIylgZKhAg" name="recycle">
-      <modelElement href="lampada3.uml#_Y-yu4IwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZuXxx4wKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZuXxyIwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
+    <operations xmi:id="_-ONRpoxnEeyauKcbfTyhVw" comments="_-OHyAIxnEeyauKcbfTyhVw" targetConnectionVisual="_-OHyAYxnEeyauKcbfTyhVw" name="recycle">
+      <modelElement href="lampada.uml#_8su3wYxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-ONRp4xnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-ONRqIxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_ZuXxyYwKEeyDmIylgZKhAg" comments="_ZuUuYYwKEeyDmIylgZKhAg" targetConnectionVisual="_ZuVVcIwKEeyDmIylgZKhAg" name="showMe">
-      <modelElement href="lampada3.uml#_Y-zV8IwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZuXxyowKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZuXxy4wKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
+    <operations xmi:id="_-ONRqYxnEeyauKcbfTyhVw" comments="_-OIZEIxnEeyauKcbfTyhVw" targetConnectionVisual="_-OIZEYxnEeyauKcbfTyhVw" name="showMe">
+      <modelElement href="lampada.uml#_8swF4IxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-ONRqoxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-ONRq4xnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_ZuXxzIwKEeyDmIylgZKhAg" comments="_ZuVVcYwKEeyDmIylgZKhAg" targetConnectionVisual="_ZuV8gIwKEeyDmIylgZKhAg" name="grantWishDemon">
-      <modelElement href="lampada3.uml#_ZAZ4cIwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZuXxzYwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZuXxzowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_ZuXxz4wKEeyDmIylgZKhAg">
-        <modelElement href="lampada3.uml#_ZAZ4c4wKEeyDmIylgZKhAg"/>
-        <type xmi:id="_ZuXx0IwKEeyDmIylgZKhAg" name="boolean">
+    <operations xmi:id="_-ONRrIxnEeyauKcbfTyhVw" comments="_-OJnMIxnEeyauKcbfTyhVw" targetConnectionVisual="_-OKOQIxnEeyauKcbfTyhVw" name="grantWishDemon">
+      <modelElement href="lampada.uml#_8x8u8IxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-ONRrYxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-ONRroxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_-ONRr4xnEeyauKcbfTyhVw">
+        <modelElement href="lampada.uml#_8x9WAYxnEeyauKcbfTyhVw"/>
+        <type xmi:id="_-ONRsIxnEeyauKcbfTyhVw" name="boolean">
           <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </type>
       </outParameters>
-      <parameters xmi:id="_ZuXx0YwKEeyDmIylgZKhAg" name="aWish">
-        <modelElement href="lampada3.uml#_ZAZ4cYwKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_ZuXx0owKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-        <type xmi:id="_ZuXx04wKEeyDmIylgZKhAg" name="String">
+      <parameters xmi:id="_-ONRsYxnEeyauKcbfTyhVw" name="aWish">
+        <modelElement href="lampada.uml#_8x8u8YxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-ONRsoxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-ONRs4xnEeyauKcbfTyhVw" name="String">
           <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </type>
       </parameters>
-      <parameters xmi:id="_ZuXx1IwKEeyDmIylgZKhAg" name="sc">
-        <modelElement href="lampada3.uml#_ZAZ4cowKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_ZuXx1YwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-        <type xmi:id="_ZuXx1owKEeyDmIylgZKhAg" name="Scanner">
-          <modelElement href="lampada3.uml#_Y_8lcIwKEeyDmIylgZKhAg"/>
+      <parameters xmi:id="_-ONRtIxnEeyauKcbfTyhVw" name="sc">
+        <modelElement href="lampada.uml#_8x9WAIxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-ONRtYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-ONRtoxnEeyauKcbfTyhVw" name="Scanner">
+          <modelElement href="lampada.uml#_8w60MIxnEeyauKcbfTyhVw"/>
         </type>
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZvP7cIwKEeyDmIylgZKhAg" name="Genie" abstractClass="true" subclassedBy="_Zush0IwKEeyDmIylgZKhAg _ZvB5AIwKEeyDmIylgZKhAg _Z0m8kIwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_Y-0kEIwKEeyDmIylgZKhAg"/>
-    <visualProperties xmi:id="_ZvP7cYwKEeyDmIylgZKhAg" position="383.0,31.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_ZvP7cowKEeyDmIylgZKhAg" label="+"/>
-    <attributes xmi:id="_ZvP7c4wKEeyDmIylgZKhAg" name="numWishes">
-      <modelElement href="lampada3.uml#_ZAnT0IwKEeyDmIylgZKhAg"/>
-      <stereotypes xmi:id="_ZvP7dIwKEeyDmIylgZKhAg" name="LegacyStyledElement">
-        <modelElement href="lampada3.uml#_ZAn64IwKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_-PwJsIxnEeyauKcbfTyhVw" name="Genie" abstractClass="true" subclassedBy="_-O6cMIxnEeyauKcbfTyhVw _-PZkYIxnEeyauKcbfTyhVw _-ZzdkIxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8s0XUIxnEeyauKcbfTyhVw"/>
+    <visualProperties xmi:id="_-PwJsYxnEeyauKcbfTyhVw" position="380.0,31.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_-PwJsoxnEeyauKcbfTyhVw" label="+"/>
+    <attributes xmi:id="_-PwJs4xnEeyauKcbfTyhVw" name="numWishes">
+      <modelElement href="lampada.uml#_8yQQ8IxnEeyauKcbfTyhVw"/>
+      <stereotypes xmi:id="_-PwJtIxnEeyauKcbfTyhVw" name="LegacyStyledElement">
+        <modelElement href="lampada.uml#_8yRfEIxnEeyauKcbfTyhVw"/>
       </stereotypes>
-      <visibility xmi:id="_ZvP7dYwKEeyDmIylgZKhAg" label="#"/>
-      <cardinality xmi:id="_ZvP7dowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <type xmi:id="_ZvP7d4wKEeyDmIylgZKhAg" name="int">
+      <visibility xmi:id="_-PwJtYxnEeyauKcbfTyhVw" label="#"/>
+      <cardinality xmi:id="_-PwJtoxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <type xmi:id="_-PwJt4xnEeyauKcbfTyhVw" name="int">
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       </type>
     </attributes>
-    <attributes xmi:id="_ZvP7eIwKEeyDmIylgZKhAg" name="remWishes">
-      <modelElement href="lampada3.uml#_ZAoh8IwKEeyDmIylgZKhAg"/>
-      <stereotypes xmi:id="_ZvP7eYwKEeyDmIylgZKhAg" name="LegacyStyledElement">
-        <modelElement href="lampada3.uml#_ZAoh8YwKEeyDmIylgZKhAg"/>
+    <attributes xmi:id="_-PwJuIxnEeyauKcbfTyhVw" name="remWishes">
+      <modelElement href="lampada.uml#_8yRfEYxnEeyauKcbfTyhVw"/>
+      <stereotypes xmi:id="_-PwJuYxnEeyauKcbfTyhVw" name="LegacyStyledElement">
+        <modelElement href="lampada.uml#_8ySGIIxnEeyauKcbfTyhVw"/>
       </stereotypes>
-      <visibility xmi:id="_ZvP7eowKEeyDmIylgZKhAg" label="#"/>
-      <cardinality xmi:id="_ZvP7e4wKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <type xmi:id="_ZvP7fIwKEeyDmIylgZKhAg" name="int">
+      <visibility xmi:id="_-PwJuoxnEeyauKcbfTyhVw" label="#"/>
+      <cardinality xmi:id="_-PwJu4xnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <type xmi:id="_-PwJvIxnEeyauKcbfTyhVw" name="int">
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       </type>
     </attributes>
-    <operations xmi:id="_ZvP7fYwKEeyDmIylgZKhAg" comments="_ZvCgEIwKEeyDmIylgZKhAg" targetConnectionVisual="_ZvDHIIwKEeyDmIylgZKhAg" name="Genie">
-      <modelElement href="lampada3.uml#_Y-1yMIwKEeyDmIylgZKhAg"/>
-      <keywords xmi:id="_ZvP7fowKEeyDmIylgZKhAg" keyword="create"/>
-      <visibility xmi:id="_ZvP7f4wKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZvP7gIwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_ZvP7gYwKEeyDmIylgZKhAg">
-        <modelElement href="lampada3.uml#_Y-2ZQowKEeyDmIylgZKhAg"/>
-        <type xmi:id="_ZvP7gowKEeyDmIylgZKhAg" name="Genie">
-          <modelElement href="lampada3.uml#_Y-0kEIwKEeyDmIylgZKhAg"/>
+    <operations xmi:id="_-PwJvYxnEeyauKcbfTyhVw" comments="_-PaLcIxnEeyauKcbfTyhVw" targetConnectionVisual="_-PbZkIxnEeyauKcbfTyhVw" name="Genie">
+      <modelElement href="lampada.uml#_8s2MgIxnEeyauKcbfTyhVw"/>
+      <keywords xmi:id="_-PwJvoxnEeyauKcbfTyhVw" keyword="create"/>
+      <visibility xmi:id="_-PwJv4xnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-PwJwIxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_-PwJwYxnEeyauKcbfTyhVw">
+        <modelElement href="lampada.uml#_8s2zkoxnEeyauKcbfTyhVw"/>
+        <type xmi:id="_-PwJwoxnEeyauKcbfTyhVw" name="Genie">
+          <modelElement href="lampada.uml#_8s0XUIxnEeyauKcbfTyhVw"/>
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_ZvP7g4wKEeyDmIylgZKhAg" comments="_ZvDuMIwKEeyDmIylgZKhAg" targetConnectionVisual="_ZvDuMYwKEeyDmIylgZKhAg" name="getNumWishes">
-      <modelElement href="lampada3.uml#_Y-2ZQ4wKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZvP7hIwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZvP7hYwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_ZvP7howKEeyDmIylgZKhAg">
-        <modelElement href="lampada3.uml#_Y-2ZRIwKEeyDmIylgZKhAg"/>
-        <type xmi:id="_ZvP7h4wKEeyDmIylgZKhAg" name="int">
+    <operations xmi:id="_-PwJw4xnEeyauKcbfTyhVw" comments="_-PcAoIxnEeyauKcbfTyhVw" targetConnectionVisual="_-PcAoYxnEeyauKcbfTyhVw" name="getNumWishes">
+      <modelElement href="lampada.uml#_8s3aoIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-PwJxIxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-PwJxYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_-PwJxoxnEeyauKcbfTyhVw">
+        <modelElement href="lampada.uml#_8s4BsIxnEeyauKcbfTyhVw"/>
+        <type xmi:id="_-PwJx4xnEeyauKcbfTyhVw" name="int">
           <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_ZvP7iIwKEeyDmIylgZKhAg" comments="_ZvEVQIwKEeyDmIylgZKhAg" targetConnectionVisual="_ZvEVQYwKEeyDmIylgZKhAg" name="getRemWishes">
-      <modelElement href="lampada3.uml#_Y-3AUIwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZvP7iYwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZvP7iowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_ZvP7i4wKEeyDmIylgZKhAg">
-        <modelElement href="lampada3.uml#_Y-3AUYwKEeyDmIylgZKhAg"/>
-        <type xmi:id="_ZvP7jIwKEeyDmIylgZKhAg" name="int">
+    <operations xmi:id="_-PwJyIxnEeyauKcbfTyhVw" comments="_-PcnsIxnEeyauKcbfTyhVw" targetConnectionVisual="_-PdOwIxnEeyauKcbfTyhVw" name="getRemWishes">
+      <modelElement href="lampada.uml#_8s4owIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-PwJyYxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-PwJyoxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_-PwJy4xnEeyauKcbfTyhVw">
+        <modelElement href="lampada.uml#_8s5P0IxnEeyauKcbfTyhVw"/>
+        <type xmi:id="_-PwJzIxnEeyauKcbfTyhVw" name="int">
           <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_ZvP7jYwKEeyDmIylgZKhAg" comments="_ZvE8UIwKEeyDmIylgZKhAg" targetConnectionVisual="_ZvE8UYwKEeyDmIylgZKhAg" name="grantWish">
-      <modelElement href="lampada3.uml#_Y-3nYIwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZvP7jowKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZvP7j4wKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_ZvP7kIwKEeyDmIylgZKhAg">
-        <modelElement href="lampada3.uml#_Y-4OcIwKEeyDmIylgZKhAg"/>
-        <type xmi:id="_ZvP7kYwKEeyDmIylgZKhAg" name="boolean">
+    <operations xmi:id="_-PwJzYxnEeyauKcbfTyhVw" comments="_-Pec4IxnEeyauKcbfTyhVw" targetConnectionVisual="_-Pec4YxnEeyauKcbfTyhVw" name="grantWish">
+      <modelElement href="lampada.uml#_8s6d8IxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-PwJzoxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-PwJz4xnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_-PwJ0IxnEeyauKcbfTyhVw">
+        <modelElement href="lampada.uml#_8s7FAIxnEeyauKcbfTyhVw"/>
+        <type xmi:id="_-PwJ0YxnEeyauKcbfTyhVw" name="boolean">
           <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </type>
       </outParameters>
-      <parameters xmi:id="_ZvP7kowKEeyDmIylgZKhAg" name="aWish">
-        <modelElement href="lampada3.uml#_Y-3nYYwKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_ZvP7k4wKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-        <type xmi:id="_ZvP7lIwKEeyDmIylgZKhAg" name="String">
+      <parameters xmi:id="_-PwJ0oxnEeyauKcbfTyhVw" name="aWish">
+        <modelElement href="lampada.uml#_8s6d8YxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-PwJ04xnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-PwJ1IxnEeyauKcbfTyhVw" name="String">
           <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_ZvP7lYwKEeyDmIylgZKhAg" comments="_ZvFjYIwKEeyDmIylgZKhAg" targetConnectionVisual="_ZvFjYYwKEeyDmIylgZKhAg" name="showMe">
-      <modelElement href="lampada3.uml#_Y-4OcYwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZvP7lowKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZvP7l4wKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
+    <operations xmi:id="_-PwJ1YxnEeyauKcbfTyhVw" comments="_-PfD8IxnEeyauKcbfTyhVw" targetConnectionVisual="_-PfrAIxnEeyauKcbfTyhVw" name="showMe">
+      <modelElement href="lampada.uml#_8s7sEIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-PwJ1oxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-PwJ14xnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZwppoIwKEeyDmIylgZKhAg" comments="_ZwB-kIwKEeyDmIylgZKhAg" targetConnectionVisual="_ZweqgIwKEeyDmIylgZKhAg" name="MagicLamp">
-    <modelElement href="lampada3.uml#_Y-6DoIwKEeyDmIylgZKhAg"/>
-    <visualProperties xmi:id="_ZwppoYwKEeyDmIylgZKhAg" position="434.0,485.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_ZwppoowKEeyDmIylgZKhAg" label="+"/>
-    <attributes xmi:id="_Zwppo4wKEeyDmIylgZKhAg" name="limGenies">
-      <modelElement href="lampada3.uml#_ZApwEIwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZwpppIwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZwpppYwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <type xmi:id="_ZwpppowKEeyDmIylgZKhAg" name="int">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_-R3pkIxnEeyauKcbfTyhVw" comments="_-RAt8IxnEeyauKcbfTyhVw" targetConnectionVisual="_-RzYIIxnEeyauKcbfTyhVw" name="MagicLamp">
+    <modelElement href="lampada.uml#_8s9hQIxnEeyauKcbfTyhVw"/>
+    <visualProperties xmi:id="_-R3pkYxnEeyauKcbfTyhVw" position="431.0,485.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_-R3pkoxnEeyauKcbfTyhVw" label="+"/>
+    <attributes xmi:id="_-R3pk4xnEeyauKcbfTyhVw" name="limGenies">
+      <modelElement href="lampada.uml#_8yTUQIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-R3plIxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-R3plYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <type xmi:id="_-R3ploxnEeyauKcbfTyhVw" name="int">
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       </type>
     </attributes>
-    <attributes xmi:id="_Zwppp4wKEeyDmIylgZKhAg" name="numGenies">
-      <modelElement href="lampada3.uml#_ZApwEYwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZwppqIwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZwppqYwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <type xmi:id="_ZwppqowKEeyDmIylgZKhAg" name="int">
+    <attributes xmi:id="_-R3pl4xnEeyauKcbfTyhVw" name="numGenies">
+      <modelElement href="lampada.uml#_8yT7UIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-R3pmIxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-R3pmYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <type xmi:id="_-R3pmoxnEeyauKcbfTyhVw" name="int">
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       </type>
     </attributes>
-    <attributes xmi:id="_Zwppq4wKEeyDmIylgZKhAg" name="rubs">
-      <modelElement href="lampada3.uml#_ZAqXIIwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZwpprIwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZwpprYwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <type xmi:id="_ZwpprowKEeyDmIylgZKhAg" name="int">
+    <attributes xmi:id="_-R3pm4xnEeyauKcbfTyhVw" name="rubs">
+      <modelElement href="lampada.uml#_8yVJcIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-R3pnIxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-R3pnYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <type xmi:id="_-R3pnoxnEeyauKcbfTyhVw" name="int">
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       </type>
     </attributes>
-    <attributes xmi:id="_Zwppr4wKEeyDmIylgZKhAg" name="demons">
-      <modelElement href="lampada3.uml#_ZAqXIYwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZwppsIwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZwppsYwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <type xmi:id="_ZwppsowKEeyDmIylgZKhAg" name="int">
+    <attributes xmi:id="_-R3pn4xnEeyauKcbfTyhVw" name="demons">
+      <modelElement href="lampada.uml#_8yVwgIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-R3poIxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-R3poYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <type xmi:id="_-R3pooxnEeyauKcbfTyhVw" name="int">
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       </type>
     </attributes>
-    <operations xmi:id="_Zwpps4wKEeyDmIylgZKhAg" name="MagicLamp">
-      <modelElement href="lampada3.uml#_Y-7RwIwKEeyDmIylgZKhAg"/>
-      <keywords xmi:id="_ZwpptIwKEeyDmIylgZKhAg" keyword="create"/>
-      <visibility xmi:id="_ZwpptYwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZwpptowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_Zwppt4wKEeyDmIylgZKhAg">
-        <modelElement href="lampada3.uml#_Y-7404wKEeyDmIylgZKhAg"/>
-        <type xmi:id="_ZwppuIwKEeyDmIylgZKhAg" name="MagicLamp">
-          <modelElement href="lampada3.uml#_Y-6DoIwKEeyDmIylgZKhAg"/>
+    <operations xmi:id="_-R3po4xnEeyauKcbfTyhVw" name="MagicLamp">
+      <modelElement href="lampada.uml#_8s_9gIxnEeyauKcbfTyhVw"/>
+      <keywords xmi:id="_-R3ppIxnEeyauKcbfTyhVw" keyword="create"/>
+      <visibility xmi:id="_-R3ppYxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-R3ppoxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_-R3pp4xnEeyauKcbfTyhVw">
+        <modelElement href="lampada.uml#_8tAkkoxnEeyauKcbfTyhVw"/>
+        <type xmi:id="_-R3pqIxnEeyauKcbfTyhVw" name="MagicLamp">
+          <modelElement href="lampada.uml#_8s9hQIxnEeyauKcbfTyhVw"/>
         </type>
       </outParameters>
-      <parameters xmi:id="_ZwppuYwKEeyDmIylgZKhAg" name="aLimit">
-        <modelElement href="lampada3.uml#_Y-740IwKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_ZwppuowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-        <type xmi:id="_Zwppu4wKEeyDmIylgZKhAg" name="int">
+      <parameters xmi:id="_-R3pqYxnEeyauKcbfTyhVw" name="aLimit">
+        <modelElement href="lampada.uml#_8s_9gYxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-R3pqoxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-R3pq4xnEeyauKcbfTyhVw" name="int">
           <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_ZwppvIwKEeyDmIylgZKhAg" name="rechargeLamp">
-      <modelElement href="lampada3.uml#_ZAA24IwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZwppvYwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZwppvowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <parameters xmi:id="_Zwppv4wKEeyDmIylgZKhAg" name="demon">
-        <modelElement href="lampada3.uml#_ZAA24YwKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_ZwppwIwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-        <type xmi:id="_ZwppwYwKEeyDmIylgZKhAg" name="Demon">
-          <modelElement href="lampada3.uml#_Y-vrkIwKEeyDmIylgZKhAg"/>
+    <operations xmi:id="_-R3prIxnEeyauKcbfTyhVw" name="rechargeLamp">
+      <modelElement href="lampada.uml#_8xATwIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-R3prYxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-R3proxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_-R3pr4xnEeyauKcbfTyhVw" name="demon">
+        <modelElement href="lampada.uml#_8xA60IxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-R3psIxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-R3psYxnEeyauKcbfTyhVw" name="Demon">
+          <modelElement href="lampada.uml#_8sr0cIxnEeyauKcbfTyhVw"/>
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_ZwppwowKEeyDmIylgZKhAg" name="rub">
-      <modelElement href="lampada3.uml#_ZAbtoIwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_Zwppw4wKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZwppxIwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_ZwppxYwKEeyDmIylgZKhAg">
-        <modelElement href="lampada3.uml#_ZAcUsIwKEeyDmIylgZKhAg"/>
-        <type xmi:id="_ZwppxowKEeyDmIylgZKhAg" name="Genie">
-          <modelElement href="lampada3.uml#_Y-0kEIwKEeyDmIylgZKhAg"/>
+    <operations xmi:id="_-R3psoxnEeyauKcbfTyhVw" name="rub">
+      <modelElement href="lampada.uml#_8x_LMIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-R3ps4xnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-R3ptIxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_-R3ptYxnEeyauKcbfTyhVw">
+        <modelElement href="lampada.uml#_8x_yQYxnEeyauKcbfTyhVw"/>
+        <type xmi:id="_-R3ptoxnEeyauKcbfTyhVw" name="Genie">
+          <modelElement href="lampada.uml#_8s0XUIxnEeyauKcbfTyhVw"/>
         </type>
       </outParameters>
-      <parameters xmi:id="_Zwppx4wKEeyDmIylgZKhAg" name="sc">
-        <modelElement href="lampada3.uml#_ZAbtoYwKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_ZwppyIwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-        <type xmi:id="_ZwppyYwKEeyDmIylgZKhAg" name="Scanner">
-          <modelElement href="lampada3.uml#_Y_8lcIwKEeyDmIylgZKhAg"/>
+      <parameters xmi:id="_-R3pt4xnEeyauKcbfTyhVw" name="sc">
+        <modelElement href="lampada.uml#_8x_yQIxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-R3puIxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-R3puYxnEeyauKcbfTyhVw" name="Scanner">
+          <modelElement href="lampada.uml#_8w60MIxnEeyauKcbfTyhVw"/>
         </type>
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZxrkYIwKEeyDmIylgZKhAg" comments="_ZxGVkIwKEeyDmIylgZKhAg" targetConnectionVisual="_ZxeJAIwKEeyDmIylgZKhAg" name="Main">
-    <modelElement href="lampada3.uml#_Y_BYYIwKEeyDmIylgZKhAg"/>
-    <visualProperties xmi:id="_ZxrkYYwKEeyDmIylgZKhAg" position="14.0,485.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_ZxrkYowKEeyDmIylgZKhAg" label="+"/>
-    <attributes xmi:id="_ZxrkY4wKEeyDmIylgZKhAg" defaultValue="System.currentTimeMillis()" name="now" staticAttribute="true">
-      <modelElement href="lampada3.uml#_ZArlQIwKEeyDmIylgZKhAg"/>
-      <stereotypes xmi:id="_ZxrkZIwKEeyDmIylgZKhAg" name="LegacyStyledElement">
-        <modelElement href="lampada3.uml#_ZAszYIwKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_-UeRoIxnEeyauKcbfTyhVw" comments="_-Sf7sIxnEeyauKcbfTyhVw" targetConnectionVisual="_-TKqEIxnEeyauKcbfTyhVw" name="Main">
+    <modelElement href="lampada.uml#_8tGrMIxnEeyauKcbfTyhVw"/>
+    <visualProperties xmi:id="_-UeRoYxnEeyauKcbfTyhVw" position="11.0,485.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_-UeRooxnEeyauKcbfTyhVw" label="+"/>
+    <attributes xmi:id="_-UeRo4xnEeyauKcbfTyhVw" defaultValue="System.currentTimeMillis()" name="now" staticAttribute="true">
+      <modelElement href="lampada.uml#_8yWXkIxnEeyauKcbfTyhVw"/>
+      <stereotypes xmi:id="_-UeRpIxnEeyauKcbfTyhVw" name="LegacyStyledElement">
+        <modelElement href="lampada.uml#_8yW-oIxnEeyauKcbfTyhVw"/>
       </stereotypes>
-      <visibility xmi:id="_ZxrkZYwKEeyDmIylgZKhAg" label="~"/>
-      <cardinality xmi:id="_ZxrkZowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <type xmi:id="_ZxrkZ4wKEeyDmIylgZKhAg" name="long">
+      <visibility xmi:id="_-UeRpYxnEeyauKcbfTyhVw" label="~"/>
+      <cardinality xmi:id="_-UeRpoxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <type xmi:id="_-UeRp4xnEeyauKcbfTyhVw" name="long">
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
       </type>
     </attributes>
-    <operations xmi:id="_ZxrkaIwKEeyDmIylgZKhAg" name="main" staticOperation="true">
-      <modelElement href="lampada3.uml#_Y_DNkIwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZxrkaYwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZxrkaowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <parameters xmi:id="_Zxrka4wKEeyDmIylgZKhAg" name="args">
-        <modelElement href="lampada3.uml#_Y_DNkYwKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_ZxrkbIwKEeyDmIylgZKhAg" label="1..*" max="-1" min="1"/>
-        <type xmi:id="_ZxrkbYwKEeyDmIylgZKhAg" name="String">
+    <operations xmi:id="_-UeRqIxnEeyauKcbfTyhVw" name="main" staticOperation="true">
+      <modelElement href="lampada.uml#_8tJHcIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-UeRqYxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-UeRqoxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_-UeRq4xnEeyauKcbfTyhVw" name="args">
+        <modelElement href="lampada.uml#_8tJugIxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-UeRrIxnEeyauKcbfTyhVw" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_-UeRrYxnEeyauKcbfTyhVw" name="String">
           <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_ZxrkbowKEeyDmIylgZKhAg" name="printWelcomeToTheLamp" staticOperation="true">
-      <modelElement href="lampada3.uml#_Y_D0oYwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_Zxrkb4wKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZxrkcIwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
+    <operations xmi:id="_-UeRroxnEeyauKcbfTyhVw" name="printWelcomeToTheLamp" staticOperation="true">
+      <modelElement href="lampada.uml#_8tKVkIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-UeRr4xnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-UeRsIxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_ZxrkcYwKEeyDmIylgZKhAg" name="clearConsole" staticOperation="true">
-      <modelElement href="lampada3.uml#_Y_FCwIwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZxrkcowKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_Zxrkc4wKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
+    <operations xmi:id="_-UeRsYxnEeyauKcbfTyhVw" name="clearConsole" staticOperation="true">
+      <modelElement href="lampada.uml#_8tLjsIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-UeRsoxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-UeRs4xnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_ZxrkdIwKEeyDmIylgZKhAg" name="waitForEnter" staticOperation="true">
-      <modelElement href="lampada3.uml#_Y_Fp0IwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZxrkdYwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZxrkdowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
+    <operations xmi:id="_-UeRtIxnEeyauKcbfTyhVw" name="waitForEnter" staticOperation="true">
+      <modelElement href="lampada.uml#_8tMKwIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-UeRtYxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-UeRtoxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_Zxrkd4wKEeyDmIylgZKhAg" name="printMenu" staticOperation="true">
-      <modelElement href="lampada3.uml#_ZAFvYYwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZxrkeIwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZxrkeYwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <parameters xmi:id="_ZxrkeowKEeyDmIylgZKhAg" name="aLamp">
-        <modelElement href="lampada3.uml#_ZAGWcIwKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_Zxrke4wKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-        <type xmi:id="_ZxrkfIwKEeyDmIylgZKhAg" name="MagicLamp">
-          <modelElement href="lampada3.uml#_Y-6DoIwKEeyDmIylgZKhAg"/>
+    <operations xmi:id="_-UeRt4xnEeyauKcbfTyhVw" name="printMenu" staticOperation="true">
+      <modelElement href="lampada.uml#_8xKr0IxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-UeRuIxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-UeRuYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_-UeRuoxnEeyauKcbfTyhVw" name="aLamp">
+        <modelElement href="lampada.uml#_8xLS4IxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-UeRu4xnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-UeRvIxnEeyauKcbfTyhVw" name="MagicLamp">
+          <modelElement href="lampada.uml#_8s9hQIxnEeyauKcbfTyhVw"/>
         </type>
       </parameters>
-      <parameters xmi:id="_ZxrkfYwKEeyDmIylgZKhAg" name="aMusicOn">
-        <modelElement href="lampada3.uml#_ZAGWcYwKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_ZxrkfowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-        <type xmi:id="_Zxrkf4wKEeyDmIylgZKhAg" name="boolean">
+      <parameters xmi:id="_-UeRvYxnEeyauKcbfTyhVw" name="aMusicOn">
+        <modelElement href="lampada.uml#_8xLS4YxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-UeRvoxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-UeRv4xnEeyauKcbfTyhVw" name="boolean">
           <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_ZxrkgIwKEeyDmIylgZKhAg" name="printGameOver" staticOperation="true">
-      <modelElement href="lampada3.uml#_ZAdi0IwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_ZxrkgYwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_ZxrkgowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <parameters xmi:id="_Zxrkg4wKEeyDmIylgZKhAg" name="sc">
-        <modelElement href="lampada3.uml#_ZAdi0YwKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_ZxrkhIwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-        <type xmi:id="_ZxrkhYwKEeyDmIylgZKhAg" name="Scanner">
-          <modelElement href="lampada3.uml#_Y_8lcIwKEeyDmIylgZKhAg"/>
+    <operations xmi:id="_-UeRwIxnEeyauKcbfTyhVw" name="printGameOver" staticOperation="true">
+      <modelElement href="lampada.uml#_8yBncIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-UeRwYxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-UeRwoxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_-UeRw4xnEeyauKcbfTyhVw" name="sc">
+        <modelElement href="lampada.uml#_8yCOgIxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-UeRxIxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-UeRxYxnEeyauKcbfTyhVw" name="Scanner">
+          <modelElement href="lampada.uml#_8w60MIxnEeyauKcbfTyhVw"/>
         </type>
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Zy2CAIwKEeyDmIylgZKhAg" name="MidiSequencer" associationsOut="_ZyNv4IwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_Y_ItIIwKEeyDmIylgZKhAg"/>
-    <visualProperties xmi:id="_Zy2CAYwKEeyDmIylgZKhAg" position="19.0,722.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_Zy2CAowKEeyDmIylgZKhAg" label="+"/>
-    <attributes xmi:id="_Zy2CA4wKEeyDmIylgZKhAg" name="sequencer">
-      <modelElement href="lampada3.uml#_ZAtacIwKEeyDmIylgZKhAg"/>
-      <stereotypes xmi:id="_Zy2CBIwKEeyDmIylgZKhAg" name="LegacyStyledElement">
-        <modelElement href="lampada3.uml#_ZAuokIwKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_-W8W0IxnEeyauKcbfTyhVw" name="MidiSequencer" associationsOut="_-VnhIIxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8tP1IIxnEeyauKcbfTyhVw"/>
+    <visualProperties xmi:id="_-W8W0YxnEeyauKcbfTyhVw" position="16.0,722.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_-W8W0oxnEeyauKcbfTyhVw" label="+"/>
+    <attributes xmi:id="_-W8W04xnEeyauKcbfTyhVw" name="sequencer">
+      <modelElement href="lampada.uml#_8yXlsIxnEeyauKcbfTyhVw"/>
+      <stereotypes xmi:id="_-W8W1IxnEeyauKcbfTyhVw" name="LegacyStyledElement">
+        <modelElement href="lampada.uml#_8yYz0IxnEeyauKcbfTyhVw"/>
       </stereotypes>
-      <visibility xmi:id="_Zy2CBYwKEeyDmIylgZKhAg" label="-"/>
-      <cardinality xmi:id="_Zy2CBowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <type xmi:id="_Zy2CB4wKEeyDmIylgZKhAg" name="Sequencer">
-        <modelElement href="lampada3.uml#_ZAQHcYwKEeyDmIylgZKhAg"/>
+      <visibility xmi:id="_-W8W1YxnEeyauKcbfTyhVw" label="-"/>
+      <cardinality xmi:id="_-W8W1oxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <type xmi:id="_-W8W14xnEeyauKcbfTyhVw" name="Sequencer">
+        <modelElement href="lampada.uml#_8xZ8YYxnEeyauKcbfTyhVw"/>
       </type>
     </attributes>
-    <operations xmi:id="_Zy2CCIwKEeyDmIylgZKhAg" name="MidiSequencer">
-      <modelElement href="lampada3.uml#_Y_KiUIwKEeyDmIylgZKhAg"/>
-      <keywords xmi:id="_Zy2CCYwKEeyDmIylgZKhAg" keyword="create"/>
-      <visibility xmi:id="_Zy2CCowKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_Zy2CC4wKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_Zy2CDIwKEeyDmIylgZKhAg">
-        <modelElement href="lampada3.uml#_Y_KiU4wKEeyDmIylgZKhAg"/>
-        <type xmi:id="_Zy2CDYwKEeyDmIylgZKhAg" name="MidiSequencer">
-          <modelElement href="lampada3.uml#_Y_ItIIwKEeyDmIylgZKhAg"/>
+    <operations xmi:id="_-W8W2IxnEeyauKcbfTyhVw" name="MidiSequencer">
+      <modelElement href="lampada.uml#_8tRDQIxnEeyauKcbfTyhVw"/>
+      <keywords xmi:id="_-W8W2YxnEeyauKcbfTyhVw" keyword="create"/>
+      <visibility xmi:id="_-W8W2oxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-W8W24xnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_-W894IxnEeyauKcbfTyhVw">
+        <modelElement href="lampada.uml#_8tRqUIxnEeyauKcbfTyhVw"/>
+        <type xmi:id="_-W894YxnEeyauKcbfTyhVw" name="MidiSequencer">
+          <modelElement href="lampada.uml#_8tP1IIxnEeyauKcbfTyhVw"/>
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_Zy2CDowKEeyDmIylgZKhAg" name="playMidi">
-      <modelElement href="lampada3.uml#_Y_LJYIwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_Zy2CD4wKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_Zy2CEIwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
+    <operations xmi:id="_-W894oxnEeyauKcbfTyhVw" name="playSound">
+      <modelElement href="lampada.uml#_8tSRYIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-W8944xnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-W895IxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_-W895YxnEeyauKcbfTyhVw" name="filename">
+        <modelElement href="lampada.uml#_8tSRYYxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-W895oxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-W8954xnEeyauKcbfTyhVw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
     </operations>
-    <operations xmi:id="_Zy2CEYwKEeyDmIylgZKhAg" name="stopSequencer">
-      <modelElement href="lampada3.uml#_Y_LwcIwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_Zy2CEowKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_Zy2CE4wKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
+    <operations xmi:id="_-W896IxnEeyauKcbfTyhVw" name="stopSequencer">
+      <modelElement href="lampada.uml#_8tS4cIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-W896YxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-W896oxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Z1XxkIwKEeyDmIylgZKhAg" comments="_Z1FdsIwKEeyDmIylgZKhAg" targetConnectionVisual="_Z1WjcIwKEeyDmIylgZKhAg" name="NiceGenie" generalizations="_Z0m8kIwKEeyDmIylgZKhAg">
-    <modelElement href="lampada3.uml#_Y_TFMIwKEeyDmIylgZKhAg"/>
-    <visualProperties xmi:id="_Z1XxkYwKEeyDmIylgZKhAg" position="22.0,250.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_Z1XxkowKEeyDmIylgZKhAg" label="+"/>
-    <operations xmi:id="_Z1Xxk4wKEeyDmIylgZKhAg" name="NiceGenie">
-      <modelElement href="lampada3.uml#_Y_UTUIwKEeyDmIylgZKhAg"/>
-      <keywords xmi:id="_Z1XxlIwKEeyDmIylgZKhAg" keyword="create"/>
-      <visibility xmi:id="_Z1XxlYwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_Z1XxlowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_Z1Xxl4wKEeyDmIylgZKhAg">
-        <modelElement href="lampada3.uml#_Y_UTVIwKEeyDmIylgZKhAg"/>
-        <type xmi:id="_Z1XxmIwKEeyDmIylgZKhAg" name="NiceGenie">
-          <modelElement href="lampada3.uml#_Y_TFMIwKEeyDmIylgZKhAg"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_Z1XxmYwKEeyDmIylgZKhAg" name="aNumWishes">
-        <modelElement href="lampada3.uml#_Y_UTUYwKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_Z1XxmowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-        <type xmi:id="_Z1Xxm4wKEeyDmIylgZKhAg" name="int">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_-Lf70IxnEeyauKcbfTyhVw" comments="_-LRSUIxnEeyauKcbfTyhVw" targetConnectionVisual="_-LUVoIxnEeyauKcbfTyhVw" name="AudioPlayer">
+    <modelElement href="lampada.uml#_8sbVwIxnEeyauKcbfTyhVw"/>
+    <visualProperties xmi:id="_-Lf70YxnEeyauKcbfTyhVw" position="269.0,723.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_-Lf70oxnEeyauKcbfTyhVw" label="+"/>
+    <attributes xmi:id="_-Lf704xnEeyauKcbfTyhVw" name="playCompleted">
+      <modelElement href="lampada.uml#_8yMmkIxnEeyauKcbfTyhVw"/>
+      <stereotypes xmi:id="_-Lf71IxnEeyauKcbfTyhVw" name="LegacyStyledElement">
+        <modelElement href="lampada.uml#_8yN0sIxnEeyauKcbfTyhVw"/>
+      </stereotypes>
+      <visibility xmi:id="_-Lf71YxnEeyauKcbfTyhVw" label="~"/>
+      <cardinality xmi:id="_-Lf71oxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <type xmi:id="_-Lf714xnEeyauKcbfTyhVw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_-Lf72IxnEeyauKcbfTyhVw" name="play">
+      <modelElement href="lampada.uml#_8shcYIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-Lf72YxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-Lf72oxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_-Lf724xnEeyauKcbfTyhVw" name="filename">
+        <modelElement href="lampada.uml#_8siDcIxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-Lf73IxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-Lf73YxnEeyauKcbfTyhVw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_Z1XxnIwKEeyDmIylgZKhAg" name="showMe">
-      <modelElement href="lampada3.uml#_Y_U6YIwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_Z1XxnYwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_Z1XxnowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
+    <operations xmi:id="_-Lf73oxnEeyauKcbfTyhVw" name="update">
+      <modelElement href="lampada.uml#_8x32cIxnEeyauKcbfTyhVw"/>
+      <stereotypes xmi:id="_-Lf734xnEeyauKcbfTyhVw" name="LegacyStyledElement">
+        <modelElement href="lampada.uml#_8x5EkIxnEeyauKcbfTyhVw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_-Lf74IxnEeyauKcbfTyhVw" name="Annotations">
+        <modelElement href="lampada.uml#_8x65wIxnEeyauKcbfTyhVw"/>
+      </stereotypes>
+      <visibility xmi:id="_-Lf74YxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-Lf74oxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_-Lf744xnEeyauKcbfTyhVw" name="event">
+        <modelElement href="lampada.uml#_8x32cYxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-Lf75IxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-Lf75YxnEeyauKcbfTyhVw" name="LineEvent">
+          <modelElement href="lampada.uml#_8wy4YYxnEeyauKcbfTyhVw"/>
+        </type>
+      </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Z0H0YIwKEeyDmIylgZKhAg" comments="_ZzQ4wIwKEeyDmIylgZKhAg" targetConnectionVisual="_Zz4j0IwKEeyDmIylgZKhAg" name="MyErrorHandler">
-    <modelElement href="lampada3.uml#_Y_OMsIwKEeyDmIylgZKhAg"/>
-    <visualProperties xmi:id="_Z0H0YYwKEeyDmIylgZKhAg" position="362.0,746.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_Z0H0YowKEeyDmIylgZKhAg" label="+"/>
-    <operations xmi:id="_Z0H0Y4wKEeyDmIylgZKhAg" name="errorHandler" staticOperation="true">
-      <modelElement href="lampada3.uml#_ZAhNMIwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_Z0H0ZIwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_Z0H0ZYwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <parameters xmi:id="_Z0H0ZowKEeyDmIylgZKhAg" name="err">
-        <modelElement href="lampada3.uml#_ZAhNMYwKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_Z0H0Z4wKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-        <type xmi:id="_Z0H0aIwKEeyDmIylgZKhAg" name="Exception">
-          <modelElement href="lampada3.uml#_ZAfYAYwKEeyDmIylgZKhAg"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_-Y9wEIxnEeyauKcbfTyhVw" comments="_-XyEUIxnEeyauKcbfTyhVw" targetConnectionVisual="_-YeA0IxnEeyauKcbfTyhVw" name="MyErrorHandler">
+    <modelElement href="lampada.uml#_8tUGkIxnEeyauKcbfTyhVw"/>
+    <visualProperties xmi:id="_-Y9wEYxnEeyauKcbfTyhVw" position="522.0,721.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_-Y9wEoxnEeyauKcbfTyhVw" label="+"/>
+    <operations xmi:id="_-Y9wE4xnEeyauKcbfTyhVw" name="errorHandler" staticOperation="true">
+      <modelElement href="lampada.uml#_8yF44IxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-Y9wFIxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-Y9wFYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_-Y9wFoxnEeyauKcbfTyhVw" name="err">
+        <modelElement href="lampada.uml#_8yF44YxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-Y9wF4xnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-Y9wGIxnEeyauKcbfTyhVw" name="Exception">
+          <modelElement href="lampada.uml#_8yEDsYxnEeyauKcbfTyhVw"/>
         </type>
       </parameters>
-      <parameters xmi:id="_Z0H0aYwKEeyDmIylgZKhAg" name="sc">
-        <modelElement href="lampada3.uml#_ZAhNMowKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_Z0H0aowKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-        <type xmi:id="_Z0H0a4wKEeyDmIylgZKhAg" name="Scanner">
-          <modelElement href="lampada3.uml#_Y_8lcIwKEeyDmIylgZKhAg"/>
+      <parameters xmi:id="_-Y9wGYxnEeyauKcbfTyhVw" name="sc">
+        <modelElement href="lampada.uml#_8yF44oxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-Y9wGoxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-Y9wG4xnEeyauKcbfTyhVw" name="Scanner">
+          <modelElement href="lampada.uml#_8w60MIxnEeyauKcbfTyhVw"/>
         </type>
       </parameters>
-      <parameters xmi:id="_Z0H0bIwKEeyDmIylgZKhAg" name="midiSequencer">
-        <modelElement href="lampada3.uml#_ZAh0QIwKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_Z0H0bYwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-        <type xmi:id="_Z0H0bowKEeyDmIylgZKhAg" name="MidiSequencer">
-          <modelElement href="lampada3.uml#_Y_ItIIwKEeyDmIylgZKhAg"/>
+      <parameters xmi:id="_-Y9wHIxnEeyauKcbfTyhVw" name="midiSequencer">
+        <modelElement href="lampada.uml#_8yGf8IxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-Y9wHYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-Y9wHoxnEeyauKcbfTyhVw" name="MidiSequencer">
+          <modelElement href="lampada.uml#_8tP1IIxnEeyauKcbfTyhVw"/>
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_Z0H0b4wKEeyDmIylgZKhAg" name="tryScannerIntFromNextLine" staticOperation="true">
-      <modelElement href="lampada3.uml#_ZAibUIwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_Z0H0cIwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_Z0H0cYwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_Z0H0cowKEeyDmIylgZKhAg">
-        <modelElement href="lampada3.uml#_ZAibUowKEeyDmIylgZKhAg"/>
-        <type xmi:id="_Z0H0c4wKEeyDmIylgZKhAg" name="int">
+    <operations xmi:id="_-Y9wH4xnEeyauKcbfTyhVw" name="tryScannerIntFromNextLine" staticOperation="true">
+      <modelElement href="lampada.uml#_8yHHAIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-Y9wIIxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-Y9wIYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_-Y9wIoxnEeyauKcbfTyhVw">
+        <modelElement href="lampada.uml#_8yHuEYxnEeyauKcbfTyhVw"/>
+        <type xmi:id="_-Y9wI4xnEeyauKcbfTyhVw" name="int">
           <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </type>
       </outParameters>
-      <parameters xmi:id="_Z0H0dIwKEeyDmIylgZKhAg" name="sc">
-        <modelElement href="lampada3.uml#_ZAibUYwKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_Z0H0dYwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-        <type xmi:id="_Z0H0dowKEeyDmIylgZKhAg" name="Scanner">
-          <modelElement href="lampada3.uml#_Y_8lcIwKEeyDmIylgZKhAg"/>
+      <parameters xmi:id="_-Y9wJIxnEeyauKcbfTyhVw" name="sc">
+        <modelElement href="lampada.uml#_8yHuEIxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-Y9wJYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-Y9wJoxnEeyauKcbfTyhVw" name="Scanner">
+          <modelElement href="lampada.uml#_8w60MIxnEeyauKcbfTyhVw"/>
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_Z0H0d4wKEeyDmIylgZKhAg" name="tryScannerNextLine" staticOperation="true">
-      <modelElement href="lampada3.uml#_ZAjCYIwKEeyDmIylgZKhAg"/>
-      <visibility xmi:id="_Z0H0eIwKEeyDmIylgZKhAg" label="+"/>
-      <cardinality xmi:id="_Z0H0eYwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_Z0H0eowKEeyDmIylgZKhAg">
-        <modelElement href="lampada3.uml#_ZAjpcIwKEeyDmIylgZKhAg"/>
-        <type xmi:id="_Z0H0e4wKEeyDmIylgZKhAg" name="String">
+    <operations xmi:id="_-Y9wJ4xnEeyauKcbfTyhVw" name="tryScannerNextLine" staticOperation="true">
+      <modelElement href="lampada.uml#_8yI8MIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-Y9wKIxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-Y9wKYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_-Y9wKoxnEeyauKcbfTyhVw">
+        <modelElement href="lampada.uml#_8yI8MoxnEeyauKcbfTyhVw"/>
+        <type xmi:id="_-Y9wK4xnEeyauKcbfTyhVw" name="String">
           <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </type>
       </outParameters>
-      <parameters xmi:id="_Z0H0fIwKEeyDmIylgZKhAg" name="sc">
-        <modelElement href="lampada3.uml#_ZAjCYYwKEeyDmIylgZKhAg"/>
-        <cardinality xmi:id="_Z0H0fYwKEeyDmIylgZKhAg" label="1" max="1" min="1"/>
-        <type xmi:id="_Z0H0fowKEeyDmIylgZKhAg" name="Scanner">
-          <modelElement href="lampada3.uml#_Y_8lcIwKEeyDmIylgZKhAg"/>
+      <parameters xmi:id="_-Y9wLIxnEeyauKcbfTyhVw" name="sc">
+        <modelElement href="lampada.uml#_8yI8MYxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-Y9wLYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-Y9wLoxnEeyauKcbfTyhVw" name="Scanner">
+          <modelElement href="lampada.uml#_8w60MIxnEeyauKcbfTyhVw"/>
         </type>
       </parameters>
+    </operations>
+    <operations xmi:id="_-Y9wL4xnEeyauKcbfTyhVw" name="tryStartNum" staticOperation="true">
+      <modelElement href="lampada.uml#_8yKKUIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-Y9wMIxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-Y9wMYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_-Y9wMoxnEeyauKcbfTyhVw">
+        <modelElement href="lampada.uml#_8yKKUoxnEeyauKcbfTyhVw"/>
+        <type xmi:id="_-Y9wM4xnEeyauKcbfTyhVw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_-Y9wNIxnEeyauKcbfTyhVw" name="sc">
+        <modelElement href="lampada.uml#_8yKKUYxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-Y9wNYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-Y9wNoxnEeyauKcbfTyhVw" name="Scanner">
+          <modelElement href="lampada.uml#_8w60MIxnEeyauKcbfTyhVw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_-bL9oIxnEeyauKcbfTyhVw" comments="_-arAQIxnEeyauKcbfTyhVw" targetConnectionVisual="_-bITQIxnEeyauKcbfTyhVw" name="NiceGenie" generalizations="_-ZzdkIxnEeyauKcbfTyhVw">
+    <modelElement href="lampada.uml#_8ta0QIxnEeyauKcbfTyhVw"/>
+    <visualProperties xmi:id="_-bMksIxnEeyauKcbfTyhVw" position="19.0,250.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_-bMksYxnEeyauKcbfTyhVw" label="+"/>
+    <operations xmi:id="_-bMksoxnEeyauKcbfTyhVw" name="NiceGenie">
+      <modelElement href="lampada.uml#_8tcCYIxnEeyauKcbfTyhVw"/>
+      <keywords xmi:id="_-bMks4xnEeyauKcbfTyhVw" keyword="create"/>
+      <visibility xmi:id="_-bMktIxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-bMktYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_-bMktoxnEeyauKcbfTyhVw">
+        <modelElement href="lampada.uml#_8tcpcoxnEeyauKcbfTyhVw"/>
+        <type xmi:id="_-bMkt4xnEeyauKcbfTyhVw" name="NiceGenie">
+          <modelElement href="lampada.uml#_8ta0QIxnEeyauKcbfTyhVw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_-bMkuIxnEeyauKcbfTyhVw" name="aNumWishes">
+        <modelElement href="lampada.uml#_8tcCYYxnEeyauKcbfTyhVw"/>
+        <cardinality xmi:id="_-bMkuYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
+        <type xmi:id="_-bMkuoxnEeyauKcbfTyhVw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_-bMku4xnEeyauKcbfTyhVw" name="showMe">
+      <modelElement href="lampada.uml#_8tdQgIxnEeyauKcbfTyhVw"/>
+      <visibility xmi:id="_-bMkvIxnEeyauKcbfTyhVw" label="+"/>
+      <cardinality xmi:id="_-bMkvYxnEeyauKcbfTyhVw" label="1" max="1" min="1"/>
     </operations>
   </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

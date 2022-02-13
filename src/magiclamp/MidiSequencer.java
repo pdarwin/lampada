@@ -12,16 +12,34 @@ import javax.sound.midi.MidiSystem;
 import javax.sound.midi.MidiUnavailableException;
 import javax.sound.midi.Sequencer;
 
+/**
+ * Classe para sequenciação de Midis
+ * @author P. Perneta e J. Rocha
+ *
+ */
 public class MidiSequencer {
 
-	//** O sequenciador */
+	/** 
+	 * Váriável que guarda o sequenciador 
+	 */
 	private Sequencer sequencer;
+
+	/**
+	 * Método construtor do sequenciador
+	 * 
+	 */
 
 	public MidiSequencer ()
 	{
 		sequencer = null;
 	}
 
+	/**
+	 * Toca uma música / liga o sequenciador para uma música
+	 * 
+	 * @param filename
+	 * 				nome do ficheiro a tocar, em String
+	 */
 	public void playSound (String filename)
 	{
 		// Obtains the default Sequencer connected to a default device.
@@ -32,41 +50,43 @@ public class MidiSequencer {
 			
 			MyErrorHandler.errorHandler(e, null, null);
 		}
-		 
-	    // Opens the device, indicating that it should now acquire any
-	    // system resources it requires and become operational.
+		
+		/* abre o sequenciador, indicando que deve adquiror agora
+		 * quaiaquer recursos do sistema que necessite para se tornar operacional
+		 */
 	    try {
-			sequencer.open();
+			sequencer.open(); //abre o sequenciador
 		} catch (MidiUnavailableException e) {
-			// TODO Auto-generated catch block
 			MyErrorHandler.errorHandler(e, null, null);
 		}
 
-	    // create a stream from a file
-	    InputStream is = null;
+	    // cria a stream a partir de um ficheiro
+	    InputStream inputstream = null;
 		try {
 			String basePath = new File("").getAbsolutePath(); // Vai buscar o caminho relativo da pasta
 		    
-			is = new BufferedInputStream(new FileInputStream(new File(basePath + "\\" + filename)));
+			inputstream = new BufferedInputStream(new FileInputStream(new File(basePath + "\\" + filename)));
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			MyErrorHandler.errorHandler(e, null, null);
 		}
-	    // Sets the current sequence on which the sequencer operates.
-	    // The stream must point to MIDI file data.
+	    // Define a sequência correta sober a qual o sequenciador opera.
+	    // A stream tem de apontar para o ficheiro MIDI.
 	    try {
-			sequencer.setSequence(is);
+			sequencer.setSequence(inputstream);
 		} catch (IOException e) {
 			MyErrorHandler.errorHandler(e, null, null);
 		} catch (InvalidMidiDataException e) {
 			MyErrorHandler.errorHandler(e, null, null);
 		}
 
-	    // Starts playback of the MIDI data in the currently loaded sequence.
+	    // Começa a tocar a sequência de dados MIDI correntemente carregada.
 	    sequencer.start();
 		
 	}
 	
+	/**
+	 * Para o sequenciador
+	 */
 	public void stopSequencer ()
 	{
 		sequencer.stop();

@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
-  <uml:Model xmi:id="_6D3YEIxnEeyauKcbfTyhVw" name="lampada">
-    <eAnnotations xmi:id="_8UjBQIxnEeyauKcbfTyhVw" source="http://ns.yatta.de/umllab">
-      <contents xmi:type="ecore:EAnnotation" xmi:id="_8UjoUIxnEeyauKcbfTyhVw" source="codegen">
-        <details xmi:id="_8UjoUYxnEeyauKcbfTyhVw" key="codegenDirectory" value="/lampada/src"/>
-        <details xmi:id="_886o0IxnEeyauKcbfTyhVw" key="AssociatedSourceCode" value="/lampada/src/magiclamp/AudioPlayer.java;70292791/1;/lampada/src/magiclamp/BadGenie.java;997808254/1;/lampada/src/magiclamp/Demon.java;1104701512/1;/lampada/src/magiclamp/Genie.java;3138962946/1;/lampada/src/magiclamp/MagicLamp.java;2539989898/1;/lampada/src/magiclamp/Main.java;4286785584/1;/lampada/src/magiclamp/MidiSequencer.java;2399863372/1;/lampada/src/magiclamp/MyErrorHandler.java;3774817136/1;/lampada/src/magiclamp/NiceGenie.java;3907872473/1;"/>
+  <uml:Model xmi:id="_OTt8UI0HEeyTK68GWrtVgA" name="lampada">
+    <eAnnotations xmi:id="_Qq52II0HEeyTK68GWrtVgA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_Qq6dMI0HEeyTK68GWrtVgA" source="codegen">
+        <details xmi:id="_Qq6dMY0HEeyTK68GWrtVgA" key="codegenDirectory" value="/lampada/src"/>
+        <details xmi:id="_RQ2b0I0HEeyTK68GWrtVgA" key="AssociatedSourceCode" value="/lampada/src/magiclamp/AudioPlayer.java;1185789619/1;/lampada/src/magiclamp/BadGenie.java;2085911701/1;/lampada/src/magiclamp/Demon.java;3397461049/1;/lampada/src/magiclamp/Genie.java;787617493/1;/lampada/src/magiclamp/MagicLamp.java;1829404811/1;/lampada/src/magiclamp/Main.java;2898041199/1;/lampada/src/magiclamp/MidiSequencer.java;264330266/1;/lampada/src/magiclamp/MyErrorHandler.java;4213570077/1;/lampada/src/magiclamp/NiceGenie.java;997856454/1;"/>
       </contents>
     </eAnnotations>
-    <elementImport xmi:id="_8rFR8IxnEeyauKcbfTyhVw">
+    <elementImport xmi:id="_RCyKoI0HEeyTK68GWrtVgA">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
     </elementImport>
-    <elementImport xmi:id="_8rF5AIxnEeyauKcbfTyhVw">
+    <elementImport xmi:id="_RCzYwI0HEeyTK68GWrtVgA">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
     </elementImport>
-    <elementImport xmi:id="_8rGgEIxnEeyauKcbfTyhVw">
+    <elementImport xmi:id="_RCz_0I0HEeyTK68GWrtVgA">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
     </elementImport>
-    <elementImport xmi:id="_8rGgEYxnEeyauKcbfTyhVw">
+    <elementImport xmi:id="_RCz_0Y0HEeyTK68GWrtVgA">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
     </elementImport>
-    <elementImport xmi:id="_8rGgEoxnEeyauKcbfTyhVw">
+    <elementImport xmi:id="_RCz_0o0HEeyTK68GWrtVgA">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
     </elementImport>
-    <elementImport xmi:id="_8rGgE4xnEeyauKcbfTyhVw">
+    <elementImport xmi:id="_RC0m4I0HEeyTK68GWrtVgA">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
     </elementImport>
-    <elementImport xmi:id="_8rHHIIxnEeyauKcbfTyhVw">
+    <elementImport xmi:id="_RC0m4Y0HEeyTK68GWrtVgA">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
     </elementImport>
-    <elementImport xmi:id="_8rHHIYxnEeyauKcbfTyhVw">
+    <elementImport xmi:id="_RC0m4o0HEeyTK68GWrtVgA">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
     </elementImport>
-    <elementImport xmi:id="_8rHuMIxnEeyauKcbfTyhVw">
+    <elementImport xmi:id="_RC11AI0HEeyTK68GWrtVgA">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </elementImport>
-    <packagedElement xmi:type="uml:Package" xmi:id="_8rNNwIxnEeyauKcbfTyhVw" name="java">
-      <packagedElement xmi:type="uml:Package" xmi:id="_8rN00IxnEeyauKcbfTyhVw" name="io">
-        <packagedElement xmi:type="uml:Class" xmi:id="_8wldAIxnEeyauKcbfTyhVw" name="File"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_8xDXEIxnEeyauKcbfTyhVw" name="BufferedReader"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_8xFzUIxnEeyauKcbfTyhVw" name="IOException"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_8xHBcYxnEeyauKcbfTyhVw" name="InputStreamReader"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_8xNvIIxnEeyauKcbfTyhVw" name="BufferedInputStream"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_8xPkUYxnEeyauKcbfTyhVw" name="FileInputStream"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_8xRZgYxnEeyauKcbfTyhVw" name="FileNotFoundException"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_8xT1wIxnEeyauKcbfTyhVw" name="InputStream"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RC77oI0HEeyTK68GWrtVgA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_RC8isI0HEeyTK68GWrtVgA" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_RGzH8I0HEeyTK68GWrtVgA" name="File"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RHPz4I0HEeyTK68GWrtVgA" name="BufferedReader"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RHRCAY0HEeyTK68GWrtVgA" name="IOException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RHS3MI0HEeyTK68GWrtVgA" name="InputStreamReader"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RHYWwI0HEeyTK68GWrtVgA" name="BufferedInputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RHaL8I0HEeyTK68GWrtVgA" name="FileInputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RHcBII0HEeyTK68GWrtVgA" name="FileNotFoundException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RHdPQI0HEeyTK68GWrtVgA" name="InputStream"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_8rjMAIxnEeyauKcbfTyhVw" name="util">
-        <packagedElement xmi:type="uml:Class" xmi:id="_8w60MIxnEeyauKcbfTyhVw" name="Scanner"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_8xI2oIxnEeyauKcbfTyhVw" name="Random"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_8xc_sIxnEeyauKcbfTyhVw" name="InputMismatchException"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_RDSg8I0HEeyTK68GWrtVgA" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_RHIfII0HEeyTK68GWrtVgA" name="Scanner"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RHUFUY0HEeyTK68GWrtVgA" name="Random"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RHlyII0HEeyTK68GWrtVgA" name="InputMismatchException"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_8yEDsIxnEeyauKcbfTyhVw" name="lang">
-        <packagedElement xmi:type="uml:Class" xmi:id="_8yEDsYxnEeyauKcbfTyhVw" name="Exception"/>
-      </packagedElement>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_8rOb4IxnEeyauKcbfTyhVw" name="javax">
-      <packagedElement xmi:type="uml:Package" xmi:id="_8rOb4YxnEeyauKcbfTyhVw" name="sound">
-        <packagedElement xmi:type="uml:Package" xmi:id="_8rPC8IxnEeyauKcbfTyhVw" name="sampled">
-          <packagedElement xmi:type="uml:Class" xmi:id="_8wpHYIxnEeyauKcbfTyhVw" name="AudioFormat"/>
-          <packagedElement xmi:type="uml:Class" xmi:id="_8wq8kYxnEeyauKcbfTyhVw" name="AudioInputStream"/>
-          <packagedElement xmi:type="uml:Class" xmi:id="_8wsxwIxnEeyauKcbfTyhVw" name="AudioSystem"/>
-          <packagedElement xmi:type="uml:Interface" xmi:id="_8wvOAIxnEeyauKcbfTyhVw" name="Clip"/>
-          <packagedElement xmi:type="uml:Interface" xmi:id="_8wxDMYxnEeyauKcbfTyhVw" name="DataLine"/>
-          <packagedElement xmi:type="uml:Class" xmi:id="_8wy4YYxnEeyauKcbfTyhVw" name="LineEvent"/>
-          <packagedElement xmi:type="uml:Interface" xmi:id="_8w0tkYxnEeyauKcbfTyhVw" name="LineListener"/>
-          <packagedElement xmi:type="uml:Class" xmi:id="_8xfb8IxnEeyauKcbfTyhVw" name="LineUnavailableException"/>
-          <packagedElement xmi:type="uml:Class" xmi:id="_8xgqEYxnEeyauKcbfTyhVw" name="UnsupportedAudioFileException"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Package" xmi:id="_8sCUMIxnEeyauKcbfTyhVw" name="midi">
-          <packagedElement xmi:type="uml:Class" xmi:id="_8xVq8IxnEeyauKcbfTyhVw" name="InvalidMidiDataException"/>
-          <packagedElement xmi:type="uml:Class" xmi:id="_8xXgIIxnEeyauKcbfTyhVw" name="MidiSystem"/>
-          <packagedElement xmi:type="uml:Class" xmi:id="_8xYuQIxnEeyauKcbfTyhVw" name="MidiUnavailableException"/>
-          <packagedElement xmi:type="uml:Interface" xmi:id="_8xZ8YYxnEeyauKcbfTyhVw" name="Sequencer"/>
-        </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_RIFhYI0HEeyTK68GWrtVgA" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_RIFhYY0HEeyTK68GWrtVgA" name="Exception"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_8raCEIxnEeyauKcbfTyhVw" name="magiclamp">
-      <packagedElement xmi:type="uml:Class" xmi:id="_8sbVwIxnEeyauKcbfTyhVw" name="AudioPlayer">
-        <ownedComment xmi:id="_8y80gIxnEeyauKcbfTyhVw">
-          <body>Classe para tocar um fivheiro .wav usando o Clip da Java Sound API.&#xD;
+    <packagedElement xmi:type="uml:Package" xmi:id="_RC9JwI0HEeyTK68GWrtVgA" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_RC9JwY0HEeyTK68GWrtVgA" name="sound">
+        <packagedElement xmi:type="uml:Package" xmi:id="_RC9w0I0HEeyTK68GWrtVgA" name="sampled">
+          <packagedElement xmi:type="uml:Class" xmi:id="_RG2yUI0HEeyTK68GWrtVgA" name="AudioFormat"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_RG4ngI0HEeyTK68GWrtVgA" name="AudioInputStream"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_RG6csI0HEeyTK68GWrtVgA" name="AudioSystem"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_RG848Y0HEeyTK68GWrtVgA" name="Clip"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_RG-uIY0HEeyTK68GWrtVgA" name="DataLine"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_RHAjUI0HEeyTK68GWrtVgA" name="LineEvent"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_RHBxcY0HEeyTK68GWrtVgA" name="LineListener"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_RHnAQY0HEeyTK68GWrtVgA" name="LineUnavailableException"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_RHoOYY0HEeyTK68GWrtVgA" name="UnsupportedAudioFileException"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_RDyQMI0HEeyTK68GWrtVgA" name="midi">
+          <packagedElement xmi:type="uml:Class" xmi:id="_RHedYY0HEeyTK68GWrtVgA" name="InvalidMidiDataException"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_RHgSkI0HEeyTK68GWrtVgA" name="MidiSystem"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_RHhgsY0HEeyTK68GWrtVgA" name="MidiUnavailableException"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_RHiu0Y0HEeyTK68GWrtVgA" name="Sequencer"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RDJ-EI0HEeyTK68GWrtVgA" name="magiclamp">
+      <packagedElement xmi:type="uml:Class" xmi:id="_REL40I0HEeyTK68GWrtVgA" name="AudioPlayer">
+        <ownedComment xmi:id="_RI7O4I0HEeyTK68GWrtVgA">
+          <body>Classe para tocar um ficheiro .wav usando o Clip da Java Sound API.&#xD;
 @author www.codejava.net&#xD;
  *</body>
         </ownedComment>
-        <ownedAttribute xmi:id="_8yMmkIxnEeyauKcbfTyhVw" name="playCompleted" visibility="package">
+        <ownedAttribute xmi:id="_RIOrUI0HEeyTK68GWrtVgA" name="playCompleted" visibility="package">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </ownedAttribute>
-        <interfaceRealization xmi:id="_8x2BQIxnEeyauKcbfTyhVw" client="_8sbVwIxnEeyauKcbfTyhVw" supplier="_8w0tkYxnEeyauKcbfTyhVw" contract="_8w0tkYxnEeyauKcbfTyhVw"/>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8ym2QIxnEeyauKcbfTyhVw" name="play" specification="_8shcYIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8ym2QYxnEeyauKcbfTyhVw" name="filename">
+        <interfaceRealization xmi:id="_RH4tEI0HEeyTK68GWrtVgA" client="_REL40I0HEeyTK68GWrtVgA" supplier="_RHBxcY0HEeyTK68GWrtVgA" contract="_RHBxcY0HEeyTK68GWrtVgA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RIo7AI0HEeyTK68GWrtVgA" name="play" specification="_RET0oI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RIpiEI0HEeyTK68GWrtVgA" name="filename">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
           <language>java</language>
@@ -132,8 +132,8 @@
       &#xD;
  </body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8ytj8IxnEeyauKcbfTyhVw" name="update" specification="_8x32cIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8ytj8YxnEeyauKcbfTyhVw" name="event" type="_8wy4YYxnEeyauKcbfTyhVw"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RIwPwI0HEeyTK68GWrtVgA" name="update" specification="_RH57MI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RIwPwY0HEeyTK68GWrtVgA" name="event" type="_RHAjUI0HEeyTK68GWrtVgA"/>
           <language>java</language>
           <body>LineEvent.Type type = event.getType(); // Vai buscar o tipo de evento&#xD;
       &#xD;
@@ -149,31 +149,33 @@
  &#xD;
  </body>
         </ownedBehavior>
-        <ownedOperation xmi:id="_8shcYIxnEeyauKcbfTyhVw" name="play" method="_8ym2QIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8siDcIxnEeyauKcbfTyhVw" name="filename">
+        <ownedOperation xmi:id="_RET0oI0HEeyTK68GWrtVgA" name="play" method="_RIo7AI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RET0oY0HEeyTK68GWrtVgA" name="filename">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
         </ownedOperation>
-        <ownedOperation xmi:id="_8x32cIxnEeyauKcbfTyhVw" name="update" method="_8ytj8IxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8x32cYxnEeyauKcbfTyhVw" name="event" type="_8wy4YYxnEeyauKcbfTyhVw"/>
+        <ownedOperation xmi:id="_RH57MI0HEeyTK68GWrtVgA" name="update" method="_RIwPwI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RH6iQI0HEeyTK68GWrtVgA" name="event" type="_RHAjUI0HEeyTK68GWrtVgA"/>
         </ownedOperation>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_8snjAIxnEeyauKcbfTyhVw" name="BadGenie">
-        <ownedComment xmi:id="_8y80gYxnEeyauKcbfTyhVw">
-          <body>Génio mau - só concede um desejo</body>
+      <packagedElement xmi:type="uml:Class" xmi:id="_REbJYI0HEeyTK68GWrtVgA" name="BadGenie">
+        <ownedComment xmi:id="_RI7O4Y0HEeyTK68GWrtVgA">
+          <body>Génio mau - só concede um desejo&#xD;
+@author P. Perneta e J. Rocha&#xD;
+ *</body>
         </ownedComment>
-        <generalization xmi:id="_8w5mEIxnEeyauKcbfTyhVw" general="_8s0XUIxnEeyauKcbfTyhVw"/>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8yuLAIxnEeyauKcbfTyhVw" name="BadGenie" specification="_8soxIIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8yuyEIxnEeyauKcbfTyhVw" type="_8snjAIxnEeyauKcbfTyhVw" direction="return"/>
+        <generalization xmi:id="_RHH4EI0HEeyTK68GWrtVgA" general="_RElhcI0HEeyTK68GWrtVgA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RIw20I0HEeyTK68GWrtVgA" name="BadGenie" specification="_REc-kI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RIxd4I0HEeyTK68GWrtVgA" type="_REbJYI0HEeyTK68GWrtVgA" direction="return"/>
           <language>java</language>
           <body>super();&#xD;
-		this.numWishes = 1;&#xD;
-		this.remWishes = 1;&#xD;
+		this.numWishes = 1; // inicializa o n.º total de desejos&#xD;
+		this.remWishes = 1; // inicializa o n.º de desejos restantes&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8yvZIIxnEeyauKcbfTyhVw" name="showMe" specification="_8sqmUIxnEeyauKcbfTyhVw">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RIxd4Y0HEeyTK68GWrtVgA" name="showMe" specification="_REeMsI0HEeyTK68GWrtVgA">
           <language>java</language>
-          <body>Main.clearConsole();&#xD;
+          <body>Main.clearConsole(); // limpa a consola&#xD;
 		System.out.println(&quot;                                                                                &quot;);&#xD;
 		System.out.println(&quot;                                                                                &quot;);&#xD;
 		System.out.println(&quot;                                                                                &quot;);&#xD;
@@ -204,78 +206,72 @@
 		System.out.println(&quot;                                                                                &quot;);&#xD;
 		System.out.println(&quot;                                                                                &quot;);&#xD;
 		System.out.println(&quot;          Eu sou o génio mau, e vou conceder apenas um desejo!                  &quot;);&#xD;
-		AudioPlayer player = new AudioPlayer();&#xD;
-		player.play(&quot;Evil_laugh.wav&quot;);&#xD;
+		&#xD;
+		AudioPlayer player = new AudioPlayer(); &#xD;
+		player.play(&quot;Evil_laugh.wav&quot;); // toca a gargalhada do génio mau&#xD;
 	</body>
         </ownedBehavior>
-        <ownedOperation xmi:id="_8soxIIxnEeyauKcbfTyhVw" name="BadGenie" method="_8yuLAIxnEeyauKcbfTyhVw">
-          <eAnnotations xmi:id="_8spYMIxnEeyauKcbfTyhVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_8sp_QIxnEeyauKcbfTyhVw" key="create"/>
+        <ownedOperation xmi:id="_REc-kI0HEeyTK68GWrtVgA" name="BadGenie" method="_RIw20I0HEeyTK68GWrtVgA">
+          <eAnnotations xmi:id="_REc-kY0HEeyTK68GWrtVgA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_REdloI0HEeyTK68GWrtVgA" key="create"/>
           </eAnnotations>
-          <ownedParameter xmi:id="_8sp_QYxnEeyauKcbfTyhVw" type="_8snjAIxnEeyauKcbfTyhVw" direction="return"/>
+          <ownedParameter xmi:id="_REdloY0HEeyTK68GWrtVgA" type="_REbJYI0HEeyTK68GWrtVgA" direction="return"/>
         </ownedOperation>
-        <ownedOperation xmi:id="_8sqmUIxnEeyauKcbfTyhVw" name="showMe" method="_8yvZIIxnEeyauKcbfTyhVw"/>
+        <ownedOperation xmi:id="_REeMsI0HEeyTK68GWrtVgA" name="showMe" method="_RIxd4Y0HEeyTK68GWrtVgA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_8sr0cIxnEeyauKcbfTyhVw" name="Demon">
-        <ownedComment xmi:id="_8y9bkIxnEeyauKcbfTyhVw">
-          <body>Demónio reciclável</body>
+      <packagedElement xmi:type="uml:Class" xmi:id="_REfa0I0HEeyTK68GWrtVgA" name="Demon">
+        <ownedComment xmi:id="_RI718I0HEeyTK68GWrtVgA">
+          <body>Demónio reciclável&#xD;
+@author P. Perneta e J. Rocha&#xD;
+ *</body>
         </ownedComment>
-        <generalization xmi:id="_8w9QcIxnEeyauKcbfTyhVw" general="_8s0XUIxnEeyauKcbfTyhVw"/>
-        <ownedAttribute xmi:id="_8yObwIxnEeyauKcbfTyhVw" name="recycled" visibility="private">
+        <generalization xmi:id="_RHKUUI0HEeyTK68GWrtVgA" general="_RElhcI0HEeyTK68GWrtVgA"/>
+        <ownedAttribute xmi:id="_RIQggI0HEeyTK68GWrtVgA" name="recycled" isReadOnly="true">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_8yPC0IxnEeyauKcbfTyhVw" value="false"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_RIRHkI0HEeyTK68GWrtVgA" value="false"/>
         </ownedAttribute>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8ywAMIxnEeyauKcbfTyhVw" name="Demon" specification="_8stCkIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8ywAMYxnEeyauKcbfTyhVw" name="aNumWishes">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RIyE8I0HEeyTK68GWrtVgA" name="Demon" specification="_REhQAI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RIyE8Y0HEeyTK68GWrtVgA" name="aNumWishes">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
-          <ownedParameter xmi:id="_8ywAMoxnEeyauKcbfTyhVw" type="_8sr0cIxnEeyauKcbfTyhVw" direction="return"/>
+          <ownedParameter xmi:id="_RIyE8o0HEeyTK68GWrtVgA" type="_REfa0I0HEeyTK68GWrtVgA" direction="return"/>
           <language>java</language>
           <body>super();&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8ywAM4xnEeyauKcbfTyhVw" name="recycled" specification="_8suQsIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8ywANIxnEeyauKcbfTyhVw" direction="return">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
-          </ownedParameter>
-          <language>java</language>
-          <body>return recycled;&#xD;
-	</body>
-        </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8ywnQIxnEeyauKcbfTyhVw" name="recycle" specification="_8su3wYxnEeyauKcbfTyhVw">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RIysAI0HEeyTK68GWrtVgA" name="recycle" specification="_REh3E40HEeyTK68GWrtVgA">
           <language>java</language>
           <body>System.out.println(&quot;O demónio está a ser consumido!&quot;);&#xD;
-		recycled = true;&#xD;
 		AudioPlayer player = new AudioPlayer();&#xD;
-		player.play(&quot;Demon_dying.wav&quot;);&#xD;
+		player.play(&quot;Demon_dying.wav&quot;); // Toca som do demónio a morrer&#xD;
+		recycled = true; // Coloca o demónio como consumido&#xD;
 		System.out.println(&quot;Demónio consumido. Lâmpada em reciclagem...&quot;);&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8yxOUIxnEeyauKcbfTyhVw" name="grantWishDemon" specification="_8x8u8IxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8yxOUYxnEeyauKcbfTyhVw" name="aWish">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RIysAY0HEeyTK68GWrtVgA" name="grantWishDemon" specification="_RH9lkI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RIysAo0HEeyTK68GWrtVgA" name="aWish">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
-          <ownedParameter xmi:id="_8yxOUoxnEeyauKcbfTyhVw" name="sc" type="_8w60MIxnEeyauKcbfTyhVw"/>
-          <ownedParameter xmi:id="_8yxOU4xnEeyauKcbfTyhVw" direction="return">
+          <ownedParameter xmi:id="_RIysA40HEeyTK68GWrtVgA" name="sc" type="_RHIfII0HEeyTK68GWrtVgA"/>
+          <ownedParameter xmi:id="_RIysBI0HEeyTK68GWrtVgA" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
           </ownedParameter>
           <language>java</language>
           <body>System.out.println(&quot;Desejo concedido! &quot; + aWish + &quot; foi realizado. Escolha outro desejo, ou \&quot;x\&quot; para sair.&quot;);&#xD;
-		String resposta = MyErrorHandler.tryScannerNextLine(sc) ; // Guarda o desejo na variável&#xD;
+		String resposta = MyErrorHandler.tryScannerNextLine(sc) ; // Guarda o desejo escolhido na variável&#xD;
 		&#xD;
-		if (!resposta.equals(&quot;x&quot;))&#xD;
+		if (!resposta.equals(&quot;x&quot;)) // se a resposta é diferente de x (código de saída)&#xD;
 			{&#xD;
-			//sc.nextLine(); // Limpar scanner&#xD;
-			this.grantWishDemon(resposta, sc);&#xD;
+			this.grantWishDemon(resposta, sc); // realiza o desejo&#xD;
 			return true;&#xD;
 			}&#xD;
-		else return false;&#xD;
+		else return false; // retirna falso, se for escolhido o código de saída &quot;x&quot;&#xD;
 &#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8yxOVIxnEeyauKcbfTyhVw" name="showMe" specification="_8swF4IxnEeyauKcbfTyhVw">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RIzTEI0HEeyTK68GWrtVgA" name="showMe" specification="_REjFMI0HEeyTK68GWrtVgA">
           <language>java</language>
-          <body>Main.clearConsole();&#xD;
+          <body>Main.clearConsole(); // limpa a consola&#xD;
 		System.out.println(&quot;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&quot;);&#xD;
 		System.out.println(&quot;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&quot;);&#xD;
 		System.out.println(&quot;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&quot;);&#xD;
@@ -308,258 +304,257 @@
 		System.out.println(&quot;@@@   Eu sou o demónio reciclável, e posso realizar todos os seus desejos!  @@@@&quot;);&#xD;
 	</body>
         </ownedBehavior>
-        <ownedOperation xmi:id="_8stCkIxnEeyauKcbfTyhVw" name="Demon" method="_8ywAMIxnEeyauKcbfTyhVw">
-          <eAnnotations xmi:id="_8stpoIxnEeyauKcbfTyhVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_8stpoYxnEeyauKcbfTyhVw" key="create"/>
+        <ownedOperation xmi:id="_REhQAI0HEeyTK68GWrtVgA" name="Demon" method="_RIyE8I0HEeyTK68GWrtVgA">
+          <eAnnotations xmi:id="_REh3EI0HEeyTK68GWrtVgA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_REh3EY0HEeyTK68GWrtVgA" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_8y9bkYxnEeyauKcbfTyhVw">
-            <body>@param aLimit&#xD;
-	 *            número de desejos a realizar (ignorado, independente do limite)</body>
-          </ownedComment>
-          <ownedParameter xmi:id="_8stCkYxnEeyauKcbfTyhVw" name="aNumWishes">
+          <ownedParameter xmi:id="_REhQAY0HEeyTK68GWrtVgA" name="aNumWishes">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
-          <ownedParameter xmi:id="_8stpooxnEeyauKcbfTyhVw" type="_8sr0cIxnEeyauKcbfTyhVw" direction="return"/>
+          <ownedParameter xmi:id="_REh3Eo0HEeyTK68GWrtVgA" type="_REfa0I0HEeyTK68GWrtVgA" direction="return"/>
         </ownedOperation>
-        <ownedOperation xmi:id="_8suQsIxnEeyauKcbfTyhVw" name="recycled" method="_8ywAM4xnEeyauKcbfTyhVw">
-          <ownedComment xmi:id="_8y9bkoxnEeyauKcbfTyhVw">
-            <body>@return estado de reciclagem do demónio</body>
-          </ownedComment>
-          <ownedParameter xmi:id="_8su3wIxnEeyauKcbfTyhVw" direction="return">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
-          </ownedParameter>
-        </ownedOperation>
-        <ownedOperation xmi:id="_8su3wYxnEeyauKcbfTyhVw" name="recycle" method="_8ywnQIxnEeyauKcbfTyhVw">
-          <ownedComment xmi:id="_8y9bk4xnEeyauKcbfTyhVw">
-            <body>Recicla o demónio - função chamada pela lâmpada mágica</body>
-          </ownedComment>
-        </ownedOperation>
-        <ownedOperation xmi:id="_8swF4IxnEeyauKcbfTyhVw" name="showMe" method="_8yxOVIxnEeyauKcbfTyhVw">
-          <ownedComment xmi:id="_8y-CoIxnEeyauKcbfTyhVw">
-            <body>Mostra o demónio.</body>
-          </ownedComment>
-        </ownedOperation>
-        <ownedOperation xmi:id="_8x8u8IxnEeyauKcbfTyhVw" name="grantWishDemon" method="_8yxOUIxnEeyauKcbfTyhVw">
-          <ownedComment xmi:id="_8y9blIxnEeyauKcbfTyhVw">
-            <body>Pede ao demónio que realize um desejo, e pergunta se quer realizar outro&#xD;
-	 * &#xD;
-	 * @return verdadeiro se continua a realizar, senão falso</body>
-          </ownedComment>
-          <ownedParameter xmi:id="_8x8u8YxnEeyauKcbfTyhVw" name="aWish">
+        <ownedOperation xmi:id="_REh3E40HEeyTK68GWrtVgA" name="recycle" method="_RIysAI0HEeyTK68GWrtVgA"/>
+        <ownedOperation xmi:id="_REjFMI0HEeyTK68GWrtVgA" name="showMe" method="_RIzTEI0HEeyTK68GWrtVgA"/>
+        <ownedOperation xmi:id="_RH9lkI0HEeyTK68GWrtVgA" name="grantWishDemon" method="_RIysAY0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RH-MoI0HEeyTK68GWrtVgA" name="aWish">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
-          <ownedParameter xmi:id="_8x9WAIxnEeyauKcbfTyhVw" name="sc" type="_8w60MIxnEeyauKcbfTyhVw"/>
-          <ownedParameter xmi:id="_8x9WAYxnEeyauKcbfTyhVw" direction="return">
+          <ownedParameter xmi:id="_RH-MoY0HEeyTK68GWrtVgA" name="sc" type="_RHIfII0HEeyTK68GWrtVgA"/>
+          <ownedParameter xmi:id="_RH-Moo0HEeyTK68GWrtVgA" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
           </ownedParameter>
         </ownedOperation>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_8s0XUIxnEeyauKcbfTyhVw" name="Genie" isAbstract="true">
-        <ownedAttribute xmi:id="_8yQQ8IxnEeyauKcbfTyhVw" name="numWishes" visibility="protected">
+      <packagedElement xmi:type="uml:Class" xmi:id="_RElhcI0HEeyTK68GWrtVgA" name="Genie" isAbstract="true">
+        <ownedComment xmi:id="_RI718Y0HEeyTK68GWrtVgA">
+          <body>Classe abstracta para génios de qualquer tipo&#xD;
+@author P. Perneta e J. Rocha&#xD;
+ *</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_RIRuoI0HEeyTK68GWrtVgA" name="numWishes" visibility="protected">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_8yRfEYxnEeyauKcbfTyhVw" name="remWishes" visibility="protected">
+        <ownedAttribute xmi:id="_RIS8wI0HEeyTK68GWrtVgA" name="remWishes" visibility="protected">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedAttribute>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8yx1YIxnEeyauKcbfTyhVw" name="Genie" specification="_8s2MgIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8yx1YYxnEeyauKcbfTyhVw" type="_8s0XUIxnEeyauKcbfTyhVw" direction="return"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RIzTEY0HEeyTK68GWrtVgA" name="Genie" specification="_REnWoI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RIzTEo0HEeyTK68GWrtVgA" type="_RElhcI0HEeyTK68GWrtVgA" direction="return"/>
           <language>java</language>
           <body>super();&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8yx1YoxnEeyauKcbfTyhVw" name="getNumWishes" specification="_8s3aoIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8yx1Y4xnEeyauKcbfTyhVw" direction="return">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RIz6II0HEeyTK68GWrtVgA" name="getNumWishes" specification="_REn9sY0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RIz6IY0HEeyTK68GWrtVgA" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
           <language>java</language>
           <body>return numWishes;&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8yyccIxnEeyauKcbfTyhVw" name="getRemWishes" specification="_8s4owIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8yyccYxnEeyauKcbfTyhVw" direction="return">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RIz6Io0HEeyTK68GWrtVgA" name="getRemWishes" specification="_REokwY0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RIz6I40HEeyTK68GWrtVgA" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
           <language>java</language>
           <body>return remWishes;&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8yzDgIxnEeyauKcbfTyhVw" name="grantWish" specification="_8s6d8IxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8yzDgYxnEeyauKcbfTyhVw" name="aWish">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RIz6JI0HEeyTK68GWrtVgA" name="grantWish" specification="_REpy4I0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RIz6JY0HEeyTK68GWrtVgA" name="aWish">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
-          <ownedParameter xmi:id="_8yzDgoxnEeyauKcbfTyhVw" direction="return">
+          <ownedParameter xmi:id="_RIz6Jo0HEeyTK68GWrtVgA" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
           </ownedParameter>
           <language>java</language>
-          <body>if (remWishes > 0) {&#xD;
-			remWishes-=1;&#xD;
-			System.out.println(&quot;Desejo concedido! &quot; + aWish + &quot; foi realizado. &quot; + (remWishes==0 ? &quot;Não lhe restam mais&quot; : &quot;Ainda lhe restam &quot; + remWishes + &quot; de &quot; + numWishes) + &quot; desejos.&quot;);&#xD;
-			return true;&#xD;
+          <body>if (remWishes > 0) // Se ainda existirem desejos por realizar&#xD;
+		{ &#xD;
+			// Aqui ficaria o código para realização do desejo, em caso de&#xD;
+			// desta funcionalidade&#xD;
+			&#xD;
+			remWishes-=1; // subtrai 1 desejo&#xD;
+			System.out.println(&quot;Desejo concedido! &quot; + aWish + &quot; foi realizado. &quot; + &#xD;
+					(remWishes==0 ? &quot;Não lhe restam mais&quot; : &quot;Ainda lhe restam &quot; + remWishes + &#xD;
+					&quot; de &quot; + numWishes) + &quot; desejos.&quot;); // mensagem informativa ao utilizador&#xD;
+			&#xD;
+			return true; //verdadeiro se realizado&#xD;
 		}&#xD;
-		return false;&#xD;
+		return false; // falso se não realizado (não existem mais desejos)&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8yzDg4xnEeyauKcbfTyhVw" name="showMe" specification="_8s7sEIxnEeyauKcbfTyhVw">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI0hMI0HEeyTK68GWrtVgA" name="showMe" specification="_REqZ8I0HEeyTK68GWrtVgA">
           <language>java</language>
           <body>// NADA&#xD;
 	</body>
         </ownedBehavior>
-        <ownedOperation xmi:id="_8s2MgIxnEeyauKcbfTyhVw" name="Genie" method="_8yx1YIxnEeyauKcbfTyhVw">
-          <eAnnotations xmi:id="_8s2zkIxnEeyauKcbfTyhVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_8s2zkYxnEeyauKcbfTyhVw" key="create"/>
+        <ownedOperation xmi:id="_REnWoI0HEeyTK68GWrtVgA" name="Genie" method="_RIzTEY0HEeyTK68GWrtVgA">
+          <eAnnotations xmi:id="_REnWoY0HEeyTK68GWrtVgA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_REnWoo0HEeyTK68GWrtVgA" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_8y-CoYxnEeyauKcbfTyhVw">
-            <body>@param laLimWishes número máximo de desejos a conceder</body>
+          <ownedComment xmi:id="_RI718o0HEeyTK68GWrtVgA">
+            <body>Construtor do génio</body>
           </ownedComment>
-          <ownedParameter xmi:id="_8s2zkoxnEeyauKcbfTyhVw" type="_8s0XUIxnEeyauKcbfTyhVw" direction="return"/>
+          <ownedParameter xmi:id="_REn9sI0HEeyTK68GWrtVgA" type="_RElhcI0HEeyTK68GWrtVgA" direction="return"/>
         </ownedOperation>
-        <ownedOperation xmi:id="_8s3aoIxnEeyauKcbfTyhVw" name="getNumWishes" method="_8yx1YoxnEeyauKcbfTyhVw">
-          <ownedComment xmi:id="_8y-CooxnEeyauKcbfTyhVw">
+        <ownedOperation xmi:id="_REn9sY0HEeyTK68GWrtVgA" name="getNumWishes" method="_RIz6II0HEeyTK68GWrtVgA">
+          <ownedComment xmi:id="_RI8dAI0HEeyTK68GWrtVgA">
             <body>@return retorna o número de desejos pedidos</body>
           </ownedComment>
-          <ownedParameter xmi:id="_8s4BsIxnEeyauKcbfTyhVw" direction="return">
+          <ownedParameter xmi:id="_REokwI0HEeyTK68GWrtVgA" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
         </ownedOperation>
-        <ownedOperation xmi:id="_8s4owIxnEeyauKcbfTyhVw" name="getRemWishes" method="_8yyccIxnEeyauKcbfTyhVw">
-          <ownedComment xmi:id="_8y-Co4xnEeyauKcbfTyhVw">
+        <ownedOperation xmi:id="_REokwY0HEeyTK68GWrtVgA" name="getRemWishes" method="_RIz6Io0HEeyTK68GWrtVgA">
+          <ownedComment xmi:id="_RI8dAY0HEeyTK68GWrtVgA">
             <body>@return retorna o número de desejos ainda disponíveis</body>
           </ownedComment>
-          <ownedParameter xmi:id="_8s5P0IxnEeyauKcbfTyhVw" direction="return">
+          <ownedParameter xmi:id="_REpL0I0HEeyTK68GWrtVgA" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
         </ownedOperation>
-        <ownedOperation xmi:id="_8s6d8IxnEeyauKcbfTyhVw" name="grantWish" method="_8yzDgIxnEeyauKcbfTyhVw">
-          <ownedComment xmi:id="_8y-CpIxnEeyauKcbfTyhVw">
-            <body>Pede ao génio que realize um desejo.&#xD;
+        <ownedOperation xmi:id="_REpy4I0HEeyTK68GWrtVgA" name="grantWish" method="_RIz6JI0HEeyTK68GWrtVgA">
+          <ownedComment xmi:id="_RI8dAo0HEeyTK68GWrtVgA">
+            <body>Função geral que pede ao génio que realize um desejo.&#xD;
 	 * Nunca pode permitir mais desejos que o limite definido&#xD;
-	 * &#xD;
+	 * @param aWish o desejo pedido, em String&#xD;
 	 * @return verdadeiro se o desejo foi concedido, senão falso</body>
           </ownedComment>
-          <ownedParameter xmi:id="_8s6d8YxnEeyauKcbfTyhVw" name="aWish">
+          <ownedParameter xmi:id="_REpy4Y0HEeyTK68GWrtVgA" name="aWish">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
-          <ownedParameter xmi:id="_8s7FAIxnEeyauKcbfTyhVw" direction="return">
+          <ownedParameter xmi:id="_REpy4o0HEeyTK68GWrtVgA" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
           </ownedParameter>
         </ownedOperation>
-        <ownedOperation xmi:id="_8s7sEIxnEeyauKcbfTyhVw" name="showMe" method="_8yzDg4xnEeyauKcbfTyhVw">
-          <ownedComment xmi:id="_8y-CpYxnEeyauKcbfTyhVw">
+        <ownedOperation xmi:id="_REqZ8I0HEeyTK68GWrtVgA" name="showMe" method="_RI0hMI0HEeyTK68GWrtVgA">
+          <ownedComment xmi:id="_RI8dA40HEeyTK68GWrtVgA">
             <body>Mostra o génio. Não faz nada, as subclasses definirão o que acontece aqui</body>
           </ownedComment>
         </ownedOperation>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_8s9hQIxnEeyauKcbfTyhVw" name="MagicLamp">
-        <ownedComment xmi:id="_8y-psIxnEeyauKcbfTyhVw">
-          <body>Lâmpada mágica</body>
+      <packagedElement xmi:type="uml:Class" xmi:id="_REroEI0HEeyTK68GWrtVgA" name="MagicLamp">
+        <ownedComment xmi:id="_RI8dBI0HEeyTK68GWrtVgA">
+          <body>Classe da lâmpada mágica&#xD;
+@author P. Perneta e J. Rocha&#xD;
+ *</body>
         </ownedComment>
-        <ownedAttribute xmi:id="_8yTUQIxnEeyauKcbfTyhVw" name="limGenies" isReadOnly="true">
+        <ownedAttribute xmi:id="_RIUK4I0HEeyTK68GWrtVgA" name="limGenies" isReadOnly="true">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_8yT7UIxnEeyauKcbfTyhVw" name="numGenies" isReadOnly="true">
+        <ownedAttribute xmi:id="_RIVZAI0HEeyTK68GWrtVgA" name="numGenies" isReadOnly="true">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_8yVJcIxnEeyauKcbfTyhVw" name="rubs">
+        <ownedAttribute xmi:id="_RIWAEI0HEeyTK68GWrtVgA" name="rubs">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_8yVwgIxnEeyauKcbfTyhVw" name="demons" isReadOnly="true">
+        <ownedAttribute xmi:id="_RIWAEY0HEeyTK68GWrtVgA" name="demons" isReadOnly="true">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedAttribute>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8yzqkIxnEeyauKcbfTyhVw" name="MagicLamp" specification="_8s_9gIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8yzqkYxnEeyauKcbfTyhVw" name="aLimit">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI0hMY0HEeyTK68GWrtVgA" name="MagicLamp" specification="_REuEUI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RI0hMo0HEeyTK68GWrtVgA" name="aLimit">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
-          <ownedParameter xmi:id="_8yzqkoxnEeyauKcbfTyhVw" type="_8s9hQIxnEeyauKcbfTyhVw" direction="return"/>
+          <ownedParameter xmi:id="_RI0hM40HEeyTK68GWrtVgA" type="_REroEI0HEeyTK68GWrtVgA" direction="return"/>
           <language>java</language>
           <body>this.limGenies = aLimit;&#xD;
 		this.numGenies = aLimit;&#xD;
 		this.demons = 0;&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y0RoIxnEeyauKcbfTyhVw" name="rub" specification="_8x_LMIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8y0RoYxnEeyauKcbfTyhVw" name="sc" type="_8w60MIxnEeyauKcbfTyhVw"/>
-          <ownedParameter xmi:id="_8y0RooxnEeyauKcbfTyhVw" type="_8s0XUIxnEeyauKcbfTyhVw" direction="return"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI1IQI0HEeyTK68GWrtVgA" name="rub" specification="_RIAB0I0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RI1IQY0HEeyTK68GWrtVgA" name="sc" type="_RHIfII0HEeyTK68GWrtVgA"/>
+          <ownedParameter xmi:id="_RI1IQo0HEeyTK68GWrtVgA" type="_RElhcI0HEeyTK68GWrtVgA" direction="return"/>
           <language>java</language>
-          <body>System.out.print(&quot;Está a esfregar a lâmpada &quot; + rubs + &quot; vezes. Quantos desejos pretende realizar?&quot;);&#xD;
+          <body>/* Dá a informação de quantas vezes esfregou a lâmpada, e pergunta o n.º de desejos a realizar */ &#xD;
+		System.out.print(&quot;Está a esfregar a lâmpada &quot; + rubs + &#xD;
+				&quot; vezes. Quantos desejos pretende realizar?&quot;);&#xD;
 		&#xD;
+		/* Vai buscar o n.+ de desejos */&#xD;
 		int numWishes = MyErrorHandler.tryScannerIntFromNextLine(sc);&#xD;
 		&#xD;
-		if (numGenies > 0)&#xD;
+		if (numGenies > 0) // se existirem génios&#xD;
 		{&#xD;
+			numGenies -= 1; // remove um génio&#xD;
 			&#xD;
-			numGenies -= 1;&#xD;
+			/* Condição de saída do génio mal humorado: &quot;Sempre que a lâmpada for esfregada &#xD;
+			 * um par de vezes, sem contar a atual&quot; - Ou seja, sempre que seja par ou &#xD;
+			 * = 1, sai bem humorado&#xD;
+			 */&#xD;
+			&#xD;
 			if ((rubs % 2 == 0) || (rubs == 1))&#xD;
 			{&#xD;
-				return new NiceGenie(numWishes);&#xD;
+				return new NiceGenie(numWishes); //retorna um génio bom, com o nº de desejos escolhido&#xD;
 			}&#xD;
 			else&#xD;
 			{&#xD;
-				return new BadGenie();&#xD;
+				return new BadGenie(); //Senão, retorna um génio mau&#xD;
 			}&#xD;
 			&#xD;
 		}&#xD;
 		else&#xD;
 		{&#xD;
-			return new Demon(numWishes);&#xD;
+			return new Demon(numWishes); //chama o demónio, com o nº de desejos escolhido&#xD;
 		}&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y04sIxnEeyauKcbfTyhVw" name="rechargeLamp" specification="_8xATwIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8y04sYxnEeyauKcbfTyhVw" name="demon" type="_8sr0cIxnEeyauKcbfTyhVw"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI1IQ40HEeyTK68GWrtVgA" name="rechargeLamp" specification="_RHNXoI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RI1IRI0HEeyTK68GWrtVgA" name="demon" type="_REfa0I0HEeyTK68GWrtVgA"/>
           <language>java</language>
-          <body>if (!demon.recycled()) {&#xD;
-			demon.recycle();&#xD;
-			rubs = 0;&#xD;
-			numGenies = limGenies;&#xD;
-			demons++;&#xD;
+          <body>if (!demon.isRecycled()) //se o demónio não foi reciclado&#xD;
+		{&#xD;
+			demon.recycle(); //recicla o demónio&#xD;
+			rubs = 0; // faz reset ao n.º de esfregadelas&#xD;
+			numGenies = limGenies; // faz reset ao n.º de génios disponíveis, pelo máximo atribuído no início&#xD;
+			demons++; // aumenta o nº de demónios consumidos (= recargas da lâmpada)&#xD;
 		}&#xD;
 	</body>
         </ownedBehavior>
-        <ownedOperation xmi:id="_8s_9gIxnEeyauKcbfTyhVw" name="MagicLamp" method="_8yzqkIxnEeyauKcbfTyhVw">
-          <eAnnotations xmi:id="_8tAkkIxnEeyauKcbfTyhVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_8tAkkYxnEeyauKcbfTyhVw" key="create"/>
+        <ownedOperation xmi:id="_REuEUI0HEeyTK68GWrtVgA" name="MagicLamp" method="_RI0hMY0HEeyTK68GWrtVgA">
+          <eAnnotations xmi:id="_REurYY0HEeyTK68GWrtVgA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_REurYo0HEeyTK68GWrtVgA" key="create"/>
           </eAnnotations>
-          <ownedParameter xmi:id="_8s_9gYxnEeyauKcbfTyhVw" name="aLimit">
+          <ownedParameter xmi:id="_REurYI0HEeyTK68GWrtVgA" name="aLimit">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
-          <ownedParameter xmi:id="_8tAkkoxnEeyauKcbfTyhVw" type="_8s9hQIxnEeyauKcbfTyhVw" direction="return"/>
+          <ownedParameter xmi:id="_REvScI0HEeyTK68GWrtVgA" type="_REroEI0HEeyTK68GWrtVgA" direction="return"/>
         </ownedOperation>
-        <ownedOperation xmi:id="_8xATwIxnEeyauKcbfTyhVw" name="rechargeLamp" method="_8y04sIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8xA60IxnEeyauKcbfTyhVw" name="demon" type="_8sr0cIxnEeyauKcbfTyhVw"/>
+        <ownedOperation xmi:id="_RHNXoI0HEeyTK68GWrtVgA" name="rechargeLamp" method="_RI1IQ40HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RHNXoY0HEeyTK68GWrtVgA" name="demon" type="_REfa0I0HEeyTK68GWrtVgA"/>
         </ownedOperation>
-        <ownedOperation xmi:id="_8x_LMIxnEeyauKcbfTyhVw" name="rub" method="_8y0RoIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8x_yQIxnEeyauKcbfTyhVw" name="sc" type="_8w60MIxnEeyauKcbfTyhVw"/>
-          <ownedParameter xmi:id="_8x_yQYxnEeyauKcbfTyhVw" type="_8s0XUIxnEeyauKcbfTyhVw" direction="return"/>
+        <ownedOperation xmi:id="_RIAB0I0HEeyTK68GWrtVgA" name="rub" method="_RI1IQI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RIAo4I0HEeyTK68GWrtVgA" name="sc" type="_RHIfII0HEeyTK68GWrtVgA"/>
+          <ownedParameter xmi:id="_RIAo4Y0HEeyTK68GWrtVgA" type="_RElhcI0HEeyTK68GWrtVgA" direction="return"/>
         </ownedOperation>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_8tGrMIxnEeyauKcbfTyhVw" name="Main">
-        <ownedComment xmi:id="_8y-psYxnEeyauKcbfTyhVw">
-          <body>&#xD;
+      <packagedElement xmi:type="uml:Class" xmi:id="_REzj4I0HEeyTK68GWrtVgA" name="Main">
+        <ownedComment xmi:id="_RI8dBY0HEeyTK68GWrtVgA">
+          <body>Classe main da aplicação MagicLamp&#xD;
 @author P. Perneta e J. Rocha&#xD;
  *</body>
         </ownedComment>
-        <ownedAttribute xmi:id="_8yWXkIxnEeyauKcbfTyhVw" name="now" visibility="package" isStatic="true">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_8yWXkYxnEeyauKcbfTyhVw" value="System.currentTimeMillis()"/>
+        <ownedAttribute xmi:id="_RIXOMI0HEeyTK68GWrtVgA" name="musicOn" visibility="package" isStatic="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </ownedAttribute>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y1fwIxnEeyauKcbfTyhVw" name="main" specification="_8tJHcIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8y1fwYxnEeyauKcbfTyhVw" name="args">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI1vUI0HEeyTK68GWrtVgA" name="main" specification="_RE1ZEI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RI1vUY0HEeyTK68GWrtVgA" name="args">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8y1fwoxnEeyauKcbfTyhVw" value="*"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RI1vUo0HEeyTK68GWrtVgA" value="*"/>
           </ownedParameter>
           <language>java</language>
           <body>Scanner sc = new Scanner(System.in); // Cria e inicializa o scanner de input&#xD;
 		&#xD;
-		boolean musicOn = false; // Cria e inicializa o boleano do estado do sequenciador de Midis&#xD;
+		musicOn = false; // Quando arranca, a música não está a tocar&#xD;
 		&#xD;
 		printWelcomeToTheLamp(); // Imprime o ecrã de boas vindas&#xD;
 		&#xD;
 		MidiSequencer midiSequencer = new MidiSequencer(); // inicializa o sequenciador de Midis&#xD;
 		try {&#xD;
-			/** Inicia a música */&#xD;
+			/** Inicia a música escolhida no futuro pode ter mais opções, &#xD;
+			 * como uma juke-box &#xD;
+			 */&#xD;
 &#xD;
 			midiSequencer.playSound(&quot;Aladdin-(Medley-Of-All-Songs).mid&quot;);&#xD;
-			musicOn = true;&#xD;
+			musicOn = true; // Música a tocar = true&#xD;
 		} &#xD;
 		catch (Exception e1) &#xD;
 		{&#xD;
@@ -572,124 +567,121 @@
 		MagicLamp lamp; &#xD;
 		&#xD;
 		int limit = 0; // cria e inicializa o n.º limite do random&#xD;
-&#xD;
-		boolean ok = false; // Boleano para ciclos inicializado a falso&#xD;
 				&#xD;
-		do&#xD;
+		do // Ciclo para atribuição do máximo valor do random&#xD;
 		{&#xD;
 			try {&#xD;
 				Random rand = new Random();&#xD;
 				/** Gera o limite de desejos a partir do random */&#xD;
 				limit = rand.nextInt(MyErrorHandler.tryStartNum(sc)); // Tenta atribuir o valor do scanner ao inteiro&#xD;
-				ok = true;&#xD;
+				break;&#xD;
 			}&#xD;
 			catch (Exception e1) {&#xD;
 				MyErrorHandler.errorHandler(e1, sc, midiSequencer); // trata o erro&#xD;
 			}&#xD;
-		} while (!ok);&#xD;
+		} while (true);&#xD;
 		&#xD;
 			&#xD;
-		if (limit &lt;= 0) limit= 1; // para nunca dar 0 no random&#xD;
+		if (limit &lt;= 0) limit= 1; // para nunca dar 0 ou negativo no random&#xD;
 &#xD;
 			&#xD;
-		lamp = new MagicLamp(limit);&#xD;
-		&#xD;
-		/** Mostra o menu */&#xD;
-		printMenu(lamp, musicOn);&#xD;
-&#xD;
-&#xD;
-		/**&#xD;
-		 * cria e inicializa a variável que guarda a escolha do utilizador&#xD;
-		 */&#xD;
-		int choice = MyErrorHandler.tryScannerIntFromNextLine(sc);&#xD;
+		lamp = new MagicLamp(limit); // Instância a lâmpada&#xD;
 		&#xD;
 		&#xD;
-		ok = false;&#xD;
-		do 	{&#xD;
-				switch (choice)&#xD;
-				{&#xD;
-					case 1:						&#xD;
-						System.out.println(&quot;Quantas vezes deseja esfregar a lâmpada?&quot;); // Pergunta&#xD;
-						int rubs = MyErrorHandler.tryScannerIntFromNextLine(sc); // Guarda o nº de esfregadelas&#xD;
+		do 	&#xD;
+		{&#xD;
+			printMenu(lamp); //Mostra o menu de gestão da lâmpada&#xD;
 			&#xD;
-						lamp.setRubs(rubs); // Esfrega a lâmpada o nº de vezes escolhido&#xD;
+			/**&#xD;
+			 * cria e inicializa a variável que guarda a escolha do utilizador&#xD;
+			 */&#xD;
+			int choice = MyErrorHandler.tryOption(sc);&#xD;
+			&#xD;
+			switch (choice)&#xD;
+			{&#xD;
+				case 1:						&#xD;
+					System.out.println(&quot;Quantas vezes deseja esfregar a lâmpada?&quot;); // Pergunta&#xD;
+					int rubs = MyErrorHandler.tryScannerIntFromNextLine(sc); // Guarda o nº de esfregadelas&#xD;
+		&#xD;
+					lamp.setRubs(rubs); // Esfrega a lâmpada o n.º de vezes escolhido&#xD;
+					&#xD;
+					/* // cria o génio - passa o scanner como parâmetro, para que possa definir &#xD;
+					 * o n.º de desejos ao esfregar a lâmpada&#xD;
+					 */&#xD;
+					Genie genie = lamp.rub(sc);&#xD;
+					&#xD;
+					genie.showMe(); // mostra o génio&#xD;
+					&#xD;
+					int i;&#xD;
+					String wish = &quot;&quot;; // Cria e inicializa a String que vai guardar o desejo&#xD;
+					&#xD;
+					/** dois processos diferentes para pedir os desejos, caso seja génio ou demónio */&#xD;
+					if (genie instanceof Demon) // se for demónio&#xD;
+					{&#xD;
+						Demon demon = (Demon) genie; // Faz o cast para transformar o génio genérico em demónio&#xD;
 						&#xD;
-						Genie genie = lamp.rub(sc); // Cria o génio - passa o scanner como parâmetro, para que possa definir o nº de desejos ao esfregar a lâmpada&#xD;
+						System.out.println(&quot;Peça um desejo!&quot;);&#xD;
+						wish = MyErrorHandler.tryScannerNextLine(sc); // Guarda o desejo no scanner&#xD;
 						&#xD;
-						genie.showMe(); // mostra o génio&#xD;
-						int i;&#xD;
-						String wish = &quot;&quot;; // Cria a string &#xD;
+						demon.grantWishDemon(wish, sc); // chama a função recursiva que pede infinitos desejos ao demónio, até escolher parar&#xD;
+&#xD;
+						lamp.rechargeLamp(demon); // recarrega a lâmpada&#xD;
 						&#xD;
-						/** dois ciclos diferentes para pedir os desejos, caso seja génio ou demónio */&#xD;
-						&#xD;
-						if (genie instanceof Demon)&#xD;
+					}&#xD;
+					else //não sendo demónio&#xD;
+					{ &#xD;
+						for (i = 1; i &lt;= genie.getNumWishes(); i++ ) // Ciclo para realizar os desejos pedidos&#xD;
 						{&#xD;
-							Demon demon = (Demon) genie; // Faz o cast para transformar o génio genérico em demónio&#xD;
-							&#xD;
 							System.out.println(&quot;Peça um desejo!&quot;);&#xD;
 							wish = MyErrorHandler.tryScannerNextLine(sc); // Guarda o desejo no scanner&#xD;
-							&#xD;
-							demon.grantWishDemon(wish, sc); // chama a função recursiva que pede infinitos desejos ao demónio, até escolher parar&#xD;
-&#xD;
-							lamp.rechargeLamp(demon); // recarrega a lâmpada&#xD;
-							&#xD;
+							genie.grantWish(wish); // Realiza o desejo&#xD;
 						}&#xD;
-						else {&#xD;
-							for (i = 1; i &lt;= genie.getNumWishes(); i++ ) // Ciclo para realizar os desejos pedidos&#xD;
-							{&#xD;
-								System.out.println(&quot;Peça um desejo!&quot;);&#xD;
-								wish = MyErrorHandler.tryScannerNextLine(sc); // Guarda o desejo no scanner&#xD;
-								genie.grantWish(wish); // Realiza o desejo&#xD;
-							}&#xD;
+					}&#xD;
+					&#xD;
+					System.out.println(&quot;Prima Enter para continuar&quot;);&#xD;
+					&#xD;
+					waitForEnter(); // aguarda que a tecla enter seja pressionada&#xD;
+					&#xD;
+					sc.nextLine(); // limpa o scanner&#xD;
+			&#xD;
+					break;&#xD;
+				case 2:&#xD;
+					/* Possível melhoria /implementação futura:&#xD;
+					 * 		idealmente esta opção não apareceria o ficheiro de som não existisse&#xD;
+					 */&#xD;
+					try { &#xD;
+						if (!musicOn) // Verifica se a música está a tocar&#xD;
+						{&#xD;
+							midiSequencer = new MidiSequencer(); //Se não estiver, liga a música&#xD;
+							// Manda tocar a m+usica, com o ficheiro escolhido&#xD;
+							midiSequencer.playSound(&quot;Aladdin-(Medley-Of-All-Songs).mid&quot;); &#xD;
+							musicOn = true; // Diz que a música está a tocar&#xD;
 						}&#xD;
-						&#xD;
-						System.out.println(&quot;Prima Enter para continuar&quot;);&#xD;
-						waitForEnter(); // aguarda que a tecla enter seja pressionada&#xD;
-						&#xD;
-						printMenu(lamp, musicOn); // Mostra menu&#xD;
-						sc.nextLine();&#xD;
-						choice = MyErrorHandler.tryScannerIntFromNextLine(sc); // Coloca scanner à escuta para nova escolha&#xD;
+						else &#xD;
+						{&#xD;
+							midiSequencer.stopSequencer(); // Desliga a música&#xD;
+							musicOn = false; // Diz que a música desligada&#xD;
+						}&#xD;
+					} catch (Exception e) {&#xD;
+						MyErrorHandler.errorHandler(e, sc, midiSequencer);&#xD;
+					}&#xD;
 				&#xD;
-						break;&#xD;
-					case 2:&#xD;
-						try { // idealmente não correria se o ficheiro não existisse&#xD;
-							if (!musicOn) // Verifica se a música está a tocar&#xD;
-							{&#xD;
-								midiSequencer = new MidiSequencer(); //Se não estiver, liga a música&#xD;
-								midiSequencer.playSound(&quot;Aladdin-(Medley-Of-All-Songs).mid&quot;);&#xD;
-								musicOn = true;&#xD;
-							}&#xD;
-							else &#xD;
-							{&#xD;
-								midiSequencer.stopSequencer(); // Desliga a música&#xD;
-								musicOn = false; // Música desligada&#xD;
-							}&#xD;
-						} catch (Exception e) {&#xD;
-							MyErrorHandler.errorHandler(e, sc, midiSequencer);&#xD;
-						}&#xD;
-						&#xD;
-						clearConsole(); // Limpa consola&#xD;
-						printMenu(lamp, musicOn); // Mostra menu&#xD;
+					break;&#xD;
+				&#xD;
+				case 3: /* sequência de saída */&#xD;
+			        printGameOver(sc); // imprime mensagem de despedida&#xD;
 					&#xD;
-						choice = MyErrorHandler.tryScannerIntFromNextLine(sc); // Coloca scanner à escuta para nova escolha&#xD;
-						break;&#xD;
-					&#xD;
-					case 3: /* sequência de saída */&#xD;
-				        printGameOver(sc); // imprime mensagem de despedida&#xD;
-						&#xD;
-				        midiSequencer.stopSequencer(); // Desliga a música&#xD;
-						sc.close(); // Fecha o scanner&#xD;
-					&#xD;
-				        System.exit(0); // Sai do sistema&#xD;
-					default:&#xD;
-						System.out.println(choice + &quot; não é uma opção válida. Escolha outra opção, por favor.&quot;);&#xD;
-						choice = MyErrorHandler.tryScannerIntFromNextLine(sc); // Coloca scanner à escuta para nova escolha&#xD;
-						break;&#xD;
+			        midiSequencer.stopSequencer(); // Desliga a música&#xD;
+					sc.close(); // Fecha o scanner&#xD;
+				&#xD;
+			        System.exit(0); // Sai do sistema&#xD;
+				default:&#xD;
+					break;&#xD;
 				}&#xD;
-			} while (!ok);&#xD;
+			} while (true);&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y2G0IxnEeyauKcbfTyhVw" name="printWelcomeToTheLamp" specification="_8tKVkIxnEeyauKcbfTyhVw">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI2WYI0HEeyTK68GWrtVgA" name="printWelcomeToTheLamp" specification="_RE2AIY0HEeyTK68GWrtVgA">
           <language>java</language>
           <body>System.out.println(&quot;───────────────────────────────────────────────────────────────────────────&quot;);&#xD;
 		System.out.println(&quot;───────────────────────────────────────────────────────────────────────────&quot;);&#xD;
@@ -718,11 +710,8 @@
 		System.out.println(&quot;─────────────── Digite um número entre 1 e 20 para iniciar ────────────────&quot;);	&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y2G0YxnEeyauKcbfTyhVw" name="printMenu" specification="_8xKr0IxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8y2G0oxnEeyauKcbfTyhVw" name="aLamp" type="_8s9hQIxnEeyauKcbfTyhVw"/>
-          <ownedParameter xmi:id="_8y2G04xnEeyauKcbfTyhVw" name="aMusicOn">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
-          </ownedParameter>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI2WYY0HEeyTK68GWrtVgA" name="printMenu" specification="_RHV6gI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RI2WYo0HEeyTK68GWrtVgA" name="aLamp" type="_REroEI0HEeyTK68GWrtVgA"/>
           <language>java</language>
           <body>clearConsole();&#xD;
 		System.out.println(&quot;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&quot;);&#xD;
@@ -754,12 +743,12 @@
 		System.out.println(&quot;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&quot;);&#xD;
 		System.out.println(&quot;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&quot;);&#xD;
 		System.out.println(&quot;@@     1 - Esfregar lâmpada         2 - &quot; + &#xD;
-				(aMusicOn ? &quot;Desl&quot; : &quot;L&quot;) + &quot;igar música&quot; + (aMusicOn ? &quot;&quot; : &quot;   &quot;) + &quot;          3 - Sair     @@&quot;);&#xD;
+				(musicOn ? &quot;Desl&quot; : &quot;L&quot;) + &quot;igar música&quot; + (musicOn ? &quot;&quot; : &quot;   &quot;) + &quot;          3 - Sair     @@&quot;);&#xD;
 		System.out.println(&quot;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&quot;);&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y2t4IxnEeyauKcbfTyhVw" name="printGameOver" specification="_8yBncIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8y2t4YxnEeyauKcbfTyhVw" name="sc" type="_8w60MIxnEeyauKcbfTyhVw"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI2WY40HEeyTK68GWrtVgA" name="printGameOver" specification="_RICeEI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RI2WZI0HEeyTK68GWrtVgA" name="sc" type="_RHIfII0HEeyTK68GWrtVgA"/>
           <language>java</language>
           <body>// geração do buffer para sair do ciclo infinito&#xD;
 		InputStreamReader inputStream = new InputStreamReader(System.in); // Cria o leitor de streams&#xD;
@@ -846,16 +835,15 @@
 			}&#xD;
 						&#xD;
 		} while (true);&#xD;
-&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y2t4oxnEeyauKcbfTyhVw" name="clearConsole" specification="_8tLjsIxnEeyauKcbfTyhVw">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI29cI0HEeyTK68GWrtVgA" name="clearConsole" specification="_RE3OQI0HEeyTK68GWrtVgA">
           <language>java</language>
-          <body>for(int i = 0; i &lt; 50; i++)  &#xD;
+          <body>for(int i = 0; i &lt; 50; i++)&#xD;
 		    System.out.println();   &#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y3U8IxnEeyauKcbfTyhVw" name="waitForEnter" specification="_8tMKwIxnEeyauKcbfTyhVw">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI29cY0HEeyTK68GWrtVgA" name="waitForEnter" specification="_RE31UI0HEeyTK68GWrtVgA">
           <language>java</language>
           <body>try{&#xD;
 			System.in.read();&#xD;
@@ -864,35 +852,37 @@
 		}&#xD;
 	</body>
         </ownedBehavior>
-        <ownedOperation xmi:id="_8tJHcIxnEeyauKcbfTyhVw" name="main" isStatic="true" method="_8y1fwIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8tJugIxnEeyauKcbfTyhVw" name="args">
+        <ownedOperation xmi:id="_RE1ZEI0HEeyTK68GWrtVgA" name="main" isStatic="true" method="_RI1vUI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RE1ZEY0HEeyTK68GWrtVgA" name="args">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8tJugYxnEeyauKcbfTyhVw" value="*"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RE2AII0HEeyTK68GWrtVgA" value="*"/>
           </ownedParameter>
         </ownedOperation>
-        <ownedOperation xmi:id="_8tKVkIxnEeyauKcbfTyhVw" name="printWelcomeToTheLamp" isStatic="true" method="_8y2G0IxnEeyauKcbfTyhVw"/>
-        <ownedOperation xmi:id="_8tLjsIxnEeyauKcbfTyhVw" name="clearConsole" isStatic="true" method="_8y2t4oxnEeyauKcbfTyhVw"/>
-        <ownedOperation xmi:id="_8tMKwIxnEeyauKcbfTyhVw" name="waitForEnter" isStatic="true" method="_8y3U8IxnEeyauKcbfTyhVw"/>
-        <ownedOperation xmi:id="_8xKr0IxnEeyauKcbfTyhVw" name="printMenu" isStatic="true" method="_8y2G0YxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8xLS4IxnEeyauKcbfTyhVw" name="aLamp" type="_8s9hQIxnEeyauKcbfTyhVw"/>
-          <ownedParameter xmi:id="_8xLS4YxnEeyauKcbfTyhVw" name="aMusicOn">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
-          </ownedParameter>
+        <ownedOperation xmi:id="_RE2AIY0HEeyTK68GWrtVgA" name="printWelcomeToTheLamp" isStatic="true" method="_RI2WYI0HEeyTK68GWrtVgA"/>
+        <ownedOperation xmi:id="_RE3OQI0HEeyTK68GWrtVgA" name="clearConsole" isStatic="true" method="_RI29cI0HEeyTK68GWrtVgA"/>
+        <ownedOperation xmi:id="_RE31UI0HEeyTK68GWrtVgA" name="waitForEnter" isStatic="true" method="_RI29cY0HEeyTK68GWrtVgA"/>
+        <ownedOperation xmi:id="_RHV6gI0HEeyTK68GWrtVgA" name="printMenu" isStatic="true" method="_RI2WYY0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RHWhkI0HEeyTK68GWrtVgA" name="aLamp" type="_REroEI0HEeyTK68GWrtVgA"/>
         </ownedOperation>
-        <ownedOperation xmi:id="_8yBncIxnEeyauKcbfTyhVw" name="printGameOver" isStatic="true" method="_8y2t4IxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8yCOgIxnEeyauKcbfTyhVw" name="sc" type="_8w60MIxnEeyauKcbfTyhVw"/>
+        <ownedOperation xmi:id="_RICeEI0HEeyTK68GWrtVgA" name="printGameOver" isStatic="true" method="_RI2WY40HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RIDFII0HEeyTK68GWrtVgA" name="sc" type="_RHIfII0HEeyTK68GWrtVgA"/>
         </ownedOperation>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_8tP1IIxnEeyauKcbfTyhVw" name="MidiSequencer">
-        <ownedAttribute xmi:id="_8yXlsIxnEeyauKcbfTyhVw" name="sequencer" visibility="private" type="_8xZ8YYxnEeyauKcbfTyhVw" association="_8zVPAIxnEeyauKcbfTyhVw"/>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y38AIxnEeyauKcbfTyhVw" name="MidiSequencer" specification="_8tRDQIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8y38AYxnEeyauKcbfTyhVw" type="_8tP1IIxnEeyauKcbfTyhVw" direction="return"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RE5qgI0HEeyTK68GWrtVgA" name="MidiSequencer">
+        <ownedComment xmi:id="_RI9EEI0HEeyTK68GWrtVgA">
+          <body>Classe para sequenciação de Midis&#xD;
+@author P. Perneta e J. Rocha&#xD;
+ *</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_RIZDYI0HEeyTK68GWrtVgA" name="sequencer" visibility="private" type="_RHiu0Y0HEeyTK68GWrtVgA" association="_RJDKsI0HEeyTK68GWrtVgA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI29co0HEeyTK68GWrtVgA" name="MidiSequencer" specification="_RE7fsI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RI29c40HEeyTK68GWrtVgA" type="_RE5qgI0HEeyTK68GWrtVgA" direction="return"/>
           <language>java</language>
           <body>sequencer = null;&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y38AoxnEeyauKcbfTyhVw" name="playSound" specification="_8tSRYIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8y38A4xnEeyauKcbfTyhVw" name="filename">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI3kgI0HEeyTK68GWrtVgA" name="playSound" specification="_RE8t0I0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RI3kgY0HEeyTK68GWrtVgA" name="filename">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
           <language>java</language>
@@ -904,110 +894,121 @@
 			&#xD;
 			MyErrorHandler.errorHandler(e, null, null);&#xD;
 		}&#xD;
-		 &#xD;
-	    // Opens the device, indicating that it should now acquire any&#xD;
-	    // system resources it requires and become operational.&#xD;
+		&#xD;
+		/* abre o sequenciador, indicando que deve adquiror agora&#xD;
+		 * quaiaquer recursos do sistema que necessite para se tornar operacional&#xD;
+		 */&#xD;
 	    try {&#xD;
-			sequencer.open();&#xD;
+			sequencer.open(); //abre o sequenciador&#xD;
 		} catch (MidiUnavailableException e) {&#xD;
-			// TODO Auto-generated catch block&#xD;
 			MyErrorHandler.errorHandler(e, null, null);&#xD;
 		}&#xD;
 &#xD;
-	    // create a stream from a file&#xD;
-	    InputStream is = null;&#xD;
+	    // cria a stream a partir de um ficheiro&#xD;
+	    InputStream inputstream = null;&#xD;
 		try {&#xD;
 			String basePath = new File(&quot;&quot;).getAbsolutePath(); // Vai buscar o caminho relativo da pasta&#xD;
 		    &#xD;
-			is = new BufferedInputStream(new FileInputStream(new File(basePath + &quot;\\&quot; + filename)));&#xD;
+			inputstream = new BufferedInputStream(new FileInputStream(new File(basePath + &quot;\\&quot; + filename)));&#xD;
 		} catch (FileNotFoundException e) {&#xD;
-			// TODO Auto-generated catch block&#xD;
 			MyErrorHandler.errorHandler(e, null, null);&#xD;
 		}&#xD;
-	    // Sets the current sequence on which the sequencer operates.&#xD;
-	    // The stream must point to MIDI file data.&#xD;
+	    // Define a sequência correta sober a qual o sequenciador opera.&#xD;
+	    // A stream tem de apontar para o ficheiro MIDI.&#xD;
 	    try {&#xD;
-			sequencer.setSequence(is);&#xD;
+			sequencer.setSequence(inputstream);&#xD;
 		} catch (IOException e) {&#xD;
 			MyErrorHandler.errorHandler(e, null, null);&#xD;
 		} catch (InvalidMidiDataException e) {&#xD;
 			MyErrorHandler.errorHandler(e, null, null);&#xD;
 		}&#xD;
 &#xD;
-	    // Starts playback of the MIDI data in the currently loaded sequence.&#xD;
+	    // Começa a tocar a sequência de dados MIDI correntemente carregada.&#xD;
 	    sequencer.start();&#xD;
 		&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y4jEIxnEeyauKcbfTyhVw" name="stopSequencer" specification="_8tS4cIxnEeyauKcbfTyhVw">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI3kgo0HEeyTK68GWrtVgA" name="stopSequencer" specification="_RE9U4Y0HEeyTK68GWrtVgA">
           <language>java</language>
           <body>sequencer.stop();&#xD;
 	</body>
         </ownedBehavior>
-        <ownedOperation xmi:id="_8tRDQIxnEeyauKcbfTyhVw" name="MidiSequencer" method="_8y38AIxnEeyauKcbfTyhVw">
-          <eAnnotations xmi:id="_8tRDQYxnEeyauKcbfTyhVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_8tRDQoxnEeyauKcbfTyhVw" key="create"/>
+        <ownedOperation xmi:id="_RE7fsI0HEeyTK68GWrtVgA" name="MidiSequencer" method="_RI29co0HEeyTK68GWrtVgA">
+          <eAnnotations xmi:id="_RE8GwI0HEeyTK68GWrtVgA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_RE8GwY0HEeyTK68GWrtVgA" key="create"/>
           </eAnnotations>
-          <ownedParameter xmi:id="_8tRqUIxnEeyauKcbfTyhVw" type="_8tP1IIxnEeyauKcbfTyhVw" direction="return"/>
+          <ownedComment xmi:id="_RI9EEY0HEeyTK68GWrtVgA">
+            <body>Método construtor do sequenciador&#xD;
+	 *</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_RE8Gwo0HEeyTK68GWrtVgA" type="_RE5qgI0HEeyTK68GWrtVgA" direction="return"/>
         </ownedOperation>
-        <ownedOperation xmi:id="_8tSRYIxnEeyauKcbfTyhVw" name="playSound" method="_8y38AoxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8tSRYYxnEeyauKcbfTyhVw" name="filename">
+        <ownedOperation xmi:id="_RE8t0I0HEeyTK68GWrtVgA" name="playSound" method="_RI3kgI0HEeyTK68GWrtVgA">
+          <ownedComment xmi:id="_RI9EEo0HEeyTK68GWrtVgA">
+            <body>Toca uma música / liga o sequenciador para uma música&#xD;
+	 * &#xD;
+	 * @param filename&#xD;
+	 * 				nome do ficheiro a tocar, em String</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_RE9U4I0HEeyTK68GWrtVgA" name="filename">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
         </ownedOperation>
-        <ownedOperation xmi:id="_8tS4cIxnEeyauKcbfTyhVw" name="stopSequencer" method="_8y4jEIxnEeyauKcbfTyhVw"/>
+        <ownedOperation xmi:id="_RE9U4Y0HEeyTK68GWrtVgA" name="stopSequencer" method="_RI3kgo0HEeyTK68GWrtVgA">
+          <ownedComment xmi:id="_RI9EE40HEeyTK68GWrtVgA">
+            <body>Para o sequenciador</body>
+          </ownedComment>
+        </ownedOperation>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_8tUGkIxnEeyauKcbfTyhVw" name="MyErrorHandler">
-        <ownedComment xmi:id="_8y-psoxnEeyauKcbfTyhVw">
+      <packagedElement xmi:type="uml:Class" xmi:id="_RE_xII0HEeyTK68GWrtVgA" name="MyErrorHandler">
+        <ownedComment xmi:id="_RI9rII0HEeyTK68GWrtVgA">
           <body>Classe geral para tratamento de erros&#xD;
-@author PP &amp; JR&#xD;
+@author P. Perneta e J. Rocha&#xD;
  *</body>
         </ownedComment>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y5KIIxnEeyauKcbfTyhVw" name="errorHandler" specification="_8yF44IxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8y5KIYxnEeyauKcbfTyhVw" name="err" type="_8yEDsYxnEeyauKcbfTyhVw"/>
-          <ownedParameter xmi:id="_8y5KIoxnEeyauKcbfTyhVw" name="sc" type="_8w60MIxnEeyauKcbfTyhVw"/>
-          <ownedParameter xmi:id="_8y5KI4xnEeyauKcbfTyhVw" name="midiSequencer" type="_8tP1IIxnEeyauKcbfTyhVw"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI4LkI0HEeyTK68GWrtVgA" name="errorHandler" specification="_RIHWkI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RI4LkY0HEeyTK68GWrtVgA" name="err" type="_RIFhYY0HEeyTK68GWrtVgA"/>
+          <ownedParameter xmi:id="_RI4Lko0HEeyTK68GWrtVgA" name="sc" type="_RHIfII0HEeyTK68GWrtVgA"/>
+          <ownedParameter xmi:id="_RI4Lk40HEeyTK68GWrtVgA" name="midiSequencer" type="_RE5qgI0HEeyTK68GWrtVgA"/>
           <language>java</language>
           <body>try {&#xD;
-			throw err;&#xD;
+			throw err; // atira o erro recebido, para tratamento pelos catch abaixo&#xD;
 		}&#xD;
-		catch (InputMismatchException e) // quando n é um inteiro&#xD;
+		catch (InputMismatchException e) // quando não é um n.º inteiro&#xD;
 		{&#xD;
 			System.out.println(&quot;Opção inválida. Por favor escolha um número.&quot;); // imprime mensagem de erro&#xD;
-			//sc.next(); // limpa o scanner&#xD;
 		}&#xD;
-		catch (NumberFormatException e)&#xD;
+		catch (NumberFormatException e) // quando está fora do formato de dados aceite&#xD;
 		{&#xD;
-			System.out.println(&quot;Opção inválida. Por favor escolha um número.&quot;); // imprime mensagem de erro&#xD;
-			//sc.next(); // limpa o scanner&#xD;
+			System.out.println(&quot;Opção inválida. Por favor escolha outro número.&quot;); // imprime mensagem de erro&#xD;
 		}&#xD;
 		catch (IllegalArgumentException e) // quando apanha o zero na escolha do random&#xD;
 		{&#xD;
 			System.out.println(&quot;Opção inválida. Por favor escolha um número maior que zero.&quot;); // imprime mensagem de erro&#xD;
 		}&#xD;
-		catch (FileNotFoundException e)&#xD;
+		catch (FileNotFoundException e) // ficheiro não encontrado&#xD;
 		{&#xD;
 			System.out.println(&quot;Ficheiro audio não encontrado, executando sem som.\nDetalhes: &quot; +&#xD;
-					e.getMessage());&#xD;
+					e.getMessage()); // Mostra a mensagem do erro, para que se perceba qual é o ficheiro em falta&#xD;
 		}&#xD;
-		catch (IllegalStateException e)&#xD;
+		catch (IllegalStateException e) // estado ilegal (relacionado ao sequenciador de Midis)&#xD;
 		{&#xD;
-			// não faz nada, só passa à frente&#xD;
+			// não faz nada por agora, só passa à frente&#xD;
 		}&#xD;
-	    catch (UnsupportedAudioFileException ex)&#xD;
+	    catch (UnsupportedAudioFileException e) //ficheiro audio não suportado (classe AudioPlayer)&#xD;
 		{&#xD;
 	        System.out.println(&quot;Ficheiro audio não suportado.&quot;);&#xD;
-	        ex.printStackTrace();&#xD;
-	    } catch (LineUnavailableException ex)&#xD;
+	        e.printStackTrace();&#xD;
+	    } catch (LineUnavailableException e) // linha de audio indisponível (classe AudioPlayer)&#xD;
 		{&#xD;
 	        System.out.println(&quot;Sem linha disponível para tocar o audio.&quot;);&#xD;
-	        ex.printStackTrace();&#xD;
-	    } catch (IOException ex) &#xD;
+	        e.printStackTrace();&#xD;
+	    } catch (IOException e) // erro I/O (classe AudioPlayer)&#xD;
 		{&#xD;
 	        System.out.println(&quot;Erro ao tocar o audio.&quot;);&#xD;
-	        ex.printStackTrace();&#xD;
+	        e.printStackTrace();&#xD;
 	    }&#xD;
-		catch (Exception e)&#xD;
+		catch (Exception e) // Outros erros não previstos acima&#xD;
 		{&#xD;
 			e.printStackTrace();&#xD;
 	        System.out.println(&quot;Ocorreu um erro imprevisto. Finalizando programa...&quot;); // imprime mensagem de despedida&#xD;
@@ -1020,32 +1021,32 @@
 		&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y5xMIxnEeyauKcbfTyhVw" name="tryScannerIntFromNextLine" specification="_8yHHAIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8y5xMYxnEeyauKcbfTyhVw" name="sc" type="_8w60MIxnEeyauKcbfTyhVw"/>
-          <ownedParameter xmi:id="_8y5xMoxnEeyauKcbfTyhVw" direction="return">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI4LlI0HEeyTK68GWrtVgA" name="tryScannerIntFromNextLine" specification="_RIIksI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RI4LlY0HEeyTK68GWrtVgA" name="sc" type="_RHIfII0HEeyTK68GWrtVgA"/>
+          <ownedParameter xmi:id="_RI4Llo0HEeyTK68GWrtVgA" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
           <language>java</language>
-          <body>boolean ok = false;&#xD;
-		int nInt = 0; // inicializa a variável que guarda o inteiro a devolver&#xD;
+          <body>int nInt = 0; // inicializa a variável que guarda o inteiro a devolver&#xD;
+		&#xD;
 		do&#xD;
 		{&#xD;
 			try &#xD;
 			{&#xD;
 				nInt = Integer.parseInt (tryScannerNextLine(sc)) ; // Tenta atribuir o valor do scanner ao inteiro&#xD;
-				ok = true;&#xD;
+				break;&#xD;
 			}&#xD;
 			catch (Exception e1) {&#xD;
-				errorHandler(e1, sc, null); // mostra o erro&#xD;
+				errorHandler(e1, sc, null); // Trata o erro&#xD;
 			}&#xD;
-		} while (!ok);&#xD;
+		} while (true);&#xD;
 		&#xD;
 		return nInt;&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y5xM4xnEeyauKcbfTyhVw" name="tryScannerNextLine" specification="_8yI8MIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8y5xNIxnEeyauKcbfTyhVw" name="sc" type="_8w60MIxnEeyauKcbfTyhVw"/>
-          <ownedParameter xmi:id="_8y5xNYxnEeyauKcbfTyhVw" direction="return">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI4yoI0HEeyTK68GWrtVgA" name="tryScannerNextLine" specification="_RIJLwI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RI4yoY0HEeyTK68GWrtVgA" name="sc" type="_RHIfII0HEeyTK68GWrtVgA"/>
+          <ownedParameter xmi:id="_RI4yoo0HEeyTK68GWrtVgA" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
           <language>java</language>
@@ -1056,10 +1057,9 @@
 			{&#xD;
 				sString = sc.nextLine(); // Tenta atribuir o valor do scanner à String&#xD;
 				&#xD;
-				if (sString.trim().isEmpty())&#xD;
+				if (sString.trim().isEmpty()) // Se a tring estiver vazia&#xD;
 				{&#xD;
 					System.out.println(&quot;O valor inserido estava vazio, ou só continha espaços. Por favor digite outra vez.&quot;);&#xD;
-					//sc.next(); // limpa o scanner&#xD;
 				}&#xD;
 				else&#xD;
 				{&#xD;
@@ -1067,22 +1067,18 @@
 				}					&#xD;
 					&#xD;
 			}&#xD;
-			catch (InputMismatchException e) // quando n é uma String válida&#xD;
-			{&#xD;
-				; // imprime mensagem de erro&#xD;
-				//sc.next(); // limpa o scanner&#xD;
-			}&#xD;
-			catch (Exception e1) {&#xD;
-				e1.printStackTrace(); // mostra o erro&#xD;
+			catch (Exception e)&#xD;
+			{// quando n é uma String válida&#xD;
+				errorHandler(e, sc, null); // Trata o erro&#xD;
 			}&#xD;
 		} while (true);&#xD;
 		&#xD;
 		return sString;&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y6YQIxnEeyauKcbfTyhVw" name="tryStartNum" specification="_8yKKUIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8y6YQYxnEeyauKcbfTyhVw" name="sc" type="_8w60MIxnEeyauKcbfTyhVw"/>
-          <ownedParameter xmi:id="_8y6YQoxnEeyauKcbfTyhVw" direction="return">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI4yo40HEeyTK68GWrtVgA" name="tryStartNum" specification="_RIKZ4I0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RI4ypI0HEeyTK68GWrtVgA" name="sc" type="_RHIfII0HEeyTK68GWrtVgA"/>
+          <ownedParameter xmi:id="_RI4ypY0HEeyTK68GWrtVgA" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
           <language>java</language>
@@ -1090,7 +1086,6 @@
 		&#xD;
 		do&#xD;
 		{&#xD;
-	&#xD;
 			num = tryScannerIntFromNextLine(sc);&#xD;
 			&#xD;
 			if (num > 0 &amp;&amp; num &lt;= 20)&#xD;
@@ -1107,50 +1102,83 @@
 		return num;&#xD;
 	</body>
         </ownedBehavior>
-        <ownedOperation xmi:id="_8yF44IxnEeyauKcbfTyhVw" name="errorHandler" isStatic="true" method="_8y5KIIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8yF44YxnEeyauKcbfTyhVw" name="err" type="_8yEDsYxnEeyauKcbfTyhVw"/>
-          <ownedParameter xmi:id="_8yF44oxnEeyauKcbfTyhVw" name="sc" type="_8w60MIxnEeyauKcbfTyhVw"/>
-          <ownedParameter xmi:id="_8yGf8IxnEeyauKcbfTyhVw" name="midiSequencer" type="_8tP1IIxnEeyauKcbfTyhVw"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI5ZsI0HEeyTK68GWrtVgA" name="tryOption" specification="_RILoAI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RI5ZsY0HEeyTK68GWrtVgA" name="sc" type="_RHIfII0HEeyTK68GWrtVgA"/>
+          <ownedParameter xmi:id="_RI5Zso0HEeyTK68GWrtVgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>int option;&#xD;
+		&#xD;
+		do&#xD;
+		{&#xD;
+	&#xD;
+			option = tryScannerIntFromNextLine(sc);&#xD;
+			&#xD;
+			if (option > 0 &amp;&amp; option &lt;= 3)&#xD;
+			{&#xD;
+				break;&#xD;
+			}&#xD;
+			else&#xD;
+			{&#xD;
+				System.out.println(&quot;Opção invá3lida. Por favor escolha uma opção de 1 a 3&quot;);&#xD;
+&#xD;
+			}&#xD;
+		} while (true);&#xD;
+		&#xD;
+		return option;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_RIHWkI0HEeyTK68GWrtVgA" name="errorHandler" isStatic="true" method="_RI4LkI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RIHWkY0HEeyTK68GWrtVgA" name="err" type="_RIFhYY0HEeyTK68GWrtVgA"/>
+          <ownedParameter xmi:id="_RIHWko0HEeyTK68GWrtVgA" name="sc" type="_RHIfII0HEeyTK68GWrtVgA"/>
+          <ownedParameter xmi:id="_RIH9oI0HEeyTK68GWrtVgA" name="midiSequencer" type="_RE5qgI0HEeyTK68GWrtVgA"/>
         </ownedOperation>
-        <ownedOperation xmi:id="_8yHHAIxnEeyauKcbfTyhVw" name="tryScannerIntFromNextLine" isStatic="true" method="_8y5xMIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8yHuEIxnEeyauKcbfTyhVw" name="sc" type="_8w60MIxnEeyauKcbfTyhVw"/>
-          <ownedParameter xmi:id="_8yHuEYxnEeyauKcbfTyhVw" direction="return">
+        <ownedOperation xmi:id="_RIIksI0HEeyTK68GWrtVgA" name="tryScannerIntFromNextLine" isStatic="true" method="_RI4LlI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RIIksY0HEeyTK68GWrtVgA" name="sc" type="_RHIfII0HEeyTK68GWrtVgA"/>
+          <ownedParameter xmi:id="_RIIkso0HEeyTK68GWrtVgA" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
         </ownedOperation>
-        <ownedOperation xmi:id="_8yI8MIxnEeyauKcbfTyhVw" name="tryScannerNextLine" isStatic="true" method="_8y5xM4xnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8yI8MYxnEeyauKcbfTyhVw" name="sc" type="_8w60MIxnEeyauKcbfTyhVw"/>
-          <ownedParameter xmi:id="_8yI8MoxnEeyauKcbfTyhVw" direction="return">
+        <ownedOperation xmi:id="_RIJLwI0HEeyTK68GWrtVgA" name="tryScannerNextLine" isStatic="true" method="_RI4yoI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RIJy0I0HEeyTK68GWrtVgA" name="sc" type="_RHIfII0HEeyTK68GWrtVgA"/>
+          <ownedParameter xmi:id="_RIJy0Y0HEeyTK68GWrtVgA" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
         </ownedOperation>
-        <ownedOperation xmi:id="_8yKKUIxnEeyauKcbfTyhVw" name="tryStartNum" isStatic="true" method="_8y6YQIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8yKKUYxnEeyauKcbfTyhVw" name="sc" type="_8w60MIxnEeyauKcbfTyhVw"/>
-          <ownedParameter xmi:id="_8yKKUoxnEeyauKcbfTyhVw" direction="return">
+        <ownedOperation xmi:id="_RIKZ4I0HEeyTK68GWrtVgA" name="tryStartNum" isStatic="true" method="_RI4yo40HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RIKZ4Y0HEeyTK68GWrtVgA" name="sc" type="_RHIfII0HEeyTK68GWrtVgA"/>
+          <ownedParameter xmi:id="_RILA8I0HEeyTK68GWrtVgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_RILoAI0HEeyTK68GWrtVgA" name="tryOption" isStatic="true" method="_RI5ZsI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RILoAY0HEeyTK68GWrtVgA" name="sc" type="_RHIfII0HEeyTK68GWrtVgA"/>
+          <ownedParameter xmi:id="_RIMPEI0HEeyTK68GWrtVgA" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
         </ownedOperation>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_8ta0QIxnEeyauKcbfTyhVw" name="NiceGenie">
-        <ownedComment xmi:id="_8y_QwIxnEeyauKcbfTyhVw">
-          <body>Génio bom - concede todos os desejos</body>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RFJiII0HEeyTK68GWrtVgA" name="NiceGenie">
+        <ownedComment xmi:id="_RI9rIY0HEeyTK68GWrtVgA">
+          <body>Génio bom - concede todos os desejos&#xD;
+@author P. Perneta e J. Rocha</body>
         </ownedComment>
-        <generalization xmi:id="_8xmJoIxnEeyauKcbfTyhVw" general="_8s0XUIxnEeyauKcbfTyhVw"/>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y6_UIxnEeyauKcbfTyhVw" name="NiceGenie" specification="_8tcCYIxnEeyauKcbfTyhVw">
-          <ownedParameter xmi:id="_8y6_UYxnEeyauKcbfTyhVw" name="aNumWishes">
+        <generalization xmi:id="_RHuVAI0HEeyTK68GWrtVgA" general="_RElhcI0HEeyTK68GWrtVgA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI6AwI0HEeyTK68GWrtVgA" name="NiceGenie" specification="_RFKwQI0HEeyTK68GWrtVgA">
+          <ownedParameter xmi:id="_RI6AwY0HEeyTK68GWrtVgA" name="aNumWishes">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
-          <ownedParameter xmi:id="_8y6_UoxnEeyauKcbfTyhVw" type="_8ta0QIxnEeyauKcbfTyhVw" direction="return"/>
+          <ownedParameter xmi:id="_RI6Awo0HEeyTK68GWrtVgA" type="_RFJiII0HEeyTK68GWrtVgA" direction="return"/>
           <language>java</language>
           <body>super();&#xD;
-		this.numWishes = aNumWishes;&#xD;
-		this.remWishes = aNumWishes;&#xD;
+		this.numWishes = aNumWishes; // n.º máximo de desejos disponíveis&#xD;
+		this.remWishes = aNumWishes; // o remanescente é o n.º máximo na inicialização&#xD;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8y7mYIxnEeyauKcbfTyhVw" name="showMe" specification="_8tdQgIxnEeyauKcbfTyhVw">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RI6Aw40HEeyTK68GWrtVgA" name="showMe" specification="_RFMlcI0HEeyTK68GWrtVgA">
           <language>java</language>
           <body>Main.clearConsole();&#xD;
-&#xD;
 		System.out.println(&quot;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&quot;);&#xD;
 		System.out.println(&quot;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.  &amp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&quot;);&#xD;
 		System.out.println(&quot;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @@    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&quot;);&#xD;
@@ -1179,69 +1207,66 @@
 		System.out.println(&quot;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@           ,# %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&quot;);&#xD;
 		System.out.println(&quot;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&quot;);&#xD;
 		System.out.println(&quot;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&quot;);&#xD;
-&#xD;
-		&#xD;
 	</body>
         </ownedBehavior>
-        <ownedOperation xmi:id="_8tcCYIxnEeyauKcbfTyhVw" name="NiceGenie" method="_8y6_UIxnEeyauKcbfTyhVw">
-          <eAnnotations xmi:id="_8tcpcIxnEeyauKcbfTyhVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_8tcpcYxnEeyauKcbfTyhVw" key="create"/>
+        <ownedOperation xmi:id="_RFKwQI0HEeyTK68GWrtVgA" name="NiceGenie" method="_RI6AwI0HEeyTK68GWrtVgA">
+          <eAnnotations xmi:id="_RFLXUY0HEeyTK68GWrtVgA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_RFL-YI0HEeyTK68GWrtVgA" key="create"/>
           </eAnnotations>
-          <ownedParameter xmi:id="_8tcCYYxnEeyauKcbfTyhVw" name="aNumWishes">
+          <ownedParameter xmi:id="_RFLXUI0HEeyTK68GWrtVgA" name="aNumWishes">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
-          <ownedParameter xmi:id="_8tcpcoxnEeyauKcbfTyhVw" type="_8ta0QIxnEeyauKcbfTyhVw" direction="return"/>
+          <ownedParameter xmi:id="_RFL-YY0HEeyTK68GWrtVgA" type="_RFJiII0HEeyTK68GWrtVgA" direction="return"/>
         </ownedOperation>
-        <ownedOperation xmi:id="_8tdQgIxnEeyauKcbfTyhVw" name="showMe" method="_8y7mYIxnEeyauKcbfTyhVw"/>
+        <ownedOperation xmi:id="_RFMlcI0HEeyTK68GWrtVgA" name="showMe" method="_RI6Aw40HEeyTK68GWrtVgA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_8zVPAIxnEeyauKcbfTyhVw" name="" memberEnd="_8zVPAYxnEeyauKcbfTyhVw _8yXlsIxnEeyauKcbfTyhVw">
-        <ownedEnd xmi:id="_8zVPAYxnEeyauKcbfTyhVw" name="" type="_8tP1IIxnEeyauKcbfTyhVw" association="_8zVPAIxnEeyauKcbfTyhVw"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_RJDKsI0HEeyTK68GWrtVgA" name="" memberEnd="_RJDKsY0HEeyTK68GWrtVgA _RIZDYI0HEeyTK68GWrtVgA">
+        <ownedEnd xmi:id="_RJDKsY0HEeyTK68GWrtVgA" name="" type="_RE5qgI0HEeyTK68GWrtVgA" association="_RJDKsI0HEeyTK68GWrtVgA"/>
       </packagedElement>
     </packagedElement>
-    <profileApplication xmi:id="_8UnSsIxnEeyauKcbfTyhVw">
-      <eAnnotations xmi:id="_8UsLMIxnEeyauKcbfTyhVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <profileApplication xmi:id="_Qq9ggI0HEeyTK68GWrtVgA">
+      <eAnnotations xmi:id="_QrDnII0HEeyTK68GWrtVgA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
       </eAnnotations>
       <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
     </profileApplication>
   </uml:Model>
-  <UMLLabProfile:TargetLanguage xmi:id="_8Uzf8IxnEeyauKcbfTyhVw" base_Package="_6D3YEIxnEeyauKcbfTyhVw">
+  <UMLLabProfile:TargetLanguage xmi:id="_QrK74I0HEeyTK68GWrtVgA" base_Package="_OTt8UI0HEeyTK68GWrtVgA">
     <languageName>java</languageName>
   </UMLLabProfile:TargetLanguage>
-  <UMLLabProfile:Reference xmi:id="_8wnSMIxnEeyauKcbfTyhVw" base_Element="_8wldAIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8wq8kIxnEeyauKcbfTyhVw" base_Element="_8wpHYIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8wsKsIxnEeyauKcbfTyhVw" base_Element="_8wq8kYxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8wum8IxnEeyauKcbfTyhVw" base_Element="_8wsxwIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8wxDMIxnEeyauKcbfTyhVw" base_Element="_8wvOAIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8wy4YIxnEeyauKcbfTyhVw" base_Element="_8wxDMYxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8w0tkIxnEeyauKcbfTyhVw" base_Element="_8wy4YYxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8w2iwIxnEeyauKcbfTyhVw" base_Element="_8w0tkYxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8w8CUIxnEeyauKcbfTyhVw" base_Element="_8w60MIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8xFMQIxnEeyauKcbfTyhVw" base_Element="_8xDXEIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8xHBcIxnEeyauKcbfTyhVw" base_Element="_8xFzUIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8xIPkIxnEeyauKcbfTyhVw" base_Element="_8xHBcYxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8xKEwIxnEeyauKcbfTyhVw" base_Element="_8xI2oIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8xPkUIxnEeyauKcbfTyhVw" base_Element="_8xNvIIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8xRZgIxnEeyauKcbfTyhVw" base_Element="_8xPkUYxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8xTOsIxnEeyauKcbfTyhVw" base_Element="_8xRZgYxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8xVD4IxnEeyauKcbfTyhVw" base_Element="_8xT1wIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8xW5EIxnEeyauKcbfTyhVw" base_Element="_8xVq8IxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8xYHMIxnEeyauKcbfTyhVw" base_Element="_8xXgIIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8xZ8YIxnEeyauKcbfTyhVw" base_Element="_8xYuQIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8xbKgIxnEeyauKcbfTyhVw" base_Element="_8xZ8YYxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8xe04IxnEeyauKcbfTyhVw" base_Element="_8xc_sIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8xgqEIxnEeyauKcbfTyhVw" base_Element="_8xfb8IxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8xh4MIxnEeyauKcbfTyhVw" base_Element="_8xgqEYxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_8x5EkIxnEeyauKcbfTyhVw" base_Element="_8x32cIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Annotations xmi:id="_8x65wIxnEeyauKcbfTyhVw" base_Element="_8x32cIxnEeyauKcbfTyhVw">
-    <annotations xmi:id="_8x65wYxnEeyauKcbfTyhVw" name="Override"/>
+  <UMLLabProfile:Reference xmi:id="_RG09II0HEeyTK68GWrtVgA" base_Element="_RGzH8I0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RG4AcI0HEeyTK68GWrtVgA" base_Element="_RG2yUI0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RG51oI0HEeyTK68GWrtVgA" base_Element="_RG4ngI0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RG848I0HEeyTK68GWrtVgA" base_Element="_RG6csI0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RG-uII0HEeyTK68GWrtVgA" base_Element="_RG848Y0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RG_8QI0HEeyTK68GWrtVgA" base_Element="_RG-uIY0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHBxcI0HEeyTK68GWrtVgA" base_Element="_RHAjUI0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHDmoI0HEeyTK68GWrtVgA" base_Element="_RHBxcY0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHJtQI0HEeyTK68GWrtVgA" base_Element="_RHIfII0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHRCAI0HEeyTK68GWrtVgA" base_Element="_RHPz4I0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHSQII0HEeyTK68GWrtVgA" base_Element="_RHRCAY0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHUFUI0HEeyTK68GWrtVgA" base_Element="_RHS3MI0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHVTcI0HEeyTK68GWrtVgA" base_Element="_RHUFUY0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHZk4I0HEeyTK68GWrtVgA" base_Element="_RHYWwI0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHbaEI0HEeyTK68GWrtVgA" base_Element="_RHaL8I0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHcoMI0HEeyTK68GWrtVgA" base_Element="_RHcBII0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHedYI0HEeyTK68GWrtVgA" base_Element="_RHdPQI0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHfrgI0HEeyTK68GWrtVgA" base_Element="_RHedYY0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHhgsI0HEeyTK68GWrtVgA" base_Element="_RHgSkI0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHiu0I0HEeyTK68GWrtVgA" base_Element="_RHhgsY0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHj88I0HEeyTK68GWrtVgA" base_Element="_RHiu0Y0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHnAQI0HEeyTK68GWrtVgA" base_Element="_RHlyII0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHoOYI0HEeyTK68GWrtVgA" base_Element="_RHnAQY0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RHpcgI0HEeyTK68GWrtVgA" base_Element="_RHoOYY0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RH7JUI0HEeyTK68GWrtVgA" base_Element="_RH57MI0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Annotations xmi:id="_RH8XcI0HEeyTK68GWrtVgA" base_Element="_RH57MI0HEeyTK68GWrtVgA">
+    <annotations xmi:id="_RH8XcY0HEeyTK68GWrtVgA" name="Override"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:Reference xmi:id="_8yFR0IxnEeyauKcbfTyhVw" base_Element="_8yEDsYxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_8yN0sIxnEeyauKcbfTyhVw" base_Element="_8yMmkIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_8yPp4IxnEeyauKcbfTyhVw" base_Element="_8yObwIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_8yRfEIxnEeyauKcbfTyhVw" base_Element="_8yQQ8IxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_8ySGIIxnEeyauKcbfTyhVw" base_Element="_8yRfEYxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_8yW-oIxnEeyauKcbfTyhVw" base_Element="_8yWXkIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_8yYz0IxnEeyauKcbfTyhVw" base_Element="_8yXlsIxnEeyauKcbfTyhVw"/>
-  <UMLLabProfile:Reference xmi:id="_8zWdIIxnEeyauKcbfTyhVw" base_Element="_8zVPAIxnEeyauKcbfTyhVw"/>
+  <UMLLabProfile:Reference xmi:id="_RIGvgI0HEeyTK68GWrtVgA" base_Element="_RIFhYY0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RIP5cI0HEeyTK68GWrtVgA" base_Element="_RIOrUI0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RISVsI0HEeyTK68GWrtVgA" base_Element="_RIRuoI0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RITj0I0HEeyTK68GWrtVgA" base_Element="_RIS8wI0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RIYcUI0HEeyTK68GWrtVgA" base_Element="_RIXOMI0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RIZqcI0HEeyTK68GWrtVgA" base_Element="_RIZDYI0HEeyTK68GWrtVgA"/>
+  <UMLLabProfile:Reference xmi:id="_RJEY0I0HEeyTK68GWrtVgA" base_Element="_RJDKsI0HEeyTK68GWrtVgA"/>
 </xmi:XMI>

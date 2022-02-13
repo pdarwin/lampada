@@ -2,26 +2,28 @@ package magiclamp;
 
 /**
  * Génio bom - concede todos os desejos
+ * @author P. Perneta e J. Rocha
  */
 public class NiceGenie extends Genie {
 
 	/**
-	 * @param aNumWishes - número de desejos a realizar
+	 * Construtor  do génio bom
+	 * 
+	 * @param aNumWishes
+	 * 			número de desejos a realizar (escolhido pelo utilizador)
 	 */
-
 	public NiceGenie(int aNumWishes) {
 		super();
-		this.numWishes = aNumWishes;
-		this.remWishes = aNumWishes;
+		this.numWishes = aNumWishes; // n.º máximo de desejos disponíveis
+		this.remWishes = aNumWishes; // o remanescente é o n.º máximo na inicialização
 	}
 
 	/**
-	 * Mostra o génio.
+	 * Mostra o génio
 	 */
 	public void showMe ()
 	{
 		Main.clearConsole();
-
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.  &@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @@    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -50,8 +52,6 @@ public class NiceGenie extends Genie {
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@           ,# %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-
-		
 	}
 
 }

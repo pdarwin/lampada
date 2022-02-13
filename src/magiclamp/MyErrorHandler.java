@@ -10,60 +10,62 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 
 /**
  * Classe geral para tratamento de erros
- * @author PP & JR
+ * @author P. Perneta e J. Rocha
  *
  */
 public class MyErrorHandler {
 
 	/**
 	 * Método geral para tratamento de erros
-	 * @param err - o erro a ser tratado
-	 * @param sc - scanner, para fechar em caso de erro
-	 * @param midiSequencer - sequenciador de Midis (para fechar em caso de erro)
+	 * 
+	 * @param err
+	 * 			o erro a ser tratado
+	 * @param sc
+	 * 			o scanner corrente, para fechar em caso de erro fatal
+	 * @param midiSequencer
+	 * 			sequenciador de Midis aberto, para fechar em caso de erro fatal
 	 */
 	public static void errorHandler (Exception err, Scanner sc, MidiSequencer midiSequencer)
 	{
 		
 		try {
-			throw err;
+			throw err; // atira o erro recebido, para tratamento pelos catch abaixo
 		}
-		catch (InputMismatchException e) // quando n é um inteiro
+		catch (InputMismatchException e) // quando não é um n.º inteiro
 		{
 			System.out.println("Opção inválida. Por favor escolha um número."); // imprime mensagem de erro
-			//sc.next(); // limpa o scanner
 		}
-		catch (NumberFormatException e)
+		catch (NumberFormatException e) // quando está fora do formato de dados aceite
 		{
-			System.out.println("Opção inválida. Por favor escolha um número."); // imprime mensagem de erro
-			//sc.next(); // limpa o scanner
+			System.out.println("Opção inválida. Por favor escolha outro número."); // imprime mensagem de erro
 		}
 		catch (IllegalArgumentException e) // quando apanha o zero na escolha do random
 		{
 			System.out.println("Opção inválida. Por favor escolha um número maior que zero."); // imprime mensagem de erro
 		}
-		catch (FileNotFoundException e)
+		catch (FileNotFoundException e) // ficheiro não encontrado
 		{
 			System.out.println("Ficheiro audio não encontrado, executando sem som.\nDetalhes: " +
-					e.getMessage());
+					e.getMessage()); // Mostra a mensagem do erro, para que se perceba qual é o ficheiro em falta
 		}
-		catch (IllegalStateException e)
+		catch (IllegalStateException e) // estado ilegal (relacionado ao sequenciador de Midis)
 		{
-			// não faz nada, só passa à frente
+			// não faz nada por agora, só passa à frente
 		}
-	    catch (UnsupportedAudioFileException ex)
+	    catch (UnsupportedAudioFileException e) //ficheiro audio não suportado (classe AudioPlayer)
 		{
 	        System.out.println("Ficheiro audio não suportado.");
-	        ex.printStackTrace();
-	    } catch (LineUnavailableException ex)
+	        e.printStackTrace();
+	    } catch (LineUnavailableException e) // linha de audio indisponível (classe AudioPlayer)
 		{
 	        System.out.println("Sem linha disponível para tocar o audio.");
-	        ex.printStackTrace();
-	    } catch (IOException ex) 
+	        e.printStackTrace();
+	    } catch (IOException e) // erro I/O (classe AudioPlayer)
 		{
 	        System.out.println("Erro ao tocar o audio.");
-	        ex.printStackTrace();
+	        e.printStackTrace();
 	    }
-		catch (Exception e)
+		catch (Exception e) // Outros erros não previstos acima
 		{
 			e.printStackTrace();
 	        System.out.println("Ocorreu um erro imprevisto. Finalizando programa..."); // imprime mensagem de despedida
@@ -77,33 +79,37 @@ public class MyErrorHandler {
 	}
 	
 	/**
+	 * Testa os inteiros inseridos no Scanner
 	 * 
-	 * @param sc - scanner
-	 * @return - o inteiro inserido pelo utilizador, se válido
+	 * @param sc
+	 * 			o scanner que estamos a usar para receber o input
+	 * @return o inteiro inserido pelo utilizador, se válido
 	 */
 	public static int tryScannerIntFromNextLine (Scanner sc)
 	{
 	
-		boolean ok = false;
 		int nInt = 0; // inicializa a variável que guarda o inteiro a devolver
+		
 		do
 		{
 			try 
 			{
 				nInt = Integer.parseInt (tryScannerNextLine(sc)) ; // Tenta atribuir o valor do scanner ao inteiro
-				ok = true;
+				break;
 			}
 			catch (Exception e1) {
-				errorHandler(e1, sc, null); // mostra o erro
+				errorHandler(e1, sc, null); // Trata o erro
 			}
-		} while (!ok);
+		} while (true);
 		
 		return nInt;
 	}
 	
 	/**
+	 * Testa a String inserida no Scanner, para ver se é vazia ou só com espaços
 	 * 
-	 * @param sc - scanner
+	 * @param sc
+	 * 			o scanner que estamos a usar para receber o input
 	 * @return - a string inserida pelo utilizador, se válida
 	 */
 	public static String tryScannerNextLine (Scanner sc)
@@ -115,10 +121,9 @@ public class MyErrorHandler {
 			{
 				sString = sc.nextLine(); // Tenta atribuir o valor do scanner à String
 				
-				if (sString.trim().isEmpty())
+				if (sString.trim().isEmpty()) // Se a tring estiver vazia
 				{
 					System.out.println("O valor inserido estava vazio, ou só continha espaços. Por favor digite outra vez.");
-					//sc.next(); // limpa o scanner
 				}
 				else
 				{
@@ -126,13 +131,9 @@ public class MyErrorHandler {
 				}					
 					
 			}
-			catch (InputMismatchException e) // quando n é uma String válida
-			{
-				; // imprime mensagem de erro
-				//sc.next(); // limpa o scanner
-			}
-			catch (Exception e1) {
-				e1.printStackTrace(); // mostra o erro
+			catch (Exception e)
+			{// quando n é uma String válida
+				errorHandler(e, sc, null); // Trata o erro
 			}
 		} while (true);
 		
@@ -140,8 +141,10 @@ public class MyErrorHandler {
 	}
 	
 	/**
+	 * Valida o número da escolha inicial (máximo do random)
 	 * 
-	 * @param sc - O scanner ativo na sessão
+	 * @param sc
+	 * 			o scanner que estamos a usar para receber o input
 	 * @return - o inteiro escolhido pelo utilizador e validado pelo sistema
 	 */
 	public static int tryStartNum (Scanner sc) 
@@ -151,7 +154,6 @@ public class MyErrorHandler {
 		
 		do
 		{
-	
 			num = tryScannerIntFromNextLine(sc);
 			
 			if (num > 0 && num <= 20)
@@ -166,6 +168,37 @@ public class MyErrorHandler {
 		} while (true);
 		
 		return num;
+	}
+	
+	/**
+	 * Valida opções do menu
+	 * 
+	 * @param sc
+	 * 			o scanner que estamos a usar para receber o input
+	 * @return - o inteiro escolhido pelo utilizador e validado pelo sistema
+	 */
+	public static int tryOption (Scanner sc) 
+	{
+		
+		int option;
+		
+		do
+		{
+	
+			option = tryScannerIntFromNextLine(sc);
+			
+			if (option > 0 && option <= 3)
+			{
+				break;
+			}
+			else
+			{
+				System.out.println("Opção invá3lida. Por favor escolha uma opção de 1 a 3");
+
+			}
+		} while (true);
+		
+		return option;
 	}
 	
 }
