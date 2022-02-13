@@ -1,8 +1,12 @@
 package magiclamp;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 
 /**
  * Classe geral para tratamento de erros
@@ -39,19 +43,33 @@ public class MyErrorHandler {
 		}
 		catch (FileNotFoundException e)
 		{
-			System.out.println("Erro: Ficheiro \"Aladdin-(Medley-Of-All-Songs).mid\" não encontrado, executando programa sem som.");
+			System.out.println("Ficheiro audio não encontrado, executando sem som.\nDetalhes: " +
+					e.getMessage());
 		}
 		catch (IllegalStateException e)
 		{
 			// não faz nada, só passa à frente
 		}
+	    catch (UnsupportedAudioFileException ex)
+		{
+	        System.out.println("Ficheiro audio não suportado.");
+	        ex.printStackTrace();
+	    } catch (LineUnavailableException ex)
+		{
+	        System.out.println("Sem linha disponível para tocar o audio.");
+	        ex.printStackTrace();
+	    } catch (IOException ex) 
+		{
+	        System.out.println("Erro ao tocar o audio.");
+	        ex.printStackTrace();
+	    }
 		catch (Exception e)
 		{
 			e.printStackTrace();
 	        System.out.println("Ocorreu um erro imprevisto. Finalizando programa..."); // imprime mensagem de despedida
 			
-	        midiSequencer.stopSequencer(); // Desliga a música
-			sc.close(); // Fecha o scanner
+	        if (midiSequencer != null) midiSequencer.stopSequencer(); // Desliga a música, se o sequenciador existir
+	        if (sc != null) sc.close(); // Fecha o scanner, se não for nulo
 			
 	        System.exit(0); // Sai do sistema
 		}

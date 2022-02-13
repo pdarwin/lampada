@@ -24,15 +24,16 @@ public class Main {
 		boolean musicOn = false; // Cria e inicializa o boleano do estado do sequenciador de Midis
 		
 		printWelcomeToTheLamp(); // Imprime o ecrã de boas vindas
-
+		
 		MidiSequencer midiSequencer = new MidiSequencer(); // inicializa o sequenciador de Midis
 		try {
 			/** Inicia a música */
 
-			midiSequencer.playMidi();
+			midiSequencer.playSound("Aladdin-(Medley-Of-All-Songs).mid");
 			musicOn = true;
-		} catch (Exception e1) {
-			// TODO Auto-generated catch block
+		} 
+		catch (Exception e1) 
+		{
 			MyErrorHandler.errorHandler(e1, sc, midiSequencer);
 		}
 		
@@ -126,7 +127,7 @@ public class Main {
 							if (!musicOn) // Verifica se a música está a tocar
 							{
 								midiSequencer = new MidiSequencer(); //Se não estiver, liga a música
-								midiSequencer.playMidi();
+								midiSequencer.playSound("Aladdin-(Medley-Of-All-Songs).mid");
 								musicOn = true;
 							}
 							else 
@@ -237,24 +238,25 @@ public class Main {
 	public static void printGameOver(Scanner sc)
 	{
 
-		InputStreamReader inputStream = new InputStreamReader(System.in);
-		BufferedReader bufferedReader = new BufferedReader(inputStream);
+		// geração do buffer para sair do ciclo infinito
+		InputStreamReader inputStream = new InputStreamReader(System.in); // Cria o leitor de streams
+		BufferedReader bufferedReader = new BufferedReader(inputStream); // Cria o buffer com o leitor de streams
 		
-		do {
-			
+		do { // Ciclo infinito para alternar entre as duas telas, mostrando os créditos finais
+			 // Sai do ciclo quando dá enter, apanhado pelo buffer abaixo
 			try {
-				if (bufferedReader.ready())
+				if (bufferedReader.ready()) //coloca o buffer em escuta
 				 {
-				     bufferedReader.readLine();
-				     // do stuff before exiting loop
-				     break;
+				     bufferedReader.readLine(); // se lê uma linha...
+
+				     break; // sai do ciclo
 				 }
 			} catch (IOException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
+
+				MyErrorHandler.errorHandler(e1, sc, null);
 			}
 			
-			clearConsole();
+			clearConsole(); // limpa a consola
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -280,12 +282,12 @@ public class Main {
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@      Prima enter para sair      @@@@@@@@@@@@@@@@@@@@@@@@");
 			try {
-				Thread.sleep(500);
+				Thread.sleep(500); // dorme durante 0,5 segundos
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				
+				MyErrorHandler.errorHandler(e, sc, null);
 			}
-			clearConsole();
+			clearConsole(); // Limpa a consola
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -311,16 +313,17 @@ public class Main {
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@      Prima enter para sair      @@@@@@@@@@@@@@@@@@@@@@@@");
 			
-			try {
-				Thread.sleep(500);
-				} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			try 
+			{
+				Thread.sleep(500); // dorme durante 0,5 segundos
+			} 
+			catch (InterruptedException e) 
+			{
+				MyErrorHandler.errorHandler(e, sc, null);
 			}
 						
 		} while (true);
 
-		
 	}
 	
 	/**

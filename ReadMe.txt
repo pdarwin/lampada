@@ -1,11 +1,13 @@
-O zip contém 3 ficheiros:
+O zip contém 5 ficheiros:
 	* MyLamp.bat - executável para Windows (testado em Win 11)
 	* MyLamp.jar - executável em java
 	* (Aladdin-(Medley-Of-All-Songs).mid - Midi usado no jogo
+	* Evil_laugh.wav
+	* Demon_dying.wav
 
 
 Para instalar basta descomprimir o zip numa pasta, e correr o ficheiro .bat.
-O ficheiro de midi (Aladdin-(Medley-Of-All-Songs).mid) tem de estar na mesma diretoria que o executável.
+Os ficheiros de som têm de estar na mesma diretoria que o executável.
 
 Para jogar:
 1. Escolher um n.º de 0 a 20, que gerará o máximo de génios dentro da lâmpada

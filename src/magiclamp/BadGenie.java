@@ -20,6 +20,7 @@ public class BadGenie extends Genie {
 	 */
 	public void showMe ()
 	{
+		Main.clearConsole();
 		System.out.println("                                                                                ");
 		System.out.println("                                                                                ");
 		System.out.println("                                                                                ");
@@ -50,6 +51,8 @@ public class BadGenie extends Genie {
 		System.out.println("                                                                                ");
 		System.out.println("                                                                                ");
 		System.out.println("          Eu sou o génio mau, e vou conceder apenas um desejo!                  ");
+		AudioPlayer player = new AudioPlayer();
+		player.play("Evil_laugh.wav");
 	}
 	
 }
