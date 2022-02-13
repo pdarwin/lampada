@@ -69,12 +69,12 @@ public class Demon extends Genie {
 			this.grantWishDemon(resposta, sc); // realiza o desejo
 			return true;
 			}
-		else return false; // retirna falso, se for escolhido o código de saída "x"
+		else return false; // retorna falso, se for escolhido o código de saída "x"
 
 	}
 	
 	/**
-	 * Mostra o demónio.
+	 * Mostra o demónio
 	 */
 	public void showMe ()
 	{	

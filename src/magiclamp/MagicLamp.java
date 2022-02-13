@@ -26,9 +26,9 @@ public class MagicLamp {
 	 *            Quantos génios podem sair da lâmpada.
 	 */
 	public MagicLamp(int aLimit) {
-		this.limGenies = aLimit;
-		this.numGenies = aLimit;
-		this.demons = 0;
+		this.limGenies = aLimit; // limite máximo de génios
+		this.numGenies = aLimit; // n.º corrente de génios
+		this.demons = 0; // recargas/demónios consumidos, inicializado a 0
 	}
 
 	/**
