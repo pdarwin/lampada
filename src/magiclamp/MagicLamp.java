@@ -55,8 +55,8 @@ public class MagicLamp {
 			numGenies -= 1; // remove um génio
 			
 			/* Condição de saída do génio mal humorado: "Sempre que a lâmpada for esfregada 
-			 * um par de vezes, sem contar a atual" - Ou seja, sempre que seja par ou 
-			 * = 1, sai bem humorado
+			 * um par de vezes, sem contar a atual"
+			 * Ou seja, sempre que seja par ou = 1, sai bem humorado
 			 */
 			
 			if ((rubs % 2 == 0) || (rubs == 1))

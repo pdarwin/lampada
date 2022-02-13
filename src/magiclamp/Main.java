@@ -113,8 +113,8 @@ public class Main {
 						for (i = 1; i <= genie.getNumWishes(); i++ ) // Ciclo para realizar os desejos pedidos
 						{
 							System.out.println("Peça um desejo!");
-							wish = MyErrorHandler.tryScannerNextLine(sc); // Guarda o desejo no scanner
-							genie.grantWish(wish); // Realiza o desejo
+							wish = MyErrorHandler.tryScannerNextLine(sc); // guarda o desejo no scanner
+							genie.grantWish(wish); // realiza o desejo
 						}
 					}
 					
