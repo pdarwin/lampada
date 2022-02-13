@@ -11,7 +11,6 @@ import java.util.Scanner;
  * @author P. Perneta e J. Rocha
  *
  */
-
 public class Main {
 	
 	/**
@@ -22,11 +21,11 @@ public class Main {
 	public static void main(String[] args)
 	{			
 
-		Scanner sc = new Scanner(System.in); // Cria e inicializa o scanner de input
+		Scanner sc = new Scanner(System.in); // cria e inicializa o scanner de input
 		
-		musicOn = false; // Quando arranca, a música não está a tocar
+		musicOn = false; // quando arranca, a música não está a tocar
 		
-		printWelcomeToTheLamp(); // Imprime o ecrã de boas vindas
+		printWelcomeToTheLamp(); // imprime o ecrã de boas vindas
 		
 		MidiSequencer midiSequencer = new MidiSequencer(); // inicializa o sequenciador de Midis
 		try {
@@ -128,7 +127,8 @@ public class Main {
 					break;
 				case 2:
 					/* Possível melhoria /implementação futura:
-					 * 		idealmente esta opção não apareceria o ficheiro de som não existisse
+					 * 		idealmente esta opção não apareceria o ficheiro 
+					 * 		de som não existisse
 					 */
 					try { 
 						if (!musicOn) // Verifica se a música está a tocar
@@ -194,7 +194,8 @@ public class Main {
 	}
 	
 	/**
-	 * imprime o menu
+	 * Imprime o menu, recebendo a lâmpada mágica
+	 * 
 	 * @param aLamp
 	 * 			a Lâmpada Mágica
 	 */
