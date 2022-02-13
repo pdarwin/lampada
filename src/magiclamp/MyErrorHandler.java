@@ -193,7 +193,7 @@ public class MyErrorHandler {
 			}
 			else
 			{
-				System.out.println("Opção invá3lida. Por favor escolha uma opção de 1 a 3");
+				System.out.println("Opção inválida. Por favor escolha uma opção entre 1 e 3.");
 
 			}
 		} while (true);
