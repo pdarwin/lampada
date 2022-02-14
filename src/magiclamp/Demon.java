@@ -50,7 +50,8 @@ public class Demon extends Genie {
 	/**
 	 * Função recursiva que pede ao demónio que realize um desejo, e pergunta 
 	 * se quer realizar outro, indefinidamente, até que se digite o código
-	 * de saída ("x")
+	 * de saída ("x"). O demónio realiza todos os desejos, mas de forma perversa 
+	 * (no caso, invertida)
 	 * 
 	 * @param 
 	 * 		aWish - o desejo, em String
@@ -61,8 +62,16 @@ public class Demon extends Genie {
 	 */
 	public boolean grantWishDemon (String aWish, Scanner sc) 
 	{
-		System.out.println("Desejo concedido! " + aWish + " foi realizado. Escolha outro desejo, ou \"x\" para sair.");
-		String resposta = MyErrorHandler.tryScannerNextLine(sc) ; // Guarda o desejo escolhido na variável
+		String resposta = "";
+		char ch;
+		for (int i=0; i<aWish.length(); i++) //ciclo para inverter o desejo
+	      {
+	        ch= aWish.charAt(i); //extrai cada caracter
+	        resposta = ch + resposta; //adiciona cada caracter em frente à frase existente
+	      }
+		
+		System.out.println("Desejo concedido! " + resposta + " foi realizado! Escolha outro desejo, ou \"x\" para sair.");
+		resposta = MyErrorHandler.tryScannerNextLine(sc) ; // Guarda o desejo escolhido na variável
 		
 		if (!resposta.equals("x")) // se a resposta é diferente de x (código de saída)
 			{
