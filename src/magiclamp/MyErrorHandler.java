@@ -3,6 +3,7 @@ package magiclamp;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 import javax.sound.sampled.LineUnavailableException;
@@ -60,7 +61,13 @@ public class MyErrorHandler {
 		{
 	        System.out.println("Sem linha disponível para tocar o audio.");
 	        e.printStackTrace();
-	    } catch (IOException e) // erro I/O (classe AudioPlayer)
+	    }
+		catch (NoSuchElementException e)
+		{
+			// System.out.println("Sem linha disponível para tocar o audio.");
+	        // e.printStackTrace();
+		}
+		catch (IOException e) // erro I/O (classe AudioPlayer)
 		{
 	        System.out.println("Erro ao tocar o audio.");
 	        e.printStackTrace();
