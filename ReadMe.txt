@@ -10,7 +10,7 @@ Para instalar basta descomprimir o zip numa pasta, e correr o ficheiro .bat.
 Os ficheiros de som têm de estar na mesma diretoria que o executável.
 
 Para jogar:
-1. Escolher um n.º de 0 a 20, que gerará o máximo de génios dentro da lâmpada
+1. Escolher um n.º de 1 a 20, que gerará o máximo de génios dentro da lâmpada
 2. Entrando no menu, escolher o n.º de vezes que vai esfregar a lâmpada. 
 3. Assim que é esfregada, a lâmpada pergunta-lhe quantos desejos quer realizar
 4. O tipo de génio que aparece e o n.º de desejos efetivamente concedidos depende do n.º de vezes que esfregar.
