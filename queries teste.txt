@@ -1,0 +1,12 @@
+select atleta.nome, partida.data from atleta
+INNER JOIN atleta_partida on atleta.id = atleta_partida.atleta_id
+INNER JOIN partida on partida.id = atleta_partida.partida_id
+where atleta_partida.titular_ou_banco = "t"
+GROUP BY atleta.id
+
+
+SELECT avg(partida.assistencia) FROM partida
+INNER JOIN clube_partida ON clube_partida.partida_id = partida.id
+INNER JOIN clube ON clube.id = clube_partida.clube_id
+AND clube_partida.casa_ou_fora= "c"
+and clube.nome = "SC Marítimo"
